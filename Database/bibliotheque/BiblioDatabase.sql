@@ -1,6 +1,6 @@
 CREATE DATABASE Biblio;
 USE Biblio;
-DROP TABLE IF EXISTS client;
+DROP TABLE IF EXISTS Kunde ;
 CREATE TABLE kunde (
 kunde_ID INT  UNSIGNED NOT  NULL  AUTO_INCREMENT PRIMARY KEY,
 vorname VARCHAR(60) NOT NULL ,
@@ -9,12 +9,12 @@ email VARCHAR(100) ,
 phone VARCHAR (15)
 )   ;
 INSERT INTO Kunde (vorname,nachname, email,phone) 
-	VALUES  ('ahmed','mohamed','ahmed@gmail.com','0172354567'),
+	VALUES ('ahmed','mohamed','ahmed@gmail.com','0172354567'),
             ('peter','hoffman','peter@gmail.com','01959997967'),
 			('omar','mohamed','omar@gmail.com','0162656854857'),
             ('alex','seeman','alexQgmail.com',01245654644),
             ('Thomas','Hann','bestmann@gmail.com',01245635645644);
-SELECT * FROM kunde;
+            
 
 DROP TABLE IF EXISTS kunde_ADRESS;
 CREATE TABLE kunde_Adress(
@@ -25,7 +25,6 @@ plz INT UNSIGNED NOT NULL ,
 stadt VARCHAR (100) NOT NULL ,
 UNIQUE(kunde_id),
 FOREIGN KEY(kunde_id) REFERENCES kunde(kunde_id) ON UPDATE CASCADE ON DELETE CASCADE
-
 );
 
 INSERT INTO Kunde_adress (strasse,hausnummer, plz,stadt) 
@@ -44,34 +43,37 @@ DROP TABLE IF EXISTS kunde_typ;
 CREATE TABLE kunde_typ(
 typ_id INT UNSIGNED NOT NULL ,
 sorte VARCHAR (50),
-foreign key(typ_id)references kunde (kunde_id)
+FOREIGN KEY(typ_id)REFERENCES kunde (kunde_id)
 );
 
-insert into kunde_typ(typ_id,sorte)
-values(2,'stuent');
-
- Drop table if  exists Buch ;
- create table Buch(
+INSERT INTO kunde_typ(typ_id,sorte)
+VALUES(2,'stuent'),
+     (3,'senior'),
+     (4,'senior');
+INSERT INTO kunde_typ(typ_id,sorte)
+VALUES(4,'senior');
+ DROP TABLE IF  EXISTS Buch ;
+ CREATE TABLE Buch(
  buch_id INT  UNSIGNED NOT  NULL  AUTO_INCREMENT PRIMARY KEY, 
- exampler int unsigned default 1, 
- buchName varchar (250) not null,
+ exampler INT UNSIGNED DEFAULT 1, 
+ buchName VARCHAR (250) NOT NULL,
  kunde_ID INT  UNSIGNED NOT  NULL,
- foreign key (kunde_id)references kunde (kunde_id),
- unique(Buch_id) );
- insert into Buch( exampler,buchName,Kunde_id)
- values (1, 'das Land',3),
+ FOREIGN KEY (kunde_id)REFERENCES kunde (kunde_id),
+ UNIQUE(Buch_id) );
+ INSERT INTO Buch( exampler,buchName,Kunde_id)
+ VALUES (1, 'das Land',3),
         (5, 'das wetter vor 100 jahre',1),
         (10, 'journey to the center of the earth',4);
  
 
- drop table if exists Autor;
- create table Autor (
- VorName  varchar (100) not null, 
- nachNAme  varchar (100) ,
- autor_id int unsigned not null primary key 
+ DROP TABLE IF EXISTS Autor;
+ CREATE TABLE Autor (
+ VorName  VARCHAR (100) NOT NULL, 
+ nachNAme  VARCHAR (100) ,
+ autor_id INT UNSIGNED NOT NULL PRIMARY KEY 
  );
- insert into Autor(vorname,nachname,autor_id)
- values('isabel','Abedi',1215),
+ INSERT INTO Autor(vorname,nachname,autor_id)
+ VALUES('isabel','Abedi',1215),
       	('jan','Beck',1211),
         ('Wolf','Hass',1205);
  
@@ -82,23 +84,45 @@ values(2,'stuent');
  
  
  
- drop table if exists verfasst;
- create table verfasst( 
+ DROP TABLE IF EXISTS verfasst;
+ CREATE TABLE verfasst( 
  buch_id INT  UNSIGNED NOT  NULL , 
-  autor_id int unsigned not null ,
-  foreign key (buch_id)references Buch (buch_id) on delete cascade on update cascade,
-  foreign key (autor_id)references autor (autor_id) on delete cascade on update cascade);
+  autor_id INT UNSIGNED NOT NULL ,
+  FOREIGN KEY (buch_id)REFERENCES Buch (buch_id) ON DELETE CASCADE ON UPDATE CASCADE,
+  FOREIGN KEY (autor_id)REFERENCES autor (autor_id) ON DELETE CASCADE ON UPDATE CASCADE);
 
-  insert into verfasst(buch_id,autor_id)
-  values (1,1211),
+  INSERT INTO verfasst(buch_id,autor_id)
+  VALUES (1,1211),
          (3,1205),
          (2,1215);
- drop table if exists buch_ausliehen;
- create table buch_ausliehen (
+ DROP TABLE IF EXISTS buch_ausliehen;
+ CREATE TABLE buch_ausliehen (
  kunde_id  INT  UNSIGNED NOT  NULL,
- buch_id int unsigned not null,
- von_datum date  not null,
- bis_datum date not null);
- insert into buch_aus (kunde_id,buch_id,von_datum,bis_datum)
- values (3,1205,01052020,6h);
+ buch_id INT UNSIGNED NOT NULL,
+ von_datum DATE  NOT NULL,
+ bis_datum DATE NOT NULL);
+ INSERT INTO buch_ausliehen (kunde_id,buch_id,von_datum,bis_datum)
+ VALUES (3,1205,'2020-05-11','2020-05-22'),
+         (1,1215,'2020-03-02','2020-03-07'),
+         (2,1211,'2020-06-01','2020-08-20');
+ DROP TABLE IF EXISTS Bibliothekar;
+ CREATE TABLE  Bibliothekar(
+ bib_id INT  UNSIGNED NOT  NULL AUTO_INCREMENT PRIMARY KEY,
+ vorName VARCHAR(50) NOT NULL,
+ nachName VARCHAR(50) NOT NULL,
+ email VARCHAR(100)NOT NULL,
+ phone VARCHAR(50) NOT NULL,
+ Bib_Ad_Str VARCHAR (50) NOT NULL,
+ Bib_Ad_haus_nr VARCHAR (7) NOT NULL,
+ Bib_Ad_Plz INT UNSIGNED  NOT NULL,
+ Bib_Ad_std VARCHAR (100) NOT NULL,
+ UNIQUE(bib_id)
+ );
+
+ INSERT INTO Bibliothekar (vorname,nachname ,email,phone,Bib_Ad_Str,Bib_Ad_haus_nr,Bib_Ad_Plz,Bib_Ad_std)
+ VALUES
+     ('Oliver ' ,'Herrman','oliver@123com',0123456789,'hamburerStr' ,'13a'    ,50254, 'Ulm'),
+      ('stefan ','jank'   ,'stefen@123com',0132965478,'burerStr'    ,'5'       ,51254,'Köln'      ),
+       ('murad','ibra'    ,'ibra@123com'  ,0114572357,'alexanderStr','1'       ,50255,'gISSEN'    );
+ 
  
