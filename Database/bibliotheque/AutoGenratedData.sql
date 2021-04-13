@@ -1,855 +1,1030 @@
+#
+# TABLE STRUCTURE FOR: Autor
+#
 
-INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Drew', 'Schaefer', 17);
-INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Hipolito', 'Hane', 3);
-INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Tressa', 'Yost', 4);
-INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('John', 'Lind', 5);
-INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Nannie', 'Reynolds', 6);
-INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Tracey', 'Kling', 7);
-INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Savannah', 'Denesik', 8);
-INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Dianna', 'Cruickshank', 9);
-INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Marietta', 'McDermott', 12);
-INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Mia', 'Pfeffer', 15);
-INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Mallory', 'Leffler', 33);
-INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Cassandre', 'Feeney', 34);
-INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Maverick', 'Hilpert', 47);
-INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Chyna', 'Romaguera', 74);
-INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Zola', 'Gutmann', 76);
-INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Domenick', 'Kuhlman', 83);
-INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Tara', 'Leuschke', 91);
-INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Nigel', 'McKenzie', 95);
-INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Ewald', 'Padberg', 356);
-INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Patrick', 'Raynor', 379);
-INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Augustus', 'Aufderhar', 606);
-INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Hobart', 'Hegmann', 676);
-INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Princess', 'Emmerich', 691);
-INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Stuart', 'Veum', 881);
-INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Jaydon', 'Swift', 934);
-INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Dovie', 'Bartoletti', 987);
-INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Dagmar', 'Willms', 1490);
-INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Vella', 'Zieme', 1630);
-INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Elyse', 'Strosin', 2212);
-INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Arvilla', 'Pfannerstill', 2501);
-INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Mazie', 'Nicolas', 2579);
-INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Hollie', 'Johnson', 2707);
-INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Evelyn', 'Fisher', 2948);
-INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Myrtice', 'Boyer', 3764);
-INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Llewellyn', 'Schulist', 3903);
-INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Jerry', 'Schmeler', 4278);
-INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Xander', 'Keebler', 7427);
-INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Loren', 'Stehr', 8608);
-INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Sadye', 'Parisian', 9705);
-INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Pablo', 'Williamson', 12455);
-INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Leilani', 'Farrell', 17448);
-INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Cortez', 'Wuckert', 20310);
-INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Velva', 'Bernhard', 20441);
-INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Freddie', 'Legros', 26841);
-INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Lourdes', 'Casper', 28644);
-INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Adelle', 'Parisian', 32328);
-INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Judah', 'Kovacek', 48066);
-INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Larry', 'Tillman', 56561);
-INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Taurean', 'Fisher', 65489);
-INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Lexi', 'McGlynn', 67152);
-INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Kaylie', 'Lebsack', 79405);
-INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Minnie', 'Kerluke', 230602);
-INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Ellie', 'Volkman', 271289);
-INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Emilia', 'Brekke', 315906);
-INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Karlie', 'Purdy', 381357);
-INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Florence', 'Lueilwitz', 420429);
-INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Freida', 'Stracke', 476289);
-INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Lewis', 'Stehr', 539566);
-INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Annie', 'Wiegand', 670369);
-INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Hermina', 'Mayert', 758724);
-INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Jeanne', 'Kerluke', 923558);
-INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Kiana', 'Franecki', 995374);
-INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Santiago', 'Bode', 1300432);
-INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Woodrow', 'Smitham', 2024210);
-INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Mohammad', 'Marquardt', 2947029);
-INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Gabrielle', 'Crist', 4117493);
-INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Ezekiel', 'Pacocha', 4789635);
-INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Teagan', 'Bogisich', 6350731);
-INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Coralie', 'Friesen', 6790531);
-INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Jessica', 'Doyle', 6816622);
-INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Josefa', 'Mertz', 6923581);
-INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Idell', 'Cole', 7064655);
-INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Jalon', 'Abshire', 7657916);
-INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Frederique', 'Franecki', 7802282);
-INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Treva', 'Bruen', 8251999);
-INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Paolo', 'Mante', 8716240);
-INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Ottis', 'Bailey', 9097494);
-INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Abby', 'Schroeder', 9102049);
-INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Benjamin', 'Gislason', 9761807);
-INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Thad', 'Dickinson', 17160105);
-INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Russel', 'Schamberger', 19134193);
-INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('August', 'Frami', 38931020);
-INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Priscilla', 'Yundt', 51774246);
-INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Keyshawn', 'Morar', 56660333);
-INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Keven', 'Willms', 72227000);
-INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Taurean', 'Bailey', 73388614);
-INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Rigoberto', 'Lockman', 77521558);
-INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Hulda', 'Cummerata', 93438479);
-INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Erna', 'Cremin', 93781921);
-INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Manley', 'Walter', 95996233);
-INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Claud', 'Dicki', 167473801);
-INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Ellsworth', 'Koelpin', 236529279);
-INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Karen', 'Kilback', 272268115);
-INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Jarvis', 'Kemmer', 273274142);
-INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Edd', 'Thompson', 418583356);
-INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('April', 'Beatty', 569258091);
-INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Jordyn', 'Yost', 578243590);
-INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Nona', 'Mills', 733414862);
-INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Ryley', 'Schroeder', 792162635);
-INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Marty', 'Doyle', 827992836);
+DROP TABLE IF EXISTS `Autor`;
+
+CREATE TABLE `Autor` (
+  `VorName` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `nachName` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `autor_id` int(10) unsigned NOT NULL,
+  PRIMARY KEY (`autor_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Price', 'Cremin', 0);
+INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Damaris', 'Hintz', 1);
+INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Leora', 'Schulist', 2);
+INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Leo', 'Predovic', 4);
+INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Erin', 'Koss', 5);
+INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Adele', 'Gerlach', 6);
+INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Ezequiel', 'Gerlach', 8);
+INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Bianka', 'Altenwerth', 9);
+INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Tyshawn', 'Haag', 16);
+INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Bernice', 'Casper', 36);
+INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Oda', 'Langworth', 61);
+INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Coby', 'Purdy', 63);
+INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Isabel', 'White', 64);
+INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Ebba', 'Haley', 84);
+INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Tiara', 'Herzog', 92);
+INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Marianna', 'Lynch', 133);
+INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Rossie', 'Moore', 136);
+INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Rodrigo', 'Wisozk', 176);
+INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Abdiel', 'Konopelski', 236);
+INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Solon', 'O\'Conner', 448);
+INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Jalyn', 'Lindgren', 454);
+INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Chaz', 'Little', 462);
+INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Carlos', 'Russel', 508);
+INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Perry', 'Davis', 512);
+INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Marc', 'Satterfield', 527);
+INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Fredrick', 'Schuppe', 599);
+INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Sterling', 'King', 602);
+INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Angie', 'Murray', 651);
+INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Marge', 'Ruecker', 674);
+INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Woodrow', 'Jast', 719);
+INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Elenor', 'Purdy', 784);
+INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Mercedes', 'Runte', 890);
+INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Doug', 'Spinka', 900);
+INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Elenora', 'Jaskolski', 1704);
+INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Colten', 'Stanton', 2278);
+INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Neva', 'Baumbach', 3403);
+INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Buddy', 'Smith', 4013);
+INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Nasir', 'Hamill', 4635);
+INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Zoey', 'Roob', 4891);
+INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Mavis', 'Lang', 5168);
+INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Chasity', 'Schmitt', 7758);
+INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Kristy', 'Gleichner', 8415);
+INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Lonie', 'Hettinger', 8887);
+INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Dion', 'Lehner', 12745);
+INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Ryann', 'Ankunding', 22848);
+INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Michale', 'Wunsch', 27370);
+INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Warren', 'Ondricka', 44762);
+INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Mara', 'Schimmel', 46517);
+INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Clarissa', 'Gibson', 65510);
+INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Deron', 'Nienow', 73409);
+INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Queenie', 'Hilpert', 77954);
+INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Augusta', 'Smitham', 87158);
+INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Ibrahim', 'Schmidt', 98141);
+INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Beatrice', 'Gislason', 98263);
+INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Lizzie', 'Bergstrom', 98810);
+INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Electa', 'Hane', 119361);
+INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Reta', 'Keeling', 266375);
+INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Trycia', 'Bernhard', 307581);
+INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Samir', 'Ondricka', 374809);
+INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Patrick', 'Kuhic', 694950);
+INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Nedra', 'Harris', 750441);
+INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Lily', 'Schaden', 798993);
+INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Astrid', 'Welch', 802608);
+INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Bertram', 'Wisozk', 868423);
+INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Joanie', 'Klocko', 1406100);
+INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Evalyn', 'Barrows', 1558376);
+INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Guido', 'Homenick', 2739826);
+INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Amaya', 'Kunze', 3302502);
+INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Elda', 'Harvey', 4002053);
+INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Jolie', 'Pouros', 4577906);
+INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Gilda', 'Will', 5004777);
+INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Helmer', 'Wisoky', 5674668);
+INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Emmitt', 'Pollich', 6714694);
+INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Wilford', 'Collier', 7841260);
+INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Lucio', 'Breitenberg', 9085997);
+INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Shawna', 'Dietrich', 9789968);
+INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Gloria', 'Windler', 16850003);
+INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Hayley', 'Barrows', 24394489);
+INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Brant', 'Hintz', 24543377);
+INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Harry', 'Cruickshank', 27398579);
+INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Jorge', 'Dare', 29459212);
+INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Otis', 'Mills', 33427865);
+INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Westley', 'Russel', 34213177);
+INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Thora', 'Schuster', 34705922);
+INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Camilla', 'Toy', 51006760);
+INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Eileen', 'Swaniawski', 57501454);
+INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Hildegard', 'Frami', 72623116);
+INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Chris', 'Kuhlman', 88946950);
+INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Keeley', 'Monahan', 93911184);
+INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Sydnee', 'Kutch', 98072659);
+INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Gordon', 'Ryan', 98896814);
+INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Alek', 'Donnelly', 98899890);
+INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Anjali', 'Balistreri', 228986987);
+INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Ally', 'Hills', 237153979);
+INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Alvis', 'Stoltenberg', 367257916);
+INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Gonzalo', 'Skiles', 427283291);
+INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Dock', 'Stoltenberg', 517181981);
+INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Noe', 'Wiza', 527322718);
+INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Donny', 'Runolfsdottir', 625329486);
+INSERT INTO `Autor` (`VorName`, `nachName`, `autor_id`) VALUES ('Jordi', 'Hermiston', 675414763);
 
 
 #
 # TABLE STRUCTURE FOR: Bibliothekar
 #
 
+DROP TABLE IF EXISTS `Bibliothekar`;
 
+CREATE TABLE `Bibliothekar` (
+  `mensch_id` int(10) unsigned NOT NULL,
+  `bib_id` int(10) unsigned NOT NULL,
+  PRIMARY KEY (`bib_id`),
+  KEY `mensch_id` (`mensch_id`),
+  CONSTRAINT `Bibliothekar_ibfk_1` FOREIGN KEY (`mensch_id`) REFERENCES `Mensch` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
-INSERT INTO `Bibliothekar` (`bib_id`, `vorName`, `nachName`, `email`, `phone`, `Bib_Ad_Str`, `Bib_Ad_haus_nr`, `Bib_Ad_Plz`, `Bib_Ad_std`) VALUES (0, 'Precious', 'Treutel', 'jayce66@example.org', '(983)082-0633x219', 'Lebsack Crossroad', 2, 88831, 'bury');
-INSERT INTO `Bibliothekar` (`bib_id`, `vorName`, `nachName`, `email`, `phone`, `Bib_Ad_Str`, `Bib_Ad_haus_nr`, `Bib_Ad_Plz`, `Bib_Ad_std`) VALUES (1, 'Zora', 'Walter', 'lueilwitz.coby@example.org', '03009412311', 'Botsford Junction', 7, 5447, 'bury');
-INSERT INTO `Bibliothekar` (`bib_id`, `vorName`, `nachName`, `email`, `phone`, `Bib_Ad_Str`, `Bib_Ad_haus_nr`, `Bib_Ad_Plz`, `Bib_Ad_std`) VALUES (2, 'Americo', 'Quigley', 'cecelia.zboncak@example.com', '016.718.2047x3224', 'Hadley Ridge', 4, 58099, 'town');
-INSERT INTO `Bibliothekar` (`bib_id`, `vorName`, `nachName`, `email`, `phone`, `Bib_Ad_Str`, `Bib_Ad_haus_nr`, `Bib_Ad_Plz`, `Bib_Ad_std`) VALUES (3, 'Samara', 'White', 'leffler.kiel@example.net', '448-215-4392', 'Kallie Spring', 7, 99826, 'mouth');
-INSERT INTO `Bibliothekar` (`bib_id`, `vorName`, `nachName`, `email`, `phone`, `Bib_Ad_Str`, `Bib_Ad_haus_nr`, `Bib_Ad_Plz`, `Bib_Ad_std`) VALUES (5, 'Maybell', 'Purdy', 'schulist.everette@example.com', '664-557-2226', 'Johns Underpass', 4, 44468, 'ton');
-INSERT INTO `Bibliothekar` (`bib_id`, `vorName`, `nachName`, `email`, `phone`, `Bib_Ad_Str`, `Bib_Ad_haus_nr`, `Bib_Ad_Plz`, `Bib_Ad_std`) VALUES (6, 'Elinore', 'Mueller', 'ophelia.kessler@example.org', '06780029077', 'Jaskolski Keys', 1, 97446, 'stad');
-INSERT INTO `Bibliothekar` (`bib_id`, `vorName`, `nachName`, `email`, `phone`, `Bib_Ad_Str`, `Bib_Ad_haus_nr`, `Bib_Ad_Plz`, `Bib_Ad_std`) VALUES (7, 'Desmond', 'Smitham', 'vivianne73@example.com', '356.895.9844', 'Alexzander Drive', 6, 32436, 'mouth');
-INSERT INTO `Bibliothekar` (`bib_id`, `vorName`, `nachName`, `email`, `phone`, `Bib_Ad_Str`, `Bib_Ad_haus_nr`, `Bib_Ad_Plz`, `Bib_Ad_std`) VALUES (8, 'Vicky', 'Reynolds', 'zetta.quigley@example.com', '(277)459-8649x27159', 'Ibrahim Station', 4, 48678, 'town');
-INSERT INTO `Bibliothekar` (`bib_id`, `vorName`, `nachName`, `email`, `phone`, `Bib_Ad_Str`, `Bib_Ad_haus_nr`, `Bib_Ad_Plz`, `Bib_Ad_std`) VALUES (9, 'Marcella', 'O\'Hara', 'amari66@example.com', '902.936.3069x1954', 'Hintz Spring', 6, 67168, 'borough');
-INSERT INTO `Bibliothekar` (`bib_id`, `vorName`, `nachName`, `email`, `phone`, `Bib_Ad_Str`, `Bib_Ad_haus_nr`, `Bib_Ad_Plz`, `Bib_Ad_std`) VALUES (11, 'Leo', 'Pfeffer', 'wsteuber@example.org', '610-231-1696x608', 'Pollich Grove', 9, 6732, 'fort');
-INSERT INTO `Bibliothekar` (`bib_id`, `vorName`, `nachName`, `email`, `phone`, `Bib_Ad_Str`, `Bib_Ad_haus_nr`, `Bib_Ad_Plz`, `Bib_Ad_std`) VALUES (13, 'Olin', 'Wolff', 'yoshiko67@example.com', '008.546.7755', 'Verner Island', 7, 39911, 'stad');
-INSERT INTO `Bibliothekar` (`bib_id`, `vorName`, `nachName`, `email`, `phone`, `Bib_Ad_Str`, `Bib_Ad_haus_nr`, `Bib_Ad_Plz`, `Bib_Ad_std`) VALUES (22, 'Conrad', 'Dickens', 'rmoore@example.org', '(560)243-2428x22511', 'Gardner Shores', 6, 63952, 'chester');
-INSERT INTO `Bibliothekar` (`bib_id`, `vorName`, `nachName`, `email`, `phone`, `Bib_Ad_Str`, `Bib_Ad_haus_nr`, `Bib_Ad_Plz`, `Bib_Ad_std`) VALUES (58, 'Gabe', 'Murazik', 'goyette.fidel@example.net', '998-945-0319x17522', 'Christop Avenue', 4, 26593, 'haven');
-INSERT INTO `Bibliothekar` (`bib_id`, `vorName`, `nachName`, `email`, `phone`, `Bib_Ad_Str`, `Bib_Ad_haus_nr`, `Bib_Ad_Plz`, `Bib_Ad_std`) VALUES (96, 'Lawrence', 'Cassin', 'nlubowitz@example.net', '07067903603', 'Jacynthe Land', 9, 35309, 'port');
-INSERT INTO `Bibliothekar` (`bib_id`, `vorName`, `nachName`, `email`, `phone`, `Bib_Ad_Str`, `Bib_Ad_haus_nr`, `Bib_Ad_Plz`, `Bib_Ad_std`) VALUES (133, 'Adeline', 'Trantow', 'ukuhlman@example.net', '642.495.4151', 'Ritchie Radial', 3, 28836, 'ville');
-INSERT INTO `Bibliothekar` (`bib_id`, `vorName`, `nachName`, `email`, `phone`, `Bib_Ad_Str`, `Bib_Ad_haus_nr`, `Bib_Ad_Plz`, `Bib_Ad_std`) VALUES (148, 'Virginie', 'Lemke', 'purdy.aileen@example.net', '(838)892-1479', 'Kuhlman Lights', 4, 98498, 'ton');
-INSERT INTO `Bibliothekar` (`bib_id`, `vorName`, `nachName`, `email`, `phone`, `Bib_Ad_Str`, `Bib_Ad_haus_nr`, `Bib_Ad_Plz`, `Bib_Ad_std`) VALUES (265, 'Declan', 'Hane', 'considine.madison@example.com', '(389)000-3756x1863', 'Kailyn Mission', 4, 70437, 'furt');
-INSERT INTO `Bibliothekar` (`bib_id`, `vorName`, `nachName`, `email`, `phone`, `Bib_Ad_Str`, `Bib_Ad_haus_nr`, `Bib_Ad_Plz`, `Bib_Ad_std`) VALUES (298, 'Omari', 'Streich', 'madilyn.casper@example.com', '06154496055', 'Timmothy Rapid', 7, 63579, 'burgh');
-INSERT INTO `Bibliothekar` (`bib_id`, `vorName`, `nachName`, `email`, `phone`, `Bib_Ad_Str`, `Bib_Ad_haus_nr`, `Bib_Ad_Plz`, `Bib_Ad_std`) VALUES (342, 'Koby', 'Buckridge', 'arnulfo57@example.com', '684-320-5451x8179', 'Alanna Well', 4, 57806, 'ton');
-INSERT INTO `Bibliothekar` (`bib_id`, `vorName`, `nachName`, `email`, `phone`, `Bib_Ad_Str`, `Bib_Ad_haus_nr`, `Bib_Ad_Plz`, `Bib_Ad_std`) VALUES (436, 'Dimitri', 'Dibbert', 'yfunk@example.com', '498-790-0910', 'Lou Gardens', 5, 38397, 'furt');
-INSERT INTO `Bibliothekar` (`bib_id`, `vorName`, `nachName`, `email`, `phone`, `Bib_Ad_Str`, `Bib_Ad_haus_nr`, `Bib_Ad_Plz`, `Bib_Ad_std`) VALUES (449, 'Edwina', 'Gerlach', 'reuben.lehner@example.com', '821.907.9859x60497', 'Tromp Rest', 6, 75394, 'borough');
-INSERT INTO `Bibliothekar` (`bib_id`, `vorName`, `nachName`, `email`, `phone`, `Bib_Ad_Str`, `Bib_Ad_haus_nr`, `Bib_Ad_Plz`, `Bib_Ad_std`) VALUES (478, 'Sylvia', 'Breitenberg', 'ana23@example.org', '986.707.5727', 'Santiago Causeway', 7, 93838, 'furt');
-INSERT INTO `Bibliothekar` (`bib_id`, `vorName`, `nachName`, `email`, `phone`, `Bib_Ad_Str`, `Bib_Ad_haus_nr`, `Bib_Ad_Plz`, `Bib_Ad_std`) VALUES (495, 'Keven', 'Schuppe', 'rohan.cleo@example.org', '1-052-320-8444', 'Geovanni Valley', 3, 36199, 'fort');
-INSERT INTO `Bibliothekar` (`bib_id`, `vorName`, `nachName`, `email`, `phone`, `Bib_Ad_Str`, `Bib_Ad_haus_nr`, `Bib_Ad_Plz`, `Bib_Ad_std`) VALUES (612, 'Niko', 'Bode', 'merlin31@example.com', '619-272-0675', 'D\'angelo Fall', 4, 85085, 'chester');
-INSERT INTO `Bibliothekar` (`bib_id`, `vorName`, `nachName`, `email`, `phone`, `Bib_Ad_Str`, `Bib_Ad_haus_nr`, `Bib_Ad_Plz`, `Bib_Ad_std`) VALUES (628, 'Adelia', 'Bauch', 'ythompson@example.net', '053-935-9511', 'Joey Tunnel', 1, 12587, 'mouth');
-INSERT INTO `Bibliothekar` (`bib_id`, `vorName`, `nachName`, `email`, `phone`, `Bib_Ad_Str`, `Bib_Ad_haus_nr`, `Bib_Ad_Plz`, `Bib_Ad_std`) VALUES (723, 'Linnea', 'Hayes', 'dtillman@example.com', '738-308-7666x4376', 'Gerald Underpass', 5, 25282, 'side');
-INSERT INTO `Bibliothekar` (`bib_id`, `vorName`, `nachName`, `email`, `phone`, `Bib_Ad_Str`, `Bib_Ad_haus_nr`, `Bib_Ad_Plz`, `Bib_Ad_std`) VALUES (765, 'Roxanne', 'Emard', 'okuneva.brody@example.org', '+43(4)0668312965', 'Anderson Ford', 5, 5000, 'haven');
-INSERT INTO `Bibliothekar` (`bib_id`, `vorName`, `nachName`, `email`, `phone`, `Bib_Ad_Str`, `Bib_Ad_haus_nr`, `Bib_Ad_Plz`, `Bib_Ad_std`) VALUES (773, 'Oren', 'Orn', 'reyna05@example.net', '213.577.2544x01207', 'Nya Extensions', 6, 24829, 'shire');
-INSERT INTO `Bibliothekar` (`bib_id`, `vorName`, `nachName`, `email`, `phone`, `Bib_Ad_Str`, `Bib_Ad_haus_nr`, `Bib_Ad_Plz`, `Bib_Ad_std`) VALUES (955, 'Abigale', 'Schneider', 'welch.francisco@example.net', '048.292.3791', 'Bartell Stravenue', 5, 83969, 'berg');
-INSERT INTO `Bibliothekar` (`bib_id`, `vorName`, `nachName`, `email`, `phone`, `Bib_Ad_Str`, `Bib_Ad_haus_nr`, `Bib_Ad_Plz`, `Bib_Ad_std`) VALUES (1778, 'Dasia', 'Wilkinson', 'gorczany.earline@example.org', '1-104-214-8694x698', 'McLaughlin Canyon', 6, 7082, 'mouth');
-INSERT INTO `Bibliothekar` (`bib_id`, `vorName`, `nachName`, `email`, `phone`, `Bib_Ad_Str`, `Bib_Ad_haus_nr`, `Bib_Ad_Plz`, `Bib_Ad_std`) VALUES (2515, 'Herbert', 'Lindgren', 'leuschke.jeanne@example.com', '298-860-0404x859', 'Gabriella Ports', 4, 36542, 'berg');
-INSERT INTO `Bibliothekar` (`bib_id`, `vorName`, `nachName`, `email`, `phone`, `Bib_Ad_Str`, `Bib_Ad_haus_nr`, `Bib_Ad_Plz`, `Bib_Ad_std`) VALUES (3843, 'Sage', 'Halvorson', 'enos.jacobi@example.org', '1-068-329-7578', 'Theresia Locks', 5, 92887, 'ville');
-INSERT INTO `Bibliothekar` (`bib_id`, `vorName`, `nachName`, `email`, `phone`, `Bib_Ad_Str`, `Bib_Ad_haus_nr`, `Bib_Ad_Plz`, `Bib_Ad_std`) VALUES (4134, 'Louisa', 'Yost', 'ewell.reynolds@example.net', '1-323-288-7385x01644', 'Skylar Way', 8, 35043, 'ville');
-INSERT INTO `Bibliothekar` (`bib_id`, `vorName`, `nachName`, `email`, `phone`, `Bib_Ad_Str`, `Bib_Ad_haus_nr`, `Bib_Ad_Plz`, `Bib_Ad_std`) VALUES (5204, 'Opal', 'Fisher', 'dreilly@example.org', '04752673928', 'Nader Path', 7, 40311, 'bury');
-INSERT INTO `Bibliothekar` (`bib_id`, `vorName`, `nachName`, `email`, `phone`, `Bib_Ad_Str`, `Bib_Ad_haus_nr`, `Bib_Ad_Plz`, `Bib_Ad_std`) VALUES (5374, 'Beaulah', 'Ondricka', 'zaria.fahey@example.com', '096-761-7527x540', 'Armani Freeway', 7, 88511, 'stad');
-INSERT INTO `Bibliothekar` (`bib_id`, `vorName`, `nachName`, `email`, `phone`, `Bib_Ad_Str`, `Bib_Ad_haus_nr`, `Bib_Ad_Plz`, `Bib_Ad_std`) VALUES (5621, 'Mable', 'Stoltenberg', 'ikulas@example.org', '1-599-315-0400x0529', 'Kraig Island', 5, 92571, 'haven');
-INSERT INTO `Bibliothekar` (`bib_id`, `vorName`, `nachName`, `email`, `phone`, `Bib_Ad_Str`, `Bib_Ad_haus_nr`, `Bib_Ad_Plz`, `Bib_Ad_std`) VALUES (5986, 'Danika', 'DuBuque', 'stoltenberg.bradley@example.com', '1-317-277-4396', 'Metz Court', 3, 99499, 'port');
-INSERT INTO `Bibliothekar` (`bib_id`, `vorName`, `nachName`, `email`, `phone`, `Bib_Ad_Str`, `Bib_Ad_haus_nr`, `Bib_Ad_Plz`, `Bib_Ad_std`) VALUES (6440, 'Dandre', 'Dibbert', 'quinn24@example.com', '08072336424', 'Clemmie Ford', 3, 5014, 'burgh');
-INSERT INTO `Bibliothekar` (`bib_id`, `vorName`, `nachName`, `email`, `phone`, `Bib_Ad_Str`, `Bib_Ad_haus_nr`, `Bib_Ad_Plz`, `Bib_Ad_std`) VALUES (8133, 'Shyanne', 'Wisoky', 'dmoore@example.org', '1-075-528-8941x0938', 'Nicolas Pike', 8, 18581, 'fort');
-INSERT INTO `Bibliothekar` (`bib_id`, `vorName`, `nachName`, `email`, `phone`, `Bib_Ad_Str`, `Bib_Ad_haus_nr`, `Bib_Ad_Plz`, `Bib_Ad_std`) VALUES (8258, 'Roxane', 'Kiehn', 'yundt.andrew@example.com', '433.372.7885x589', 'Kunze Parks', 7, 42019, 'stad');
-INSERT INTO `Bibliothekar` (`bib_id`, `vorName`, `nachName`, `email`, `phone`, `Bib_Ad_Str`, `Bib_Ad_haus_nr`, `Bib_Ad_Plz`, `Bib_Ad_std`) VALUES (10926, 'Maribel', 'Miller', 'ronaldo37@example.com', '08539273162', 'Lauryn Branch', 3, 43190, 'fort');
-INSERT INTO `Bibliothekar` (`bib_id`, `vorName`, `nachName`, `email`, `phone`, `Bib_Ad_Str`, `Bib_Ad_haus_nr`, `Bib_Ad_Plz`, `Bib_Ad_std`) VALUES (24115, 'Millie', 'Schulist', 'kristian.gusikowski@example.net', '1-764-114-2087', 'Strosin Radial', 7, 83534, 'haven');
-INSERT INTO `Bibliothekar` (`bib_id`, `vorName`, `nachName`, `email`, `phone`, `Bib_Ad_Str`, `Bib_Ad_haus_nr`, `Bib_Ad_Plz`, `Bib_Ad_std`) VALUES (29903, 'Freida', 'Howell', 'penelope.o\'hara@example.com', '1-803-528-0694', 'Josiah Parkways', 2, 37100, 'chester');
-INSERT INTO `Bibliothekar` (`bib_id`, `vorName`, `nachName`, `email`, `phone`, `Bib_Ad_Str`, `Bib_Ad_haus_nr`, `Bib_Ad_Plz`, `Bib_Ad_std`) VALUES (39064, 'Parker', 'Nikolaus', 'jessie.huel@example.org', '084-493-1727x78062', 'Wilton Trace', 2, 44699, 'borough');
-INSERT INTO `Bibliothekar` (`bib_id`, `vorName`, `nachName`, `email`, `phone`, `Bib_Ad_Str`, `Bib_Ad_haus_nr`, `Bib_Ad_Plz`, `Bib_Ad_std`) VALUES (41186, 'Kassandra', 'Gleason', 'nienow.irwin@example.com', '750.513.6349', 'Brown Mount', 9, 35603, 'berg');
-INSERT INTO `Bibliothekar` (`bib_id`, `vorName`, `nachName`, `email`, `phone`, `Bib_Ad_Str`, `Bib_Ad_haus_nr`, `Bib_Ad_Plz`, `Bib_Ad_std`) VALUES (42112, 'Kiel', 'Yundt', 'gpowlowski@example.org', '831-139-2645x679', 'Schulist Knolls', 2, 38037, 'furt');
-INSERT INTO `Bibliothekar` (`bib_id`, `vorName`, `nachName`, `email`, `phone`, `Bib_Ad_Str`, `Bib_Ad_haus_nr`, `Bib_Ad_Plz`, `Bib_Ad_std`) VALUES (62295, 'Shana', 'Schimmel', 'hagenes.westley@example.com', '548-192-2460x898', 'Amy Burg', 2, 83508, 'mouth');
-INSERT INTO `Bibliothekar` (`bib_id`, `vorName`, `nachName`, `email`, `phone`, `Bib_Ad_Str`, `Bib_Ad_haus_nr`, `Bib_Ad_Plz`, `Bib_Ad_std`) VALUES (71929, 'Micaela', 'Wolf', 'abbott.darwin@example.org', '616.575.3164x95974', 'Khalid Locks', 2, 62020, 'chester');
-INSERT INTO `Bibliothekar` (`bib_id`, `vorName`, `nachName`, `email`, `phone`, `Bib_Ad_Str`, `Bib_Ad_haus_nr`, `Bib_Ad_Plz`, `Bib_Ad_std`) VALUES (76080, 'Beulah', 'Schowalter', 'raymond61@example.com', '1-710-023-1822', 'Steuber Lock', 3, 92356, 'view');
-INSERT INTO `Bibliothekar` (`bib_id`, `vorName`, `nachName`, `email`, `phone`, `Bib_Ad_Str`, `Bib_Ad_haus_nr`, `Bib_Ad_Plz`, `Bib_Ad_std`) VALUES (79959, 'Abdiel', 'Stroman', 'brown.ratke@example.com', '09030575928', 'Muhammad Mission', 3, 25990, 'mouth');
-INSERT INTO `Bibliothekar` (`bib_id`, `vorName`, `nachName`, `email`, `phone`, `Bib_Ad_Str`, `Bib_Ad_haus_nr`, `Bib_Ad_Plz`, `Bib_Ad_std`) VALUES (92791, 'Jonathan', 'Rosenbaum', 'bailey.phyllis@example.com', '1-545-631-6268', 'Kshlerin Mountains', 6, 32428, 'haven');
-INSERT INTO `Bibliothekar` (`bib_id`, `vorName`, `nachName`, `email`, `phone`, `Bib_Ad_Str`, `Bib_Ad_haus_nr`, `Bib_Ad_Plz`, `Bib_Ad_std`) VALUES (116765, 'Elena', 'Keebler', 'kendra.osinski@example.org', '784.970.8512', 'Bogan Cove', 6, 74195, 'view');
-INSERT INTO `Bibliothekar` (`bib_id`, `vorName`, `nachName`, `email`, `phone`, `Bib_Ad_Str`, `Bib_Ad_haus_nr`, `Bib_Ad_Plz`, `Bib_Ad_std`) VALUES (153869, 'Levi', 'Mohr', 'bbrown@example.com', '02424892655', 'Breana Key', 4, 59826, 'port');
-INSERT INTO `Bibliothekar` (`bib_id`, `vorName`, `nachName`, `email`, `phone`, `Bib_Ad_Str`, `Bib_Ad_haus_nr`, `Bib_Ad_Plz`, `Bib_Ad_std`) VALUES (260946, 'Gisselle', 'Howell', 'missouri59@example.net', '910.477.0950x3029', 'Beer Plains', 7, 39673, 'mouth');
-INSERT INTO `Bibliothekar` (`bib_id`, `vorName`, `nachName`, `email`, `phone`, `Bib_Ad_Str`, `Bib_Ad_haus_nr`, `Bib_Ad_Plz`, `Bib_Ad_std`) VALUES (261980, 'Agnes', 'Kilback', 'xdouglas@example.org', '615-065-0197', 'Yost Pass', 7, 43750, 'land');
-INSERT INTO `Bibliothekar` (`bib_id`, `vorName`, `nachName`, `email`, `phone`, `Bib_Ad_Str`, `Bib_Ad_haus_nr`, `Bib_Ad_Plz`, `Bib_Ad_std`) VALUES (366846, 'Joanny', 'Tremblay', 'trevor88@example.com', '1-196-646-7915', 'Bins Parkway', 1, 93495, 'ville');
-INSERT INTO `Bibliothekar` (`bib_id`, `vorName`, `nachName`, `email`, `phone`, `Bib_Ad_Str`, `Bib_Ad_haus_nr`, `Bib_Ad_Plz`, `Bib_Ad_std`) VALUES (416208, 'Fred', 'Konopelski', 'sheila.runolfsdottir@example.org', '(240)254-4677', 'Stamm Walk', 8, 73969, 'ville');
-INSERT INTO `Bibliothekar` (`bib_id`, `vorName`, `nachName`, `email`, `phone`, `Bib_Ad_Str`, `Bib_Ad_haus_nr`, `Bib_Ad_Plz`, `Bib_Ad_std`) VALUES (448011, 'Raegan', 'Stamm', 'cloyd.zboncak@example.org', '025.488.7888x8627', 'Henriette Village', 5, 67165, 'stad');
-INSERT INTO `Bibliothekar` (`bib_id`, `vorName`, `nachName`, `email`, `phone`, `Bib_Ad_Str`, `Bib_Ad_haus_nr`, `Bib_Ad_Plz`, `Bib_Ad_std`) VALUES (498215, 'Raoul', 'Spencer', 'corwin.richmond@example.net', '1-537-624-8426x5149', 'Quitzon Turnpike', 7, 28520, 'port');
-INSERT INTO `Bibliothekar` (`bib_id`, `vorName`, `nachName`, `email`, `phone`, `Bib_Ad_Str`, `Bib_Ad_haus_nr`, `Bib_Ad_Plz`, `Bib_Ad_std`) VALUES (513633, 'Lamont', 'Hettinger', 'haley.florida@example.net', '06792246239', 'Tyshawn Road', 4, 61207, 'fort');
-INSERT INTO `Bibliothekar` (`bib_id`, `vorName`, `nachName`, `email`, `phone`, `Bib_Ad_Str`, `Bib_Ad_haus_nr`, `Bib_Ad_Plz`, `Bib_Ad_std`) VALUES (534305, 'Jordane', 'Senger', 'huel.kavon@example.org', '1-785-734-9168x825', 'Taylor Knolls', 6, 69393, 'shire');
-INSERT INTO `Bibliothekar` (`bib_id`, `vorName`, `nachName`, `email`, `phone`, `Bib_Ad_Str`, `Bib_Ad_haus_nr`, `Bib_Ad_Plz`, `Bib_Ad_std`) VALUES (556408, 'Viola', 'Strosin', 'qo\'hara@example.org', '254-064-0037x893', 'Franecki Viaduct', 6, 82990, 'port');
-INSERT INTO `Bibliothekar` (`bib_id`, `vorName`, `nachName`, `email`, `phone`, `Bib_Ad_Str`, `Bib_Ad_haus_nr`, `Bib_Ad_Plz`, `Bib_Ad_std`) VALUES (688995, 'Dorthy', 'Keebler', 'mosciski.patricia@example.net', '317.181.2955', 'Edyth Lakes', 7, 40533, 'bury');
-INSERT INTO `Bibliothekar` (`bib_id`, `vorName`, `nachName`, `email`, `phone`, `Bib_Ad_Str`, `Bib_Ad_haus_nr`, `Bib_Ad_Plz`, `Bib_Ad_std`) VALUES (1281041, 'Sabina', 'Muller', 'blaise70@example.org', '149-877-7609', 'Lesch Road', 9, 53175, 'furt');
-INSERT INTO `Bibliothekar` (`bib_id`, `vorName`, `nachName`, `email`, `phone`, `Bib_Ad_Str`, `Bib_Ad_haus_nr`, `Bib_Ad_Plz`, `Bib_Ad_std`) VALUES (1767471, 'Wilber', 'Rogahn', 'mann.kayden@example.net', '1-061-061-2935x59966', 'Benjamin Course', 4, 31969, 'burgh');
-INSERT INTO `Bibliothekar` (`bib_id`, `vorName`, `nachName`, `email`, `phone`, `Bib_Ad_Str`, `Bib_Ad_haus_nr`, `Bib_Ad_Plz`, `Bib_Ad_std`) VALUES (1983427, 'Claude', 'Runte', 'ajones@example.com', '(919)404-8587', 'Aliyah Drive', 4, 63855, 'burgh');
-INSERT INTO `Bibliothekar` (`bib_id`, `vorName`, `nachName`, `email`, `phone`, `Bib_Ad_Str`, `Bib_Ad_haus_nr`, `Bib_Ad_Plz`, `Bib_Ad_std`) VALUES (2692141, 'Brody', 'Purdy', 'dlangworth@example.org', '106-161-5252x220', 'Kianna Bridge', 2, 41093, 'view');
-INSERT INTO `Bibliothekar` (`bib_id`, `vorName`, `nachName`, `email`, `phone`, `Bib_Ad_Str`, `Bib_Ad_haus_nr`, `Bib_Ad_Plz`, `Bib_Ad_std`) VALUES (3812763, 'Kyra', 'Effertz', 'daniel.hunter@example.org', '992.643.8749', 'Fritsch Stream', 7, 52915, 'view');
-INSERT INTO `Bibliothekar` (`bib_id`, `vorName`, `nachName`, `email`, `phone`, `Bib_Ad_Str`, `Bib_Ad_haus_nr`, `Bib_Ad_Plz`, `Bib_Ad_std`) VALUES (4312179, 'Cheyanne', 'Gusikowski', 'o\'kon.dallas@example.org', '730-274-2468x0396', 'Crist Inlet', 5, 5535, 'ville');
-INSERT INTO `Bibliothekar` (`bib_id`, `vorName`, `nachName`, `email`, `phone`, `Bib_Ad_Str`, `Bib_Ad_haus_nr`, `Bib_Ad_Plz`, `Bib_Ad_std`) VALUES (4409996, 'Kenya', 'Goldner', 'tina.schmeler@example.com', '1-592-780-0020x46971', 'Dannie Throughway', 3, 405, 'shire');
-INSERT INTO `Bibliothekar` (`bib_id`, `vorName`, `nachName`, `email`, `phone`, `Bib_Ad_Str`, `Bib_Ad_haus_nr`, `Bib_Ad_Plz`, `Bib_Ad_std`) VALUES (4610884, 'Kasandra', 'Barrows', 'ygorczany@example.com', '352.212.4025x9294', 'Tremblay Mills', 8, 54540, 'town');
-INSERT INTO `Bibliothekar` (`bib_id`, `vorName`, `nachName`, `email`, `phone`, `Bib_Ad_Str`, `Bib_Ad_haus_nr`, `Bib_Ad_Plz`, `Bib_Ad_std`) VALUES (5153865, 'Narciso', 'VonRueden', 'jeramy40@example.com', '681.588.5426x890', 'Sanford Parks', 2, 6034, 'chester');
-INSERT INTO `Bibliothekar` (`bib_id`, `vorName`, `nachName`, `email`, `phone`, `Bib_Ad_Str`, `Bib_Ad_haus_nr`, `Bib_Ad_Plz`, `Bib_Ad_std`) VALUES (5633492, 'Libbie', 'Jakubowski', 'xhayes@example.net', '(296)094-5155', 'Eduardo Mount', 3, 64134, 'stad');
-INSERT INTO `Bibliothekar` (`bib_id`, `vorName`, `nachName`, `email`, `phone`, `Bib_Ad_Str`, `Bib_Ad_haus_nr`, `Bib_Ad_Plz`, `Bib_Ad_std`) VALUES (8438979, 'Schuyler', 'Abbott', 'hollie.bahringer@example.net', '110.020.9555x62026', 'Daugherty Turnpike', 2, 5262, 'chester');
-INSERT INTO `Bibliothekar` (`bib_id`, `vorName`, `nachName`, `email`, `phone`, `Bib_Ad_Str`, `Bib_Ad_haus_nr`, `Bib_Ad_Plz`, `Bib_Ad_std`) VALUES (12790038, 'Angie', 'Powlowski', 'burley.skiles@example.net', '(829)336-9221x49680', 'Sofia Shoal', 7, 23305, 'side');
-INSERT INTO `Bibliothekar` (`bib_id`, `vorName`, `nachName`, `email`, `phone`, `Bib_Ad_Str`, `Bib_Ad_haus_nr`, `Bib_Ad_Plz`, `Bib_Ad_std`) VALUES (12933202, 'Robbie', 'Rowe', 'aurelie27@example.com', '845.204.8929', 'Mazie Squares', 2, 44759, 'burgh');
-INSERT INTO `Bibliothekar` (`bib_id`, `vorName`, `nachName`, `email`, `phone`, `Bib_Ad_Str`, `Bib_Ad_haus_nr`, `Bib_Ad_Plz`, `Bib_Ad_std`) VALUES (27807364, 'Domingo', 'Kling', 'barton.brennan@example.org', '543-599-1341x571', 'Rashad Coves', 9, 9870, 'shire');
-INSERT INTO `Bibliothekar` (`bib_id`, `vorName`, `nachName`, `email`, `phone`, `Bib_Ad_Str`, `Bib_Ad_haus_nr`, `Bib_Ad_Plz`, `Bib_Ad_std`) VALUES (48156039, 'Jerrold', 'Hermiston', 'scrona@example.net', '1-581-626-8515x89768', 'Shanahan Flat', 9, 63377, 'fort');
-INSERT INTO `Bibliothekar` (`bib_id`, `vorName`, `nachName`, `email`, `phone`, `Bib_Ad_Str`, `Bib_Ad_haus_nr`, `Bib_Ad_Plz`, `Bib_Ad_std`) VALUES (50939272, 'Lysanne', 'Aufderhar', 'umertz@example.net', '+71(6)9287267287', 'Mertz Spurs', 7, 33178, 'mouth');
-INSERT INTO `Bibliothekar` (`bib_id`, `vorName`, `nachName`, `email`, `phone`, `Bib_Ad_Str`, `Bib_Ad_haus_nr`, `Bib_Ad_Plz`, `Bib_Ad_std`) VALUES (53531108, 'Gladys', 'Krajcik', 'foster.lowe@example.com', '1-051-493-1800x49919', 'Murl Mountain', 8, 6962, 'mouth');
-INSERT INTO `Bibliothekar` (`bib_id`, `vorName`, `nachName`, `email`, `phone`, `Bib_Ad_Str`, `Bib_Ad_haus_nr`, `Bib_Ad_Plz`, `Bib_Ad_std`) VALUES (54044415, 'Silas', 'Fay', 'klebsack@example.com', '682.740.0830x6087', 'Estrella Rest', 4, 20402, 'port');
-INSERT INTO `Bibliothekar` (`bib_id`, `vorName`, `nachName`, `email`, `phone`, `Bib_Ad_Str`, `Bib_Ad_haus_nr`, `Bib_Ad_Plz`, `Bib_Ad_std`) VALUES (57022309, 'Cordie', 'Becker', 'alesch@example.org', '+84(2)4895535644', 'Rubie Knoll', 5, 76526, 'land');
-INSERT INTO `Bibliothekar` (`bib_id`, `vorName`, `nachName`, `email`, `phone`, `Bib_Ad_Str`, `Bib_Ad_haus_nr`, `Bib_Ad_Plz`, `Bib_Ad_std`) VALUES (58692427, 'Melvin', 'O\'Connell', 'kling.trevion@example.org', '933.327.4550x7377', 'Maggio Road', 1, 28662, 'stad');
-INSERT INTO `Bibliothekar` (`bib_id`, `vorName`, `nachName`, `email`, `phone`, `Bib_Ad_Str`, `Bib_Ad_haus_nr`, `Bib_Ad_Plz`, `Bib_Ad_std`) VALUES (61773777, 'Kavon', 'Emmerich', 'moises.daugherty@example.net', '(747)165-4976x129', 'Sydney Road', 7, 59458, 'land');
-INSERT INTO `Bibliothekar` (`bib_id`, `vorName`, `nachName`, `email`, `phone`, `Bib_Ad_Str`, `Bib_Ad_haus_nr`, `Bib_Ad_Plz`, `Bib_Ad_std`) VALUES (62579248, 'Lila', 'Denesik', 'maxie.durgan@example.com', '533.007.2328', 'Gilberto Station', 6, 59217, 'shire');
-INSERT INTO `Bibliothekar` (`bib_id`, `vorName`, `nachName`, `email`, `phone`, `Bib_Ad_Str`, `Bib_Ad_haus_nr`, `Bib_Ad_Plz`, `Bib_Ad_std`) VALUES (66469573, 'Kelsie', 'Klocko', 'mkuhn@example.com', '1-763-061-6927', 'Wehner Greens', 5, 60026, 'town');
-INSERT INTO `Bibliothekar` (`bib_id`, `vorName`, `nachName`, `email`, `phone`, `Bib_Ad_Str`, `Bib_Ad_haus_nr`, `Bib_Ad_Plz`, `Bib_Ad_std`) VALUES (77821499, 'Malika', 'Dietrich', 'murazik.ali@example.net', '(412)829-6340', 'Bradford Inlet', 4, 45002, 'land');
-INSERT INTO `Bibliothekar` (`bib_id`, `vorName`, `nachName`, `email`, `phone`, `Bib_Ad_Str`, `Bib_Ad_haus_nr`, `Bib_Ad_Plz`, `Bib_Ad_std`) VALUES (179028114, 'Kasandra', 'Farrell', 'fredy.frami@example.net', '1-795-739-1862x71061', 'Wiegand Viaduct', 5, 74764, 'town');
-INSERT INTO `Bibliothekar` (`bib_id`, `vorName`, `nachName`, `email`, `phone`, `Bib_Ad_Str`, `Bib_Ad_haus_nr`, `Bib_Ad_Plz`, `Bib_Ad_std`) VALUES (262349308, 'Nelda', 'Daugherty', 'hans88@example.com', '224-661-8413', 'Mason Drive', 5, 50139, 'ville');
-INSERT INTO `Bibliothekar` (`bib_id`, `vorName`, `nachName`, `email`, `phone`, `Bib_Ad_Str`, `Bib_Ad_haus_nr`, `Bib_Ad_Plz`, `Bib_Ad_std`) VALUES (309329959, 'Antonia', 'Haley', 'electa.stiedemann@example.org', '976-555-3117', 'Merlin Square', 6, 69036, 'town');
-INSERT INTO `Bibliothekar` (`bib_id`, `vorName`, `nachName`, `email`, `phone`, `Bib_Ad_Str`, `Bib_Ad_haus_nr`, `Bib_Ad_Plz`, `Bib_Ad_std`) VALUES (366196901, 'Justine', 'Osinski', 'zbartoletti@example.com', '227-341-2863x0560', 'Harris Ramp', 1, 26949, 'shire');
-INSERT INTO `Bibliothekar` (`bib_id`, `vorName`, `nachName`, `email`, `phone`, `Bib_Ad_Str`, `Bib_Ad_haus_nr`, `Bib_Ad_Plz`, `Bib_Ad_std`) VALUES (458467356, 'Jayda', 'Eichmann', 'elody45@example.org', '(486)176-3219x719', 'Ramona Passage', 6, 47933, 'ville');
-INSERT INTO `Bibliothekar` (`bib_id`, `vorName`, `nachName`, `email`, `phone`, `Bib_Ad_Str`, `Bib_Ad_haus_nr`, `Bib_Ad_Plz`, `Bib_Ad_std`) VALUES (589004707, 'Earline', 'Lebsack', 'merlin39@example.org', '1-957-412-1659x9504', 'Zemlak Roads', 7, 34704, 'stad');
-INSERT INTO `Bibliothekar` (`bib_id`, `vorName`, `nachName`, `email`, `phone`, `Bib_Ad_Str`, `Bib_Ad_haus_nr`, `Bib_Ad_Plz`, `Bib_Ad_std`) VALUES (622097842, 'Clifton', 'Mohr', 'kreiger.jedidiah@example.org', '1-532-863-1043x871', 'Jaskolski Cliffs', 2, 34139, 'burgh');
-INSERT INTO `Bibliothekar` (`bib_id`, `vorName`, `nachName`, `email`, `phone`, `Bib_Ad_Str`, `Bib_Ad_haus_nr`, `Bib_Ad_Plz`, `Bib_Ad_std`) VALUES (628081745, 'Daron', 'Ondricka', 'blake88@example.net', '713-623-9385x41350', 'Bosco Cove', 5, 63710, 'view');
-INSERT INTO `Bibliothekar` (`bib_id`, `vorName`, `nachName`, `email`, `phone`, `Bib_Ad_Str`, `Bib_Ad_haus_nr`, `Bib_Ad_Plz`, `Bib_Ad_std`) VALUES (853954281, 'Letha', 'Gibson', 'arthur.paucek@example.com', '523.030.9440x780', 'Roderick Shores', 5, 45079, 'borough');
-INSERT INTO `Bibliothekar` (`bib_id`, `vorName`, `nachName`, `email`, `phone`, `Bib_Ad_Str`, `Bib_Ad_haus_nr`, `Bib_Ad_Plz`, `Bib_Ad_std`) VALUES (874703200, 'Mireya', 'Doyle', 'jed.armstrong@example.net', '+49(8)1250256819', 'Libby Plaza', 3, 10392, 'fort');
-INSERT INTO `Bibliothekar` (`bib_id`, `vorName`, `nachName`, `email`, `phone`, `Bib_Ad_Str`, `Bib_Ad_haus_nr`, `Bib_Ad_Plz`, `Bib_Ad_std`) VALUES (900073664, 'Rosetta', 'Bosco', 'wrodriguez@example.org', '1-975-339-7264x740', 'Trystan Mountain', 4, 30359, 'berg');
-INSERT INTO `Bibliothekar` (`bib_id`, `vorName`, `nachName`, `email`, `phone`, `Bib_Ad_Str`, `Bib_Ad_haus_nr`, `Bib_Ad_Plz`, `Bib_Ad_std`) VALUES (909554054, 'Christine', 'Turner', 'kelsi66@example.org', '224-045-1894x365', 'Freda Forge', 3, 6696, 'burgh');
-INSERT INTO `Bibliothekar` (`bib_id`, `vorName`, `nachName`, `email`, `phone`, `Bib_Ad_Str`, `Bib_Ad_haus_nr`, `Bib_Ad_Plz`, `Bib_Ad_std`) VALUES (988570955, 'Taurean', 'Jacobson', 'dayana.jenkins@example.org', '+27(8)8448072660', 'Keely Avenue', 1, 53249, 'land');
+INSERT INTO `Bibliothekar` (`mensch_id`, `bib_id`) VALUES (1, 0);
+INSERT INTO `Bibliothekar` (`mensch_id`, `bib_id`) VALUES (2, 92680);
+INSERT INTO `Bibliothekar` (`mensch_id`, `bib_id`) VALUES (3, 62534);
+INSERT INTO `Bibliothekar` (`mensch_id`, `bib_id`) VALUES (4, 83085171);
+INSERT INTO `Bibliothekar` (`mensch_id`, `bib_id`) VALUES (5, 3538669);
+INSERT INTO `Bibliothekar` (`mensch_id`, `bib_id`) VALUES (6, 28978);
+INSERT INTO `Bibliothekar` (`mensch_id`, `bib_id`) VALUES (7, 549);
+INSERT INTO `Bibliothekar` (`mensch_id`, `bib_id`) VALUES (8, 156);
+INSERT INTO `Bibliothekar` (`mensch_id`, `bib_id`) VALUES (9, 546);
+INSERT INTO `Bibliothekar` (`mensch_id`, `bib_id`) VALUES (10, 46329);
 
 
 #
 # TABLE STRUCTURE FOR: Buch
 #
 
+DROP TABLE IF EXISTS `Buch`;
 
-INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (0, 'asperiores');
-INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (1, 'dolorem');
-INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (2, 'tempore');
-INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (3, 'dicta');
-INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (4, 'suscipit');
-INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (5, 'eaque');
-INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (6, 'numquam');
-INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (8, 'autem');
-INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (9, 'doloremque');
-INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (15, 'ratione');
-INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (16, 'labore');
-INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (34, 'velit');
-INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (36, 'enim');
-INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (49, 'nihil');
-INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (55, 'suscipit');
-INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (65, 'quia');
-INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (86, 'aut');
-INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (126, 'facere');
-INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (179, 'voluptatum');
-INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (319, 'sapiente');
-INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (320, 'alias');
-INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (450, 'soluta');
-INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (479, 'autem');
-INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (828, 'harum');
-INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (896, 'id');
-INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (923, 'quos');
-INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (1834, 'iste');
-INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (2320, 'animi');
-INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (2852, 'magni');
-INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (3805, 'doloribus');
-INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (3854, 'velit');
-INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (3941, 'occaecati');
-INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (4198, 'et');
-INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (4261, 'recusandae');
-INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (4435, 'minima');
-INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (4799, 'qui');
-INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (5449, 'nihil');
-INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (5517, 'quam');
-INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (6683, 'saepe');
-INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (7695, 'odio');
-INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (8587, 'quasi');
-INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (9189, 'laudantium');
-INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (9432, 'dolor');
-INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (9960, 'pariatur');
-INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (13878, 'veritatis');
-INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (21160, 'repellat');
-INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (33705, 'molestiae');
-INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (56762, 'impedit');
-INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (58283, 'harum');
-INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (78161, 'sunt');
-INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (90617, 'beatae');
-INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (97116, 'pariatur');
-INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (97379, 'voluptatem');
-INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (101923, 'expedita');
-INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (267638, 'iste');
-INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (286714, 'voluptas');
-INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (361271, 'ad');
-INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (362893, 'delectus');
-INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (413858, 'molestias');
-INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (622825, 'explicabo');
-INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (645698, 'qui');
-INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (685716, 'culpa');
-INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (706295, 'ab');
-INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (788840, 'qui');
-INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (827225, 'optio');
-INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (1057064, 'eos');
-INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (3270223, 'laudantium');
-INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (5623014, 'neque');
-INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (6301383, 'debitis');
-INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (7142182, 'ipsa');
-INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (7331279, 'repellendus');
-INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (7651303, 'et');
-INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (8027727, 'eum');
-INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (8896473, 'molestiae');
-INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (9000751, 'aperiam');
-INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (24957181, 'neque');
-INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (39674677, 'similique');
-INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (42763127, 'placeat');
-INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (44359254, 'reiciendis');
-INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (48763647, 'omnis');
-INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (64438595, 'fuga');
-INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (69313777, 'tenetur');
-INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (72443576, 'aut');
-INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (72480251, 'tempore');
-INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (76678247, 'et');
-INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (78750398, 'repellendus');
-INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (82564769, 'nemo');
-INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (93541332, 'consequatur');
-INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (113389499, 'facere');
-INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (374071784, 'explicabo');
-INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (478873780, 'aut');
-INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (502498382, 'esse');
-INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (618295225, 'libero');
-INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (709578845, 'necessitatibus');
-INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (776707412, 'ut');
-INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (852369380, 'aut');
-INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (855843305, 'fugit');
-INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (870852451, 'velit');
-INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (967924437, 'quisquam');
-INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (985327608, 'nulla');
+CREATE TABLE `Buch` (
+  `buch_id` int(10) unsigned NOT NULL,
+  `buchName` varchar(250) COLLATE utf8mb4_unicode_ci NOT NULL,
+  PRIMARY KEY (`buch_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (0, 'facilis');
+INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (1, 'est');
+INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (2, 'officiis');
+INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (4, 'consequatur');
+INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (5, 'qui');
+INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (6, 'et');
+INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (17, 'incidunt');
+INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (38, 'non');
+INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (48, 'harum');
+INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (54, 'qui');
+INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (59, 'eligendi');
+INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (62, 'accusamus');
+INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (67, 'ut');
+INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (73, 'omnis');
+INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (82, 'quia');
+INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (95, 'neque');
+INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (98, 'sit');
+INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (131, 'vel');
+INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (139, 'recusandae');
+INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (157, 'assumenda');
+INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (272, 'eum');
+INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (420, 'magnam');
+INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (644, 'molestiae');
+INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (778, 'ipsam');
+INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (812, 'qui');
+INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (876, 'possimus');
+INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (935, 'et');
+INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (947, 'vitae');
+INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (1884, 'deleniti');
+INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (2055, 'iste');
+INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (2169, 'culpa');
+INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (2711, 'perferendis');
+INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (4246, 'ab');
+INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (5555, 'minima');
+INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (6318, 'repudiandae');
+INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (6351, 'praesentium');
+INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (6379, 'autem');
+INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (6668, 'magni');
+INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (7090, 'labore');
+INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (7530, 'veniam');
+INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (8404, 'ipsum');
+INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (9397, 'quia');
+INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (10345, 'eum');
+INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (26020, 'aut');
+INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (28999, 'aliquam');
+INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (39147, 'laboriosam');
+INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (44255, 'cupiditate');
+INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (50046, 'et');
+INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (53192, 'tenetur');
+INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (56067, 'rem');
+INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (57714, 'odit');
+INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (59089, 'reprehenderit');
+INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (60302, 'facere');
+INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (61185, 'aperiam');
+INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (75360, 'quaerat');
+INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (99844, 'quae');
+INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (172845, 'fuga');
+INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (283441, 'veniam');
+INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (286328, 'et');
+INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (295129, 'sunt');
+INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (303426, 'qui');
+INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (384587, 'repudiandae');
+INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (555783, 'et');
+INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (607686, 'molestias');
+INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (656105, 'ut');
+INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (836974, 'ad');
+INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (863365, 'nobis');
+INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (3227287, 'praesentium');
+INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (4126267, 'quae');
+INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (4388248, 'sint');
+INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (4987394, 'porro');
+INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (5948789, 'vitae');
+INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (6294152, 'sit');
+INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (8347890, 'ut');
+INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (8623284, 'dolores');
+INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (8885164, 'voluptas');
+INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (9006496, 'voluptas');
+INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (9726243, 'iure');
+INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (9830650, 'corporis');
+INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (28529092, 'numquam');
+INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (41765941, 'totam');
+INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (47399601, 'quia');
+INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (49724630, 'animi');
+INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (54896814, 'ducimus');
+INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (61468312, 'ducimus');
+INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (74520596, 'aut');
+INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (77175221, 'nam');
+INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (79486453, 'magnam');
+INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (86487044, 'sunt');
+INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (97112517, 'minus');
+INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (99149544, 'incidunt');
+INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (198664812, 'laboriosam');
+INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (322733655, 'quasi');
+INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (336249894, 'laborum');
+INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (340997513, 'vel');
+INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (559284373, 'dolor');
+INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (726478778, 'sed');
+INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (784870112, 'est');
+INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (951389647, 'ut');
+INSERT INTO `Buch` (`buch_id`, `buchName`) VALUES (989406400, 'unde');
 
 
 #
-# TABLE STRUCTURE FOR: Exampler
+# TABLE STRUCTURE FOR: Exemplar
 #
 
-INSERT INTO `Exampler` (`exmpler_id`, `buch_id`, `exampler_zahl`, `exampler_JAHR`) VALUES (1, 0, 8, '1973-08-30');
-INSERT INTO `Exampler` (`exmpler_id`, `buch_id`, `exampler_zahl`, `exampler_JAHR`) VALUES (2, 1, 9, '1991-11-11');
-INSERT INTO `Exampler` (`exmpler_id`, `buch_id`, `exampler_zahl`, `exampler_JAHR`) VALUES (3, 2, 5, '2014-03-22');
-INSERT INTO `Exampler` (`exmpler_id`, `buch_id`, `exampler_zahl`, `exampler_JAHR`) VALUES (4, 3, 10, '1989-09-14');
-INSERT INTO `Exampler` (`exmpler_id`, `buch_id`, `exampler_zahl`, `exampler_JAHR`) VALUES (5, 4, 2, '2004-05-16');
-INSERT INTO `Exampler` (`exmpler_id`, `buch_id`, `exampler_zahl`, `exampler_JAHR`) VALUES (6, 5, 1, '1971-12-07');
-INSERT INTO `Exampler` (`exmpler_id`, `buch_id`, `exampler_zahl`, `exampler_JAHR`) VALUES (7, 6, 4, '2001-07-20');
-INSERT INTO `Exampler` (`exmpler_id`, `buch_id`, `exampler_zahl`, `exampler_JAHR`) VALUES (8, 8, 10, '2005-10-13');
-INSERT INTO `Exampler` (`exmpler_id`, `buch_id`, `exampler_zahl`, `exampler_JAHR`) VALUES (9, 9, 8, '2011-10-18');
-INSERT INTO `Exampler` (`exmpler_id`, `buch_id`, `exampler_zahl`, `exampler_JAHR`) VALUES (10, 15, 4, '1995-03-10');
-INSERT INTO `Exampler` (`exmpler_id`, `buch_id`, `exampler_zahl`, `exampler_JAHR`) VALUES (11, 16, 4, '1980-09-13');
-INSERT INTO `Exampler` (`exmpler_id`, `buch_id`, `exampler_zahl`, `exampler_JAHR`) VALUES (12, 34, 9, '2010-02-05');
-INSERT INTO `Exampler` (`exmpler_id`, `buch_id`, `exampler_zahl`, `exampler_JAHR`) VALUES (13, 36, 6, '2002-05-03');
-INSERT INTO `Exampler` (`exmpler_id`, `buch_id`, `exampler_zahl`, `exampler_JAHR`) VALUES (14, 49, 4, '2002-01-31');
-INSERT INTO `Exampler` (`exmpler_id`, `buch_id`, `exampler_zahl`, `exampler_JAHR`) VALUES (15, 55, 10, '2011-12-09');
-INSERT INTO `Exampler` (`exmpler_id`, `buch_id`, `exampler_zahl`, `exampler_JAHR`) VALUES (16, 65, 2, '2016-02-17');
-INSERT INTO `Exampler` (`exmpler_id`, `buch_id`, `exampler_zahl`, `exampler_JAHR`) VALUES (17, 86, 4, '2014-03-22');
-INSERT INTO `Exampler` (`exmpler_id`, `buch_id`, `exampler_zahl`, `exampler_JAHR`) VALUES (18, 126, 8, '2021-01-03');
-INSERT INTO `Exampler` (`exmpler_id`, `buch_id`, `exampler_zahl`, `exampler_JAHR`) VALUES (19, 179, 1, '2000-04-17');
-INSERT INTO `Exampler` (`exmpler_id`, `buch_id`, `exampler_zahl`, `exampler_JAHR`) VALUES (20, 319, 6, '1991-07-22');
-INSERT INTO `Exampler` (`exmpler_id`, `buch_id`, `exampler_zahl`, `exampler_JAHR`) VALUES (21, 320, 10, '1988-05-12');
-INSERT INTO `Exampler` (`exmpler_id`, `buch_id`, `exampler_zahl`, `exampler_JAHR`) VALUES (22, 450, 10, '2011-01-15');
-INSERT INTO `Exampler` (`exmpler_id`, `buch_id`, `exampler_zahl`, `exampler_JAHR`) VALUES (23, 479, 10, '2014-02-24');
-INSERT INTO `Exampler` (`exmpler_id`, `buch_id`, `exampler_zahl`, `exampler_JAHR`) VALUES (24, 828, 10, '2015-06-27');
-INSERT INTO `Exampler` (`exmpler_id`, `buch_id`, `exampler_zahl`, `exampler_JAHR`) VALUES (25, 896, 4, '1986-09-18');
-INSERT INTO `Exampler` (`exmpler_id`, `buch_id`, `exampler_zahl`, `exampler_JAHR`) VALUES (26, 923, 6, '1972-03-31');
-INSERT INTO `Exampler` (`exmpler_id`, `buch_id`, `exampler_zahl`, `exampler_JAHR`) VALUES (27, 1834, 5, '1973-07-04');
-INSERT INTO `Exampler` (`exmpler_id`, `buch_id`, `exampler_zahl`, `exampler_JAHR`) VALUES (28, 2320, 7, '2020-08-26');
-INSERT INTO `Exampler` (`exmpler_id`, `buch_id`, `exampler_zahl`, `exampler_JAHR`) VALUES (29, 2852, 2, '1981-12-14');
-INSERT INTO `Exampler` (`exmpler_id`, `buch_id`, `exampler_zahl`, `exampler_JAHR`) VALUES (30, 3805, 1, '1991-08-26');
-INSERT INTO `Exampler` (`exmpler_id`, `buch_id`, `exampler_zahl`, `exampler_JAHR`) VALUES (31, 3854, 2, '1992-08-31');
-INSERT INTO `Exampler` (`exmpler_id`, `buch_id`, `exampler_zahl`, `exampler_JAHR`) VALUES (32, 3941, 6, '2003-12-06');
-INSERT INTO `Exampler` (`exmpler_id`, `buch_id`, `exampler_zahl`, `exampler_JAHR`) VALUES (33, 4198, 6, '1975-01-09');
-INSERT INTO `Exampler` (`exmpler_id`, `buch_id`, `exampler_zahl`, `exampler_JAHR`) VALUES (34, 4261, 3, '2004-08-20');
-INSERT INTO `Exampler` (`exmpler_id`, `buch_id`, `exampler_zahl`, `exampler_JAHR`) VALUES (35, 4435, 6, '1985-02-10');
-INSERT INTO `Exampler` (`exmpler_id`, `buch_id`, `exampler_zahl`, `exampler_JAHR`) VALUES (36, 4799, 3, '2001-12-28');
-INSERT INTO `Exampler` (`exmpler_id`, `buch_id`, `exampler_zahl`, `exampler_JAHR`) VALUES (37, 5449, 10, '2000-04-02');
-INSERT INTO `Exampler` (`exmpler_id`, `buch_id`, `exampler_zahl`, `exampler_JAHR`) VALUES (38, 5517, 6, '1978-01-11');
-INSERT INTO `Exampler` (`exmpler_id`, `buch_id`, `exampler_zahl`, `exampler_JAHR`) VALUES (39, 6683, 7, '2005-05-15');
-INSERT INTO `Exampler` (`exmpler_id`, `buch_id`, `exampler_zahl`, `exampler_JAHR`) VALUES (40, 7695, 4, '2014-03-07');
-INSERT INTO `Exampler` (`exmpler_id`, `buch_id`, `exampler_zahl`, `exampler_JAHR`) VALUES (41, 8587, 5, '1997-06-25');
-INSERT INTO `Exampler` (`exmpler_id`, `buch_id`, `exampler_zahl`, `exampler_JAHR`) VALUES (42, 9189, 2, '2012-02-25');
-INSERT INTO `Exampler` (`exmpler_id`, `buch_id`, `exampler_zahl`, `exampler_JAHR`) VALUES (43, 9432, 2, '1995-08-22');
-INSERT INTO `Exampler` (`exmpler_id`, `buch_id`, `exampler_zahl`, `exampler_JAHR`) VALUES (44, 9960, 9, '1976-06-28');
-INSERT INTO `Exampler` (`exmpler_id`, `buch_id`, `exampler_zahl`, `exampler_JAHR`) VALUES (45, 13878, 2, '1982-03-28');
-INSERT INTO `Exampler` (`exmpler_id`, `buch_id`, `exampler_zahl`, `exampler_JAHR`) VALUES (46, 21160, 2, '1972-01-29');
-INSERT INTO `Exampler` (`exmpler_id`, `buch_id`, `exampler_zahl`, `exampler_JAHR`) VALUES (47, 33705, 2, '1972-02-12');
-INSERT INTO `Exampler` (`exmpler_id`, `buch_id`, `exampler_zahl`, `exampler_JAHR`) VALUES (48, 56762, 8, '2013-02-16');
-INSERT INTO `Exampler` (`exmpler_id`, `buch_id`, `exampler_zahl`, `exampler_JAHR`) VALUES (49, 58283, 6, '1977-02-07');
-INSERT INTO `Exampler` (`exmpler_id`, `buch_id`, `exampler_zahl`, `exampler_JAHR`) VALUES (50, 78161, 8, '1976-09-13');
-INSERT INTO `Exampler` (`exmpler_id`, `buch_id`, `exampler_zahl`, `exampler_JAHR`) VALUES (51, 90617, 8, '1980-05-09');
-INSERT INTO `Exampler` (`exmpler_id`, `buch_id`, `exampler_zahl`, `exampler_JAHR`) VALUES (52, 97116, 9, '1984-09-29');
-INSERT INTO `Exampler` (`exmpler_id`, `buch_id`, `exampler_zahl`, `exampler_JAHR`) VALUES (53, 97379, 4, '1995-05-05');
-INSERT INTO `Exampler` (`exmpler_id`, `buch_id`, `exampler_zahl`, `exampler_JAHR`) VALUES (54, 101923, 3, '1974-04-21');
-INSERT INTO `Exampler` (`exmpler_id`, `buch_id`, `exampler_zahl`, `exampler_JAHR`) VALUES (55, 267638, 10, '2004-01-07');
-INSERT INTO `Exampler` (`exmpler_id`, `buch_id`, `exampler_zahl`, `exampler_JAHR`) VALUES (56, 286714, 4, '1982-11-04');
-INSERT INTO `Exampler` (`exmpler_id`, `buch_id`, `exampler_zahl`, `exampler_JAHR`) VALUES (57, 361271, 2, '2019-02-25');
-INSERT INTO `Exampler` (`exmpler_id`, `buch_id`, `exampler_zahl`, `exampler_JAHR`) VALUES (58, 362893, 7, '1982-11-30');
-INSERT INTO `Exampler` (`exmpler_id`, `buch_id`, `exampler_zahl`, `exampler_JAHR`) VALUES (59, 413858, 6, '1987-05-02');
-INSERT INTO `Exampler` (`exmpler_id`, `buch_id`, `exampler_zahl`, `exampler_JAHR`) VALUES (60, 622825, 7, '1985-07-27');
-INSERT INTO `Exampler` (`exmpler_id`, `buch_id`, `exampler_zahl`, `exampler_JAHR`) VALUES (61, 645698, 8, '2018-02-28');
-INSERT INTO `Exampler` (`exmpler_id`, `buch_id`, `exampler_zahl`, `exampler_JAHR`) VALUES (62, 685716, 8, '2016-03-07');
-INSERT INTO `Exampler` (`exmpler_id`, `buch_id`, `exampler_zahl`, `exampler_JAHR`) VALUES (63, 706295, 9, '1975-09-07');
-INSERT INTO `Exampler` (`exmpler_id`, `buch_id`, `exampler_zahl`, `exampler_JAHR`) VALUES (64, 788840, 7, '1990-06-14');
-INSERT INTO `Exampler` (`exmpler_id`, `buch_id`, `exampler_zahl`, `exampler_JAHR`) VALUES (65, 827225, 2, '1994-04-01');
-INSERT INTO `Exampler` (`exmpler_id`, `buch_id`, `exampler_zahl`, `exampler_JAHR`) VALUES (66, 1057064, 7, '1991-01-22');
-INSERT INTO `Exampler` (`exmpler_id`, `buch_id`, `exampler_zahl`, `exampler_JAHR`) VALUES (67, 3270223, 1, '1987-10-10');
-INSERT INTO `Exampler` (`exmpler_id`, `buch_id`, `exampler_zahl`, `exampler_JAHR`) VALUES (68, 5623014, 10, '2015-03-11');
-INSERT INTO `Exampler` (`exmpler_id`, `buch_id`, `exampler_zahl`, `exampler_JAHR`) VALUES (69, 6301383, 4, '2006-06-29');
-INSERT INTO `Exampler` (`exmpler_id`, `buch_id`, `exampler_zahl`, `exampler_JAHR`) VALUES (70, 7142182, 3, '1985-01-25');
-INSERT INTO `Exampler` (`exmpler_id`, `buch_id`, `exampler_zahl`, `exampler_JAHR`) VALUES (71, 7331279, 8, '2019-10-05');
-INSERT INTO `Exampler` (`exmpler_id`, `buch_id`, `exampler_zahl`, `exampler_JAHR`) VALUES (72, 7651303, 9, '1985-02-10');
-INSERT INTO `Exampler` (`exmpler_id`, `buch_id`, `exampler_zahl`, `exampler_JAHR`) VALUES (73, 8027727, 2, '1999-08-30');
-INSERT INTO `Exampler` (`exmpler_id`, `buch_id`, `exampler_zahl`, `exampler_JAHR`) VALUES (74, 8896473, 10, '2001-11-29');
-INSERT INTO `Exampler` (`exmpler_id`, `buch_id`, `exampler_zahl`, `exampler_JAHR`) VALUES (75, 9000751, 8, '1992-06-05');
-INSERT INTO `Exampler` (`exmpler_id`, `buch_id`, `exampler_zahl`, `exampler_JAHR`) VALUES (76, 24957181, 8, '2016-01-02');
-INSERT INTO `Exampler` (`exmpler_id`, `buch_id`, `exampler_zahl`, `exampler_JAHR`) VALUES (77, 39674677, 6, '1990-02-16');
-INSERT INTO `Exampler` (`exmpler_id`, `buch_id`, `exampler_zahl`, `exampler_JAHR`) VALUES (78, 42763127, 1, '2018-05-02');
-INSERT INTO `Exampler` (`exmpler_id`, `buch_id`, `exampler_zahl`, `exampler_JAHR`) VALUES (79, 44359254, 10, '2002-05-08');
-INSERT INTO `Exampler` (`exmpler_id`, `buch_id`, `exampler_zahl`, `exampler_JAHR`) VALUES (80, 48763647, 4, '2009-11-21');
-INSERT INTO `Exampler` (`exmpler_id`, `buch_id`, `exampler_zahl`, `exampler_JAHR`) VALUES (81, 64438595, 10, '2017-07-02');
-INSERT INTO `Exampler` (`exmpler_id`, `buch_id`, `exampler_zahl`, `exampler_JAHR`) VALUES (82, 69313777, 10, '1999-03-11');
-INSERT INTO `Exampler` (`exmpler_id`, `buch_id`, `exampler_zahl`, `exampler_JAHR`) VALUES (83, 72443576, 7, '2016-03-26');
-INSERT INTO `Exampler` (`exmpler_id`, `buch_id`, `exampler_zahl`, `exampler_JAHR`) VALUES (84, 72480251, 3, '2010-06-13');
-INSERT INTO `Exampler` (`exmpler_id`, `buch_id`, `exampler_zahl`, `exampler_JAHR`) VALUES (85, 76678247, 2, '2019-12-14');
-INSERT INTO `Exampler` (`exmpler_id`, `buch_id`, `exampler_zahl`, `exampler_JAHR`) VALUES (86, 78750398, 5, '1970-10-16');
-INSERT INTO `Exampler` (`exmpler_id`, `buch_id`, `exampler_zahl`, `exampler_JAHR`) VALUES (87, 82564769, 5, '2003-07-31');
-INSERT INTO `Exampler` (`exmpler_id`, `buch_id`, `exampler_zahl`, `exampler_JAHR`) VALUES (88, 93541332, 5, '2001-04-29');
-INSERT INTO `Exampler` (`exmpler_id`, `buch_id`, `exampler_zahl`, `exampler_JAHR`) VALUES (89, 113389499, 7, '1980-08-10');
-INSERT INTO `Exampler` (`exmpler_id`, `buch_id`, `exampler_zahl`, `exampler_JAHR`) VALUES (90, 374071784, 8, '2017-11-30');
-INSERT INTO `Exampler` (`exmpler_id`, `buch_id`, `exampler_zahl`, `exampler_JAHR`) VALUES (91, 478873780, 6, '2005-12-17');
-INSERT INTO `Exampler` (`exmpler_id`, `buch_id`, `exampler_zahl`, `exampler_JAHR`) VALUES (92, 502498382, 7, '2013-10-08');
-INSERT INTO `Exampler` (`exmpler_id`, `buch_id`, `exampler_zahl`, `exampler_JAHR`) VALUES (93, 618295225, 9, '2000-11-01');
-INSERT INTO `Exampler` (`exmpler_id`, `buch_id`, `exampler_zahl`, `exampler_JAHR`) VALUES (94, 709578845, 8, '1985-05-17');
-INSERT INTO `Exampler` (`exmpler_id`, `buch_id`, `exampler_zahl`, `exampler_JAHR`) VALUES (95, 776707412, 3, '2008-11-14');
-INSERT INTO `Exampler` (`exmpler_id`, `buch_id`, `exampler_zahl`, `exampler_JAHR`) VALUES (96, 852369380, 2, '1983-10-15');
-INSERT INTO `Exampler` (`exmpler_id`, `buch_id`, `exampler_zahl`, `exampler_JAHR`) VALUES (97, 855843305, 2, '1978-09-21');
-INSERT INTO `Exampler` (`exmpler_id`, `buch_id`, `exampler_zahl`, `exampler_JAHR`) VALUES (98, 870852451, 9, '2011-08-26');
-INSERT INTO `Exampler` (`exmpler_id`, `buch_id`, `exampler_zahl`, `exampler_JAHR`) VALUES (99, 967924437, 7, '1972-05-09');
-INSERT INTO `Exampler` (`exmpler_id`, `buch_id`, `exampler_zahl`, `exampler_JAHR`) VALUES (100, 985327608, 6, '2010-12-06');
+DROP TABLE IF EXISTS `Exemplar`;
+
+CREATE TABLE `Exemplar` (
+  `exemplar_id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `buch_id` int(10) unsigned NOT NULL,
+  `edition` int(10) unsigned DEFAULT 1,
+  `erscheingsJahr` date NOT NULL,
+  PRIMARY KEY (`exemplar_id`),
+  KEY `buch_id` (`buch_id`),
+  CONSTRAINT `Exemplar_ibfk_1` FOREIGN KEY (`buch_id`) REFERENCES `Buch` (`buch_id`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=101 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+INSERT INTO `Exemplar` (`exemplar_id`, `buch_id`, `edition`, `erscheingsJahr`) VALUES (1, 0, 10, '1994-07-25');
+INSERT INTO `Exemplar` (`exemplar_id`, `buch_id`, `edition`, `erscheingsJahr`) VALUES (2, 1, 11, '2013-02-13');
+INSERT INTO `Exemplar` (`exemplar_id`, `buch_id`, `edition`, `erscheingsJahr`) VALUES (3, 2, 12, '2006-05-17');
+INSERT INTO `Exemplar` (`exemplar_id`, `buch_id`, `edition`, `erscheingsJahr`) VALUES (4, 4, 2, '1976-01-24');
+INSERT INTO `Exemplar` (`exemplar_id`, `buch_id`, `edition`, `erscheingsJahr`) VALUES (5, 5, 7, '1994-05-11');
+INSERT INTO `Exemplar` (`exemplar_id`, `buch_id`, `edition`, `erscheingsJahr`) VALUES (6, 6, 9, '1972-01-29');
+INSERT INTO `Exemplar` (`exemplar_id`, `buch_id`, `edition`, `erscheingsJahr`) VALUES (7, 17, 9, '2015-10-30');
+INSERT INTO `Exemplar` (`exemplar_id`, `buch_id`, `edition`, `erscheingsJahr`) VALUES (8, 38, 12, '1982-06-24');
+INSERT INTO `Exemplar` (`exemplar_id`, `buch_id`, `edition`, `erscheingsJahr`) VALUES (9, 48, 7, '1999-01-08');
+INSERT INTO `Exemplar` (`exemplar_id`, `buch_id`, `edition`, `erscheingsJahr`) VALUES (10, 54, 2, '1985-02-18');
+INSERT INTO `Exemplar` (`exemplar_id`, `buch_id`, `edition`, `erscheingsJahr`) VALUES (11, 59, 11, '1988-07-11');
+INSERT INTO `Exemplar` (`exemplar_id`, `buch_id`, `edition`, `erscheingsJahr`) VALUES (12, 62, 5, '1996-07-29');
+INSERT INTO `Exemplar` (`exemplar_id`, `buch_id`, `edition`, `erscheingsJahr`) VALUES (13, 67, 11, '1993-10-25');
+INSERT INTO `Exemplar` (`exemplar_id`, `buch_id`, `edition`, `erscheingsJahr`) VALUES (14, 73, 2, '2015-03-16');
+INSERT INTO `Exemplar` (`exemplar_id`, `buch_id`, `edition`, `erscheingsJahr`) VALUES (15, 82, 10, '1997-09-25');
+INSERT INTO `Exemplar` (`exemplar_id`, `buch_id`, `edition`, `erscheingsJahr`) VALUES (16, 95, 7, '2000-07-06');
+INSERT INTO `Exemplar` (`exemplar_id`, `buch_id`, `edition`, `erscheingsJahr`) VALUES (17, 98, 12, '1970-05-10');
+INSERT INTO `Exemplar` (`exemplar_id`, `buch_id`, `edition`, `erscheingsJahr`) VALUES (18, 131, 10, '2000-01-02');
+INSERT INTO `Exemplar` (`exemplar_id`, `buch_id`, `edition`, `erscheingsJahr`) VALUES (19, 139, 11, '2021-03-14');
+INSERT INTO `Exemplar` (`exemplar_id`, `buch_id`, `edition`, `erscheingsJahr`) VALUES (20, 157, 2, '1980-01-16');
+INSERT INTO `Exemplar` (`exemplar_id`, `buch_id`, `edition`, `erscheingsJahr`) VALUES (21, 272, 2, '1997-08-08');
+INSERT INTO `Exemplar` (`exemplar_id`, `buch_id`, `edition`, `erscheingsJahr`) VALUES (22, 420, 4, '1990-10-27');
+INSERT INTO `Exemplar` (`exemplar_id`, `buch_id`, `edition`, `erscheingsJahr`) VALUES (23, 644, 3, '1971-07-05');
+INSERT INTO `Exemplar` (`exemplar_id`, `buch_id`, `edition`, `erscheingsJahr`) VALUES (24, 778, 8, '2009-01-27');
+INSERT INTO `Exemplar` (`exemplar_id`, `buch_id`, `edition`, `erscheingsJahr`) VALUES (25, 812, 4, '1986-04-24');
+INSERT INTO `Exemplar` (`exemplar_id`, `buch_id`, `edition`, `erscheingsJahr`) VALUES (26, 876, 4, '2003-09-27');
+INSERT INTO `Exemplar` (`exemplar_id`, `buch_id`, `edition`, `erscheingsJahr`) VALUES (27, 935, 12, '1994-10-09');
+INSERT INTO `Exemplar` (`exemplar_id`, `buch_id`, `edition`, `erscheingsJahr`) VALUES (28, 947, 7, '2004-05-08');
+INSERT INTO `Exemplar` (`exemplar_id`, `buch_id`, `edition`, `erscheingsJahr`) VALUES (29, 1884, 1, '1976-05-27');
+INSERT INTO `Exemplar` (`exemplar_id`, `buch_id`, `edition`, `erscheingsJahr`) VALUES (30, 2055, 11, '1996-06-02');
+INSERT INTO `Exemplar` (`exemplar_id`, `buch_id`, `edition`, `erscheingsJahr`) VALUES (31, 2169, 10, '1991-12-08');
+INSERT INTO `Exemplar` (`exemplar_id`, `buch_id`, `edition`, `erscheingsJahr`) VALUES (32, 2711, 3, '1973-08-28');
+INSERT INTO `Exemplar` (`exemplar_id`, `buch_id`, `edition`, `erscheingsJahr`) VALUES (33, 4246, 5, '1990-01-13');
+INSERT INTO `Exemplar` (`exemplar_id`, `buch_id`, `edition`, `erscheingsJahr`) VALUES (34, 5555, 9, '1987-02-10');
+INSERT INTO `Exemplar` (`exemplar_id`, `buch_id`, `edition`, `erscheingsJahr`) VALUES (35, 6318, 3, '1973-03-21');
+INSERT INTO `Exemplar` (`exemplar_id`, `buch_id`, `edition`, `erscheingsJahr`) VALUES (36, 6351, 12, '1978-10-23');
+INSERT INTO `Exemplar` (`exemplar_id`, `buch_id`, `edition`, `erscheingsJahr`) VALUES (37, 6379, 4, '2008-01-16');
+INSERT INTO `Exemplar` (`exemplar_id`, `buch_id`, `edition`, `erscheingsJahr`) VALUES (38, 6668, 12, '1986-03-04');
+INSERT INTO `Exemplar` (`exemplar_id`, `buch_id`, `edition`, `erscheingsJahr`) VALUES (39, 7090, 9, '1982-06-07');
+INSERT INTO `Exemplar` (`exemplar_id`, `buch_id`, `edition`, `erscheingsJahr`) VALUES (40, 7530, 12, '2008-10-02');
+INSERT INTO `Exemplar` (`exemplar_id`, `buch_id`, `edition`, `erscheingsJahr`) VALUES (41, 8404, 12, '2013-12-10');
+INSERT INTO `Exemplar` (`exemplar_id`, `buch_id`, `edition`, `erscheingsJahr`) VALUES (42, 9397, 3, '2003-05-27');
+INSERT INTO `Exemplar` (`exemplar_id`, `buch_id`, `edition`, `erscheingsJahr`) VALUES (43, 10345, 4, '1999-11-16');
+INSERT INTO `Exemplar` (`exemplar_id`, `buch_id`, `edition`, `erscheingsJahr`) VALUES (44, 26020, 12, '2017-03-24');
+INSERT INTO `Exemplar` (`exemplar_id`, `buch_id`, `edition`, `erscheingsJahr`) VALUES (45, 28999, 2, '2017-07-04');
+INSERT INTO `Exemplar` (`exemplar_id`, `buch_id`, `edition`, `erscheingsJahr`) VALUES (46, 39147, 4, '2000-03-14');
+INSERT INTO `Exemplar` (`exemplar_id`, `buch_id`, `edition`, `erscheingsJahr`) VALUES (47, 44255, 1, '2013-11-12');
+INSERT INTO `Exemplar` (`exemplar_id`, `buch_id`, `edition`, `erscheingsJahr`) VALUES (48, 50046, 2, '1982-01-14');
+INSERT INTO `Exemplar` (`exemplar_id`, `buch_id`, `edition`, `erscheingsJahr`) VALUES (49, 53192, 2, '2006-11-29');
+INSERT INTO `Exemplar` (`exemplar_id`, `buch_id`, `edition`, `erscheingsJahr`) VALUES (50, 56067, 9, '1982-07-24');
+INSERT INTO `Exemplar` (`exemplar_id`, `buch_id`, `edition`, `erscheingsJahr`) VALUES (51, 57714, 8, '2004-03-03');
+INSERT INTO `Exemplar` (`exemplar_id`, `buch_id`, `edition`, `erscheingsJahr`) VALUES (52, 59089, 8, '2013-06-16');
+INSERT INTO `Exemplar` (`exemplar_id`, `buch_id`, `edition`, `erscheingsJahr`) VALUES (53, 60302, 5, '2018-10-25');
+INSERT INTO `Exemplar` (`exemplar_id`, `buch_id`, `edition`, `erscheingsJahr`) VALUES (54, 61185, 1, '1974-02-11');
+INSERT INTO `Exemplar` (`exemplar_id`, `buch_id`, `edition`, `erscheingsJahr`) VALUES (55, 75360, 7, '2008-06-30');
+INSERT INTO `Exemplar` (`exemplar_id`, `buch_id`, `edition`, `erscheingsJahr`) VALUES (56, 99844, 9, '2012-12-21');
+INSERT INTO `Exemplar` (`exemplar_id`, `buch_id`, `edition`, `erscheingsJahr`) VALUES (57, 172845, 5, '1970-06-18');
+INSERT INTO `Exemplar` (`exemplar_id`, `buch_id`, `edition`, `erscheingsJahr`) VALUES (58, 283441, 11, '2012-03-11');
+INSERT INTO `Exemplar` (`exemplar_id`, `buch_id`, `edition`, `erscheingsJahr`) VALUES (59, 286328, 8, '2000-10-02');
+INSERT INTO `Exemplar` (`exemplar_id`, `buch_id`, `edition`, `erscheingsJahr`) VALUES (60, 295129, 9, '1999-01-06');
+INSERT INTO `Exemplar` (`exemplar_id`, `buch_id`, `edition`, `erscheingsJahr`) VALUES (61, 303426, 1, '2011-02-10');
+INSERT INTO `Exemplar` (`exemplar_id`, `buch_id`, `edition`, `erscheingsJahr`) VALUES (62, 384587, 7, '1985-02-06');
+INSERT INTO `Exemplar` (`exemplar_id`, `buch_id`, `edition`, `erscheingsJahr`) VALUES (63, 555783, 1, '1973-11-22');
+INSERT INTO `Exemplar` (`exemplar_id`, `buch_id`, `edition`, `erscheingsJahr`) VALUES (64, 607686, 4, '1996-11-15');
+INSERT INTO `Exemplar` (`exemplar_id`, `buch_id`, `edition`, `erscheingsJahr`) VALUES (65, 656105, 12, '1998-02-25');
+INSERT INTO `Exemplar` (`exemplar_id`, `buch_id`, `edition`, `erscheingsJahr`) VALUES (66, 836974, 5, '2017-06-05');
+INSERT INTO `Exemplar` (`exemplar_id`, `buch_id`, `edition`, `erscheingsJahr`) VALUES (67, 863365, 1, '2009-01-25');
+INSERT INTO `Exemplar` (`exemplar_id`, `buch_id`, `edition`, `erscheingsJahr`) VALUES (68, 3227287, 9, '1988-11-24');
+INSERT INTO `Exemplar` (`exemplar_id`, `buch_id`, `edition`, `erscheingsJahr`) VALUES (69, 4126267, 12, '1993-01-20');
+INSERT INTO `Exemplar` (`exemplar_id`, `buch_id`, `edition`, `erscheingsJahr`) VALUES (70, 4388248, 10, '1990-06-07');
+INSERT INTO `Exemplar` (`exemplar_id`, `buch_id`, `edition`, `erscheingsJahr`) VALUES (71, 4987394, 4, '1986-10-20');
+INSERT INTO `Exemplar` (`exemplar_id`, `buch_id`, `edition`, `erscheingsJahr`) VALUES (72, 5948789, 2, '2006-08-22');
+INSERT INTO `Exemplar` (`exemplar_id`, `buch_id`, `edition`, `erscheingsJahr`) VALUES (73, 6294152, 8, '1988-03-26');
+INSERT INTO `Exemplar` (`exemplar_id`, `buch_id`, `edition`, `erscheingsJahr`) VALUES (74, 8347890, 11, '1997-08-29');
+INSERT INTO `Exemplar` (`exemplar_id`, `buch_id`, `edition`, `erscheingsJahr`) VALUES (75, 8623284, 2, '2004-01-01');
+INSERT INTO `Exemplar` (`exemplar_id`, `buch_id`, `edition`, `erscheingsJahr`) VALUES (76, 8885164, 9, '1979-09-02');
+INSERT INTO `Exemplar` (`exemplar_id`, `buch_id`, `edition`, `erscheingsJahr`) VALUES (77, 9006496, 6, '2006-05-12');
+INSERT INTO `Exemplar` (`exemplar_id`, `buch_id`, `edition`, `erscheingsJahr`) VALUES (78, 9726243, 11, '1988-08-18');
+INSERT INTO `Exemplar` (`exemplar_id`, `buch_id`, `edition`, `erscheingsJahr`) VALUES (79, 9830650, 4, '1992-06-22');
+INSERT INTO `Exemplar` (`exemplar_id`, `buch_id`, `edition`, `erscheingsJahr`) VALUES (80, 28529092, 7, '2013-11-30');
+INSERT INTO `Exemplar` (`exemplar_id`, `buch_id`, `edition`, `erscheingsJahr`) VALUES (81, 41765941, 10, '2005-04-09');
+INSERT INTO `Exemplar` (`exemplar_id`, `buch_id`, `edition`, `erscheingsJahr`) VALUES (82, 47399601, 6, '1991-01-15');
+INSERT INTO `Exemplar` (`exemplar_id`, `buch_id`, `edition`, `erscheingsJahr`) VALUES (83, 49724630, 3, '2002-02-17');
+INSERT INTO `Exemplar` (`exemplar_id`, `buch_id`, `edition`, `erscheingsJahr`) VALUES (84, 54896814, 8, '1977-02-28');
+INSERT INTO `Exemplar` (`exemplar_id`, `buch_id`, `edition`, `erscheingsJahr`) VALUES (85, 61468312, 4, '2008-01-30');
+INSERT INTO `Exemplar` (`exemplar_id`, `buch_id`, `edition`, `erscheingsJahr`) VALUES (86, 74520596, 1, '1995-04-14');
+INSERT INTO `Exemplar` (`exemplar_id`, `buch_id`, `edition`, `erscheingsJahr`) VALUES (87, 77175221, 11, '2020-03-10');
+INSERT INTO `Exemplar` (`exemplar_id`, `buch_id`, `edition`, `erscheingsJahr`) VALUES (88, 79486453, 10, '1985-11-26');
+INSERT INTO `Exemplar` (`exemplar_id`, `buch_id`, `edition`, `erscheingsJahr`) VALUES (89, 86487044, 9, '1996-12-22');
+INSERT INTO `Exemplar` (`exemplar_id`, `buch_id`, `edition`, `erscheingsJahr`) VALUES (90, 97112517, 4, '2004-10-18');
+INSERT INTO `Exemplar` (`exemplar_id`, `buch_id`, `edition`, `erscheingsJahr`) VALUES (91, 99149544, 9, '1973-11-23');
+INSERT INTO `Exemplar` (`exemplar_id`, `buch_id`, `edition`, `erscheingsJahr`) VALUES (92, 198664812, 8, '1983-03-14');
+INSERT INTO `Exemplar` (`exemplar_id`, `buch_id`, `edition`, `erscheingsJahr`) VALUES (93, 322733655, 8, '1993-11-28');
+INSERT INTO `Exemplar` (`exemplar_id`, `buch_id`, `edition`, `erscheingsJahr`) VALUES (94, 336249894, 1, '1974-12-25');
+INSERT INTO `Exemplar` (`exemplar_id`, `buch_id`, `edition`, `erscheingsJahr`) VALUES (95, 340997513, 9, '2011-04-16');
+INSERT INTO `Exemplar` (`exemplar_id`, `buch_id`, `edition`, `erscheingsJahr`) VALUES (96, 559284373, 6, '2004-03-15');
+INSERT INTO `Exemplar` (`exemplar_id`, `buch_id`, `edition`, `erscheingsJahr`) VALUES (97, 726478778, 2, '2011-11-29');
+INSERT INTO `Exemplar` (`exemplar_id`, `buch_id`, `edition`, `erscheingsJahr`) VALUES (98, 784870112, 3, '1985-01-25');
+INSERT INTO `Exemplar` (`exemplar_id`, `buch_id`, `edition`, `erscheingsJahr`) VALUES (99, 951389647, 12, '1987-08-09');
+INSERT INTO `Exemplar` (`exemplar_id`, `buch_id`, `edition`, `erscheingsJahr`) VALUES (100, 989406400, 3, '1981-09-11');
 
 
 #
 # TABLE STRUCTURE FOR: Gebuhren
 #
 
+DROP TABLE IF EXISTS `Gebuhren`;
+
+CREATE TABLE `Gebuhren` (
+  `gebuhren_id` int(10) unsigned NOT NULL,
+  `kunde_id` int(10) unsigned NOT NULL,
+  `exemplar_id` int(10) unsigned DEFAULT NULL,
+  `beitrag` int(10) unsigned DEFAULT NULL,
+  `is_bezahlt` tinyint(1) DEFAULT NULL,
+  PRIMARY KEY (`gebuhren_id`),
+  KEY `kunde_id` (`kunde_id`),
+  KEY `exemplar_id` (`exemplar_id`),
+  CONSTRAINT `Gebuhren_ibfk_1` FOREIGN KEY (`kunde_id`) REFERENCES `Mensch` (`id`),
+  CONSTRAINT `Gebuhren_ibfk_2` FOREIGN KEY (`exemplar_id`) REFERENCES `Exemplar` (`exemplar_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `exemplar_id`, `beitrag`, `is_bezahlt`) VALUES (106, 14, 14, 58, 0);
+INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `exemplar_id`, `beitrag`, `is_bezahlt`) VALUES (117, 30, 30, 40, 0);
+INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `exemplar_id`, `beitrag`, `is_bezahlt`) VALUES (135, 63, 63, 60, 0);
+INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `exemplar_id`, `beitrag`, `is_bezahlt`) VALUES (136, 54, 54, 128, 1);
+INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `exemplar_id`, `beitrag`, `is_bezahlt`) VALUES (138, 13, 13, 87, 1);
+INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `exemplar_id`, `beitrag`, `is_bezahlt`) VALUES (139, 59, 59, 12, 1);
+INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `exemplar_id`, `beitrag`, `is_bezahlt`) VALUES (140, 16, 16, 48, 1);
+INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `exemplar_id`, `beitrag`, `is_bezahlt`) VALUES (141, 3, 3, 32, 0);
+INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `exemplar_id`, `beitrag`, `is_bezahlt`) VALUES (151, 93, 93, 35, 1);
+INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `exemplar_id`, `beitrag`, `is_bezahlt`) VALUES (153, 85, 85, 117, 0);
+INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `exemplar_id`, `beitrag`, `is_bezahlt`) VALUES (156, 21, 21, 141, 1);
+INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `exemplar_id`, `beitrag`, `is_bezahlt`) VALUES (159, 41, 41, 73, 1);
+INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `exemplar_id`, `beitrag`, `is_bezahlt`) VALUES (167, 80, 80, 42, 1);
+INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `exemplar_id`, `beitrag`, `is_bezahlt`) VALUES (182, 47, 47, 144, 0);
+INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `exemplar_id`, `beitrag`, `is_bezahlt`) VALUES (188, 89, 89, 71, 0);
+INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `exemplar_id`, `beitrag`, `is_bezahlt`) VALUES (221, 29, 29, 45, 0);
+INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `exemplar_id`, `beitrag`, `is_bezahlt`) VALUES (224, 48, 48, 30, 0);
+INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `exemplar_id`, `beitrag`, `is_bezahlt`) VALUES (230, 9, 9, 63, 1);
+INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `exemplar_id`, `beitrag`, `is_bezahlt`) VALUES (233, 33, 33, 128, 1);
+INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `exemplar_id`, `beitrag`, `is_bezahlt`) VALUES (235, 43, 43, 16, 0);
+INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `exemplar_id`, `beitrag`, `is_bezahlt`) VALUES (247, 34, 34, 53, 1);
+INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `exemplar_id`, `beitrag`, `is_bezahlt`) VALUES (253, 67, 67, 150, 1);
+INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `exemplar_id`, `beitrag`, `is_bezahlt`) VALUES (254, 53, 53, 114, 0);
+INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `exemplar_id`, `beitrag`, `is_bezahlt`) VALUES (257, 36, 36, 81, 1);
+INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `exemplar_id`, `beitrag`, `is_bezahlt`) VALUES (258, 19, 19, 142, 0);
+INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `exemplar_id`, `beitrag`, `is_bezahlt`) VALUES (263, 83, 83, 114, 1);
+INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `exemplar_id`, `beitrag`, `is_bezahlt`) VALUES (268, 64, 64, 13, 0);
+INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `exemplar_id`, `beitrag`, `is_bezahlt`) VALUES (272, 8, 8, 33, 1);
+INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `exemplar_id`, `beitrag`, `is_bezahlt`) VALUES (276, 86, 86, 25, 1);
+INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `exemplar_id`, `beitrag`, `is_bezahlt`) VALUES (277, 17, 17, 59, 0);
+INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `exemplar_id`, `beitrag`, `is_bezahlt`) VALUES (282, 71, 71, 43, 1);
+INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `exemplar_id`, `beitrag`, `is_bezahlt`) VALUES (283, 68, 68, 71, 0);
+INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `exemplar_id`, `beitrag`, `is_bezahlt`) VALUES (290, 7, 7, 111, 1);
+INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `exemplar_id`, `beitrag`, `is_bezahlt`) VALUES (297, 99, 99, 148, 0);
+INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `exemplar_id`, `beitrag`, `is_bezahlt`) VALUES (302, 58, 58, 84, 1);
+INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `exemplar_id`, `beitrag`, `is_bezahlt`) VALUES (304, 2, 2, 103, 1);
+INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `exemplar_id`, `beitrag`, `is_bezahlt`) VALUES (312, 10, 10, 135, 0);
+INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `exemplar_id`, `beitrag`, `is_bezahlt`) VALUES (319, 11, 11, 143, 1);
+INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `exemplar_id`, `beitrag`, `is_bezahlt`) VALUES (321, 27, 27, 95, 0);
+INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `exemplar_id`, `beitrag`, `is_bezahlt`) VALUES (345, 42, 42, 59, 1);
+INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `exemplar_id`, `beitrag`, `is_bezahlt`) VALUES (351, 66, 66, 104, 0);
+INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `exemplar_id`, `beitrag`, `is_bezahlt`) VALUES (356, 5, 5, 82, 1);
+INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `exemplar_id`, `beitrag`, `is_bezahlt`) VALUES (366, 56, 56, 143, 1);
+INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `exemplar_id`, `beitrag`, `is_bezahlt`) VALUES (379, 87, 87, 132, 0);
+INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `exemplar_id`, `beitrag`, `is_bezahlt`) VALUES (396, 31, 31, 60, 0);
+INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `exemplar_id`, `beitrag`, `is_bezahlt`) VALUES (397, 72, 72, 125, 0);
+INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `exemplar_id`, `beitrag`, `is_bezahlt`) VALUES (398, 39, 39, 49, 1);
+INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `exemplar_id`, `beitrag`, `is_bezahlt`) VALUES (400, 74, 74, 63, 1);
+INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `exemplar_id`, `beitrag`, `is_bezahlt`) VALUES (402, 60, 60, 73, 0);
+INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `exemplar_id`, `beitrag`, `is_bezahlt`) VALUES (407, 25, 25, 41, 0);
+INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `exemplar_id`, `beitrag`, `is_bezahlt`) VALUES (409, 57, 57, 136, 0);
+INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `exemplar_id`, `beitrag`, `is_bezahlt`) VALUES (411, 20, 20, 120, 0);
+INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `exemplar_id`, `beitrag`, `is_bezahlt`) VALUES (420, 62, 62, 149, 0);
+INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `exemplar_id`, `beitrag`, `is_bezahlt`) VALUES (425, 100, 100, 138, 1);
+INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `exemplar_id`, `beitrag`, `is_bezahlt`) VALUES (434, 12, 12, 105, 1);
+INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `exemplar_id`, `beitrag`, `is_bezahlt`) VALUES (441, 23, 23, 79, 0);
+INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `exemplar_id`, `beitrag`, `is_bezahlt`) VALUES (442, 22, 22, 68, 1);
+INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `exemplar_id`, `beitrag`, `is_bezahlt`) VALUES (443, 79, 79, 143, 1);
+INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `exemplar_id`, `beitrag`, `is_bezahlt`) VALUES (448, 44, 44, 126, 0);
+INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `exemplar_id`, `beitrag`, `is_bezahlt`) VALUES (449, 95, 95, 56, 1);
+INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `exemplar_id`, `beitrag`, `is_bezahlt`) VALUES (468, 38, 38, 79, 0);
+INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `exemplar_id`, `beitrag`, `is_bezahlt`) VALUES (489, 70, 70, 144, 1);
+INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `exemplar_id`, `beitrag`, `is_bezahlt`) VALUES (494, 18, 18, 135, 1);
+INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `exemplar_id`, `beitrag`, `is_bezahlt`) VALUES (507, 78, 78, 89, 0);
+INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `exemplar_id`, `beitrag`, `is_bezahlt`) VALUES (512, 88, 88, 133, 0);
+INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `exemplar_id`, `beitrag`, `is_bezahlt`) VALUES (535, 37, 37, 11, 1);
+INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `exemplar_id`, `beitrag`, `is_bezahlt`) VALUES (537, 15, 15, 34, 1);
+INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `exemplar_id`, `beitrag`, `is_bezahlt`) VALUES (557, 96, 96, 93, 0);
+INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `exemplar_id`, `beitrag`, `is_bezahlt`) VALUES (558, 28, 28, 134, 0);
+INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `exemplar_id`, `beitrag`, `is_bezahlt`) VALUES (568, 49, 49, 94, 1);
+INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `exemplar_id`, `beitrag`, `is_bezahlt`) VALUES (584, 4, 4, 61, 0);
+INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `exemplar_id`, `beitrag`, `is_bezahlt`) VALUES (586, 94, 94, 18, 0);
+INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `exemplar_id`, `beitrag`, `is_bezahlt`) VALUES (611, 77, 77, 129, 1);
+INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `exemplar_id`, `beitrag`, `is_bezahlt`) VALUES (617, 73, 73, 62, 1);
+INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `exemplar_id`, `beitrag`, `is_bezahlt`) VALUES (622, 65, 65, 132, 0);
+INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `exemplar_id`, `beitrag`, `is_bezahlt`) VALUES (623, 35, 35, 21, 1);
+INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `exemplar_id`, `beitrag`, `is_bezahlt`) VALUES (626, 24, 24, 83, 0);
+INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `exemplar_id`, `beitrag`, `is_bezahlt`) VALUES (632, 32, 32, 63, 1);
+INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `exemplar_id`, `beitrag`, `is_bezahlt`) VALUES (634, 75, 75, 129, 1);
+INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `exemplar_id`, `beitrag`, `is_bezahlt`) VALUES (639, 52, 52, 114, 1);
+INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `exemplar_id`, `beitrag`, `is_bezahlt`) VALUES (649, 61, 61, 19, 1);
+INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `exemplar_id`, `beitrag`, `is_bezahlt`) VALUES (659, 84, 84, 78, 1);
+INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `exemplar_id`, `beitrag`, `is_bezahlt`) VALUES (673, 40, 40, 69, 0);
+INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `exemplar_id`, `beitrag`, `is_bezahlt`) VALUES (679, 1, 1, 40, 0);
+INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `exemplar_id`, `beitrag`, `is_bezahlt`) VALUES (692, 81, 81, 146, 1);
+INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `exemplar_id`, `beitrag`, `is_bezahlt`) VALUES (699, 45, 45, 54, 0);
+INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `exemplar_id`, `beitrag`, `is_bezahlt`) VALUES (701, 51, 51, 49, 1);
+INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `exemplar_id`, `beitrag`, `is_bezahlt`) VALUES (702, 6, 6, 131, 0);
+INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `exemplar_id`, `beitrag`, `is_bezahlt`) VALUES (712, 69, 69, 66, 0);
+INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `exemplar_id`, `beitrag`, `is_bezahlt`) VALUES (714, 50, 50, 22, 0);
+INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `exemplar_id`, `beitrag`, `is_bezahlt`) VALUES (732, 97, 97, 25, 1);
+INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `exemplar_id`, `beitrag`, `is_bezahlt`) VALUES (743, 82, 82, 76, 1);
+INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `exemplar_id`, `beitrag`, `is_bezahlt`) VALUES (746, 91, 91, 100, 1);
+INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `exemplar_id`, `beitrag`, `is_bezahlt`) VALUES (758, 46, 46, 150, 1);
+INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `exemplar_id`, `beitrag`, `is_bezahlt`) VALUES (774, 90, 90, 101, 0);
+INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `exemplar_id`, `beitrag`, `is_bezahlt`) VALUES (775, 92, 92, 74, 0);
+INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `exemplar_id`, `beitrag`, `is_bezahlt`) VALUES (781, 98, 98, 44, 0);
+INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `exemplar_id`, `beitrag`, `is_bezahlt`) VALUES (785, 76, 76, 130, 1);
+INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `exemplar_id`, `beitrag`, `is_bezahlt`) VALUES (788, 26, 26, 97, 1);
+INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `exemplar_id`, `beitrag`, `is_bezahlt`) VALUES (791, 55, 55, 71, 1);
+
+select * from gebuhren;
+
+#
+# TABLE STRUCTURE FOR: Kunde
+#
+
+DROP TABLE IF EXISTS `Kunde`;
+
+CREATE TABLE `Kunde` (
+  `kunde_id` int(10) unsigned NOT NULL,
+  `sorte` enum('student','Senior','Normal') COLLATE utf8mb4_unicode_ci NOT NULL,
+  KEY `kunde_id` (`kunde_id`),
+  CONSTRAINT `Kunde_ibfk_1` FOREIGN KEY (`kunde_id`) REFERENCES `Mensch` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+INSERT INTO `Kunde` (`kunde_id`, `sorte`) VALUES (1, 'Normal');
+INSERT INTO `Kunde` (`kunde_id`, `sorte`) VALUES (2, 'Normal');
+INSERT INTO `Kunde` (`kunde_id`, `sorte`) VALUES (3, 'student');
+INSERT INTO `Kunde` (`kunde_id`, `sorte`) VALUES (4, 'Normal');
+INSERT INTO `Kunde` (`kunde_id`, `sorte`) VALUES (5, 'Normal');
+INSERT INTO `Kunde` (`kunde_id`, `sorte`) VALUES (6, 'student');
+INSERT INTO `Kunde` (`kunde_id`, `sorte`) VALUES (7, 'Senior');
+INSERT INTO `Kunde` (`kunde_id`, `sorte`) VALUES (8, 'student');
+INSERT INTO `Kunde` (`kunde_id`, `sorte`) VALUES (9, 'Senior');
+INSERT INTO `Kunde` (`kunde_id`, `sorte`) VALUES (10, 'Senior');
+INSERT INTO `Kunde` (`kunde_id`, `sorte`) VALUES (11, 'Normal');
+INSERT INTO `Kunde` (`kunde_id`, `sorte`) VALUES (12, 'student');
+INSERT INTO `Kunde` (`kunde_id`, `sorte`) VALUES (13, 'student');
+INSERT INTO `Kunde` (`kunde_id`, `sorte`) VALUES (14, 'Normal');
+INSERT INTO `Kunde` (`kunde_id`, `sorte`) VALUES (15, 'Senior');
+INSERT INTO `Kunde` (`kunde_id`, `sorte`) VALUES (16, 'Senior');
+INSERT INTO `Kunde` (`kunde_id`, `sorte`) VALUES (17, 'student');
+INSERT INTO `Kunde` (`kunde_id`, `sorte`) VALUES (18, 'student');
+INSERT INTO `Kunde` (`kunde_id`, `sorte`) VALUES (19, 'Senior');
+INSERT INTO `Kunde` (`kunde_id`, `sorte`) VALUES (20, 'Normal');
+INSERT INTO `Kunde` (`kunde_id`, `sorte`) VALUES (21, 'Normal');
+INSERT INTO `Kunde` (`kunde_id`, `sorte`) VALUES (22, 'Normal');
+INSERT INTO `Kunde` (`kunde_id`, `sorte`) VALUES (23, 'student');
+INSERT INTO `Kunde` (`kunde_id`, `sorte`) VALUES (24, 'Normal');
+INSERT INTO `Kunde` (`kunde_id`, `sorte`) VALUES (25, 'Normal');
+INSERT INTO `Kunde` (`kunde_id`, `sorte`) VALUES (26, 'Senior');
+INSERT INTO `Kunde` (`kunde_id`, `sorte`) VALUES (27, 'Senior');
+INSERT INTO `Kunde` (`kunde_id`, `sorte`) VALUES (28, 'student');
+INSERT INTO `Kunde` (`kunde_id`, `sorte`) VALUES (29, 'Normal');
+INSERT INTO `Kunde` (`kunde_id`, `sorte`) VALUES (30, 'Normal');
+INSERT INTO `Kunde` (`kunde_id`, `sorte`) VALUES (31, 'Normal');
+INSERT INTO `Kunde` (`kunde_id`, `sorte`) VALUES (32, 'Senior');
+INSERT INTO `Kunde` (`kunde_id`, `sorte`) VALUES (33, 'student');
+INSERT INTO `Kunde` (`kunde_id`, `sorte`) VALUES (34, 'Senior');
+INSERT INTO `Kunde` (`kunde_id`, `sorte`) VALUES (35, 'student');
+INSERT INTO `Kunde` (`kunde_id`, `sorte`) VALUES (36, 'student');
+INSERT INTO `Kunde` (`kunde_id`, `sorte`) VALUES (37, 'student');
+INSERT INTO `Kunde` (`kunde_id`, `sorte`) VALUES (38, 'Normal');
+INSERT INTO `Kunde` (`kunde_id`, `sorte`) VALUES (39, 'Senior');
+INSERT INTO `Kunde` (`kunde_id`, `sorte`) VALUES (40, 'Senior');
+INSERT INTO `Kunde` (`kunde_id`, `sorte`) VALUES (41, 'student');
+INSERT INTO `Kunde` (`kunde_id`, `sorte`) VALUES (42, 'Normal');
+INSERT INTO `Kunde` (`kunde_id`, `sorte`) VALUES (43, 'student');
+INSERT INTO `Kunde` (`kunde_id`, `sorte`) VALUES (44, 'Normal');
+INSERT INTO `Kunde` (`kunde_id`, `sorte`) VALUES (45, 'student');
+INSERT INTO `Kunde` (`kunde_id`, `sorte`) VALUES (46, 'Normal');
+INSERT INTO `Kunde` (`kunde_id`, `sorte`) VALUES (47, 'student');
+INSERT INTO `Kunde` (`kunde_id`, `sorte`) VALUES (48, 'Senior');
+INSERT INTO `Kunde` (`kunde_id`, `sorte`) VALUES (49, 'Senior');
+INSERT INTO `Kunde` (`kunde_id`, `sorte`) VALUES (50, 'student');
+INSERT INTO `Kunde` (`kunde_id`, `sorte`) VALUES (51, 'student');
+INSERT INTO `Kunde` (`kunde_id`, `sorte`) VALUES (52, 'student');
+INSERT INTO `Kunde` (`kunde_id`, `sorte`) VALUES (53, 'Normal');
+INSERT INTO `Kunde` (`kunde_id`, `sorte`) VALUES (54, 'student');
+INSERT INTO `Kunde` (`kunde_id`, `sorte`) VALUES (55, 'student');
+INSERT INTO `Kunde` (`kunde_id`, `sorte`) VALUES (56, 'student');
+INSERT INTO `Kunde` (`kunde_id`, `sorte`) VALUES (57, 'student');
+INSERT INTO `Kunde` (`kunde_id`, `sorte`) VALUES (58, 'Normal');
+INSERT INTO `Kunde` (`kunde_id`, `sorte`) VALUES (59, 'Senior');
+INSERT INTO `Kunde` (`kunde_id`, `sorte`) VALUES (60, 'student');
+INSERT INTO `Kunde` (`kunde_id`, `sorte`) VALUES (61, 'student');
+INSERT INTO `Kunde` (`kunde_id`, `sorte`) VALUES (62, 'Normal');
+INSERT INTO `Kunde` (`kunde_id`, `sorte`) VALUES (63, 'Senior');
+INSERT INTO `Kunde` (`kunde_id`, `sorte`) VALUES (64, 'student');
+INSERT INTO `Kunde` (`kunde_id`, `sorte`) VALUES (65, 'Normal');
+INSERT INTO `Kunde` (`kunde_id`, `sorte`) VALUES (66, 'Normal');
+INSERT INTO `Kunde` (`kunde_id`, `sorte`) VALUES (67, 'student');
+INSERT INTO `Kunde` (`kunde_id`, `sorte`) VALUES (68, 'student');
+INSERT INTO `Kunde` (`kunde_id`, `sorte`) VALUES (69, 'Normal');
+INSERT INTO `Kunde` (`kunde_id`, `sorte`) VALUES (70, 'Senior');
+INSERT INTO `Kunde` (`kunde_id`, `sorte`) VALUES (71, 'Normal');
+INSERT INTO `Kunde` (`kunde_id`, `sorte`) VALUES (72, 'Normal');
+INSERT INTO `Kunde` (`kunde_id`, `sorte`) VALUES (73, 'student');
+INSERT INTO `Kunde` (`kunde_id`, `sorte`) VALUES (74, 'Senior');
+INSERT INTO `Kunde` (`kunde_id`, `sorte`) VALUES (75, 'student');
+INSERT INTO `Kunde` (`kunde_id`, `sorte`) VALUES (76, 'student');
+INSERT INTO `Kunde` (`kunde_id`, `sorte`) VALUES (77, 'student');
+INSERT INTO `Kunde` (`kunde_id`, `sorte`) VALUES (78, 'student');
+INSERT INTO `Kunde` (`kunde_id`, `sorte`) VALUES (79, 'Normal');
+INSERT INTO `Kunde` (`kunde_id`, `sorte`) VALUES (80, 'Normal');
+INSERT INTO `Kunde` (`kunde_id`, `sorte`) VALUES (81, 'Senior');
+INSERT INTO `Kunde` (`kunde_id`, `sorte`) VALUES (82, 'Senior');
+INSERT INTO `Kunde` (`kunde_id`, `sorte`) VALUES (83, 'Normal');
+INSERT INTO `Kunde` (`kunde_id`, `sorte`) VALUES (84, 'Senior');
+INSERT INTO `Kunde` (`kunde_id`, `sorte`) VALUES (85, 'student');
+INSERT INTO `Kunde` (`kunde_id`, `sorte`) VALUES (86, 'Normal');
+INSERT INTO `Kunde` (`kunde_id`, `sorte`) VALUES (87, 'student');
+INSERT INTO `Kunde` (`kunde_id`, `sorte`) VALUES (88, 'Senior');
+INSERT INTO `Kunde` (`kunde_id`, `sorte`) VALUES (89, 'Senior');
+INSERT INTO `Kunde` (`kunde_id`, `sorte`) VALUES (90, 'Senior');
+INSERT INTO `Kunde` (`kunde_id`, `sorte`) VALUES (91, 'Normal');
+INSERT INTO `Kunde` (`kunde_id`, `sorte`) VALUES (92, 'Senior');
+INSERT INTO `Kunde` (`kunde_id`, `sorte`) VALUES (93, 'Senior');
+INSERT INTO `Kunde` (`kunde_id`, `sorte`) VALUES (94, 'student');
+INSERT INTO `Kunde` (`kunde_id`, `sorte`) VALUES (95, 'Senior');
+INSERT INTO `Kunde` (`kunde_id`, `sorte`) VALUES (96, 'Normal');
+INSERT INTO `Kunde` (`kunde_id`, `sorte`) VALUES (97, 'Senior');
+INSERT INTO `Kunde` (`kunde_id`, `sorte`) VALUES (98, 'Normal');
+INSERT INTO `Kunde` (`kunde_id`, `sorte`) VALUES (99, 'student');
+INSERT INTO `Kunde` (`kunde_id`, `sorte`) VALUES (100, 'Senior');
 
 
-INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `buch_id`, `exmpler_id`, `beitrag`, `is_bezahlt`) VALUES (666, 2, 1, 2, 147, 1);
-INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `buch_id`, `exmpler_id`, `beitrag`, `is_bezahlt`) VALUES (1, 70, 7142182, 70, 168, 0);
-INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `buch_id`, `exmpler_id`, `beitrag`, `is_bezahlt`) VALUES (3, 12, 34, 12, 50, 0);
-INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `buch_id`, `exmpler_id`, `beitrag`, `is_bezahlt`) VALUES (4, 36, 4799, 36, 12, 1);
-INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `buch_id`, `exmpler_id`, `beitrag`, `is_bezahlt`) VALUES (5, 8, 8, 8, 88, 0);
-INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `buch_id`, `exmpler_id`, `beitrag`, `is_bezahlt`) VALUES (6, 46, 21160, 46, 16, 1);
-INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `buch_id`, `exmpler_id`, `beitrag`, `is_bezahlt`) VALUES (8, 86, 78750398, 86, 59, 1);
-INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `buch_id`, `exmpler_id`, `beitrag`, `is_bezahlt`) VALUES (9, 35, 4435, 35, 134, 0);
-INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `buch_id`, `exmpler_id`, `beitrag`, `is_bezahlt`) VALUES (12, 28, 2320, 28, 66, 0);
-INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `buch_id`, `exmpler_id`, `beitrag`, `is_bezahlt`) VALUES (16, 59, 413858, 59, 13, 1);
-INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `buch_id`, `exmpler_id`, `beitrag`, `is_bezahlt`) VALUES (40, 14, 49, 14, 85, 0);
-INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `buch_id`, `exmpler_id`, `beitrag`, `is_bezahlt`) VALUES (41, 25, 896, 25, 172, 0);
-INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `buch_id`, `exmpler_id`, `beitrag`, `is_bezahlt`) VALUES (62, 5, 4, 5, 99, 1);
-INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `buch_id`, `exmpler_id`, `beitrag`, `is_bezahlt`) VALUES (86, 97, 855843305, 97, 54, 0);
-INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `buch_id`, `exmpler_id`, `beitrag`, `is_bezahlt`) VALUES (89, 41, 8587, 41, 58, 0);
-INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `buch_id`, `exmpler_id`, `beitrag`, `is_bezahlt`) VALUES (90, 48, 56762, 48, 114, 1);
-INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `buch_id`, `exmpler_id`, `beitrag`, `is_bezahlt`) VALUES (245, 75, 9000751, 75, 164, 0);
-INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `buch_id`, `exmpler_id`, `beitrag`, `is_bezahlt`) VALUES (315, 55, 267638, 55, 40, 0);
-INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `buch_id`, `exmpler_id`, `beitrag`, `is_bezahlt`) VALUES (355, 44, 9960, 44, 129, 1);
-INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `buch_id`, `exmpler_id`, `beitrag`, `is_bezahlt`) VALUES (366, 94, 709578845, 94, 184, 1);
-INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `buch_id`, `exmpler_id`, `beitrag`, `is_bezahlt`) VALUES (457, 57, 361271, 57, 62, 0);
-INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `buch_id`, `exmpler_id`, `beitrag`, `is_bezahlt`) VALUES (517, 85, 76678247, 85, 154, 1);
-INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `buch_id`, `exmpler_id`, `beitrag`, `is_bezahlt`) VALUES (550, 30, 3805, 30, 157, 0);
-INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `buch_id`, `exmpler_id`, `beitrag`, `is_bezahlt`) VALUES (617, 66, 1057064, 66, 80, 0);
-INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `buch_id`, `exmpler_id`, `beitrag`, `is_bezahlt`) VALUES (626, 38, 5517, 38, 16, 1);
-INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `buch_id`, `exmpler_id`, `beitrag`, `is_bezahlt`) VALUES (627, 17, 86, 17, 36, 1);
-INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `buch_id`, `exmpler_id`, `beitrag`, `is_bezahlt`) VALUES (702, 50, 78161, 50, 44, 1);
-INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `buch_id`, `exmpler_id`, `beitrag`, `is_bezahlt`) VALUES (812, 95, 776707412, 95, 23, 1);
-INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `buch_id`, `exmpler_id`, `beitrag`, `is_bezahlt`) VALUES (828, 47, 33705, 47, 64, 1);
-INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `buch_id`, `exmpler_id`, `beitrag`, `is_bezahlt`) VALUES (836, 51, 90617, 51, 193, 0);
-INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `buch_id`, `exmpler_id`, `beitrag`, `is_bezahlt`) VALUES (881, 49, 58283, 49, 44, 0);
-INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `buch_id`, `exmpler_id`, `beitrag`, `is_bezahlt`) VALUES (1815, 61, 645698, 61, 35, 1);
-INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `buch_id`, `exmpler_id`, `beitrag`, `is_bezahlt`) VALUES (2641, 13, 36, 13, 35, 1);
-INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `buch_id`, `exmpler_id`, `beitrag`, `is_bezahlt`) VALUES (4098, 78, 42763127, 78, 8, 1);
-INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `buch_id`, `exmpler_id`, `beitrag`, `is_bezahlt`) VALUES (4568, 73, 8027727, 73, 180, 1);
-INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `buch_id`, `exmpler_id`, `beitrag`, `is_bezahlt`) VALUES (5478, 54, 101923, 54, 104, 1);
-INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `buch_id`, `exmpler_id`, `beitrag`, `is_bezahlt`) VALUES (6092, 16, 65, 16, 13, 1);
-INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `buch_id`, `exmpler_id`, `beitrag`, `is_bezahlt`) VALUES (6122, 1, 0, 1, 28, 0);
-INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `buch_id`, `exmpler_id`, `beitrag`, `is_bezahlt`) VALUES (6502, 52, 97116, 52, 171, 0);
-INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `buch_id`, `exmpler_id`, `beitrag`, `is_bezahlt`) VALUES (6761, 20, 319, 20, 194, 0);
-INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `buch_id`, `exmpler_id`, `beitrag`, `is_bezahlt`) VALUES (7008, 22, 450, 22, 109, 1);
-INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `buch_id`, `exmpler_id`, `beitrag`, `is_bezahlt`) VALUES (8682, 56, 286714, 56, 30, 0);
-INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `buch_id`, `exmpler_id`, `beitrag`, `is_bezahlt`) VALUES (9622, 60, 622825, 60, 124, 1);
-INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `buch_id`, `exmpler_id`, `beitrag`, `is_bezahlt`) VALUES (9788, 84, 72480251, 84, 6, 0);
-INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `buch_id`, `exmpler_id`, `beitrag`, `is_bezahlt`) VALUES (12672, 74, 8896473, 74, 129, 0);
-INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `buch_id`, `exmpler_id`, `beitrag`, `is_bezahlt`) VALUES (19106, 96, 852369380, 96, 179, 1);
-INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `buch_id`, `exmpler_id`, `beitrag`, `is_bezahlt`) VALUES (21186, 6, 5, 6, 96, 1);
-INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `buch_id`, `exmpler_id`, `beitrag`, `is_bezahlt`) VALUES (21796, 89, 113389499, 89, 5, 0);
-INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `buch_id`, `exmpler_id`, `beitrag`, `is_bezahlt`) VALUES (25198, 72, 7651303, 72, 185, 1);
-INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `buch_id`, `exmpler_id`, `beitrag`, `is_bezahlt`) VALUES (26992, 65, 827225, 65, 102, 0);
-INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `buch_id`, `exmpler_id`, `beitrag`, `is_bezahlt`) VALUES (29191, 18, 126, 18, 200, 1);
-INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `buch_id`, `exmpler_id`, `beitrag`, `is_bezahlt`) VALUES (34861, 90, 374071784, 90, 7, 0);
-INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `buch_id`, `exmpler_id`, `beitrag`, `is_bezahlt`) VALUES (54221, 81, 64438595, 81, 190, 1);
-INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `buch_id`, `exmpler_id`, `beitrag`, `is_bezahlt`) VALUES (62102, 98, 870852451, 98, 68, 0);
-INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `buch_id`, `exmpler_id`, `beitrag`, `is_bezahlt`) VALUES (63946, 33, 4198, 33, 150, 0);
-INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `buch_id`, `exmpler_id`, `beitrag`, `is_bezahlt`) VALUES (73366, 7, 6, 7, 22, 0);
-INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `buch_id`, `exmpler_id`, `beitrag`, `is_bezahlt`) VALUES (78212, 93, 618295225, 93, 118, 0);
-INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `buch_id`, `exmpler_id`, `beitrag`, `is_bezahlt`) VALUES (82643, 69, 6301383, 69, 40, 1);
-INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `buch_id`, `exmpler_id`, `beitrag`, `is_bezahlt`) VALUES (91255, 67, 3270223, 67, 163, 1);
-INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `buch_id`, `exmpler_id`, `beitrag`, `is_bezahlt`) VALUES (96029, 99, 967924437, 99, 107, 0);
-INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `buch_id`, `exmpler_id`, `beitrag`, `is_bezahlt`) VALUES (97494, 91, 478873780, 91, 102, 0);
-INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `buch_id`, `exmpler_id`, `beitrag`, `is_bezahlt`) VALUES (116844, 27, 1834, 27, 135, 0);
-INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `buch_id`, `exmpler_id`, `beitrag`, `is_bezahlt`) VALUES (153717, 71, 7331279, 71, 94, 0);
-INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `buch_id`, `exmpler_id`, `beitrag`, `is_bezahlt`) VALUES (222674, 64, 788840, 64, 83, 0);
-INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `buch_id`, `exmpler_id`, `beitrag`, `is_bezahlt`) VALUES (250712, 63, 706295, 63, 183, 0);
-INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `buch_id`, `exmpler_id`, `beitrag`, `is_bezahlt`) VALUES (295639, 62, 685716, 62, 3, 0);
-INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `buch_id`, `exmpler_id`, `beitrag`, `is_bezahlt`) VALUES (316360, 45, 13878, 45, 172, 0);
-INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `buch_id`, `exmpler_id`, `beitrag`, `is_bezahlt`) VALUES (350218, 9, 9, 9, 189, 1);
-INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `buch_id`, `exmpler_id`, `beitrag`, `is_bezahlt`) VALUES (479161, 24, 828, 24, 54, 0);
-INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `buch_id`, `exmpler_id`, `beitrag`, `is_bezahlt`) VALUES (643323, 4, 3, 4, 122, 1);
-INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `buch_id`, `exmpler_id`, `beitrag`, `is_bezahlt`) VALUES (741194, 68, 5623014, 68, 19, 0);
-INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `buch_id`, `exmpler_id`, `beitrag`, `is_bezahlt`) VALUES (782028, 92, 502498382, 92, 6, 0);
-INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `buch_id`, `exmpler_id`, `beitrag`, `is_bezahlt`) VALUES (861994, 37, 5449, 37, 48, 1);
-INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `buch_id`, `exmpler_id`, `beitrag`, `is_bezahlt`) VALUES (874674, 58, 362893, 58, 38, 1);
-INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `buch_id`, `exmpler_id`, `beitrag`, `is_bezahlt`) VALUES (896600, 34, 4261, 34, 195, 0);
-INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `buch_id`, `exmpler_id`, `beitrag`, `is_bezahlt`) VALUES (940644, 10, 15, 10, 159, 1);
-INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `buch_id`, `exmpler_id`, `beitrag`, `is_bezahlt`) VALUES (2950781, 43, 9432, 43, 69, 1);
-INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `buch_id`, `exmpler_id`, `beitrag`, `is_bezahlt`) VALUES (3508407, 77, 39674677, 77, 48, 1);
-INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `buch_id`, `exmpler_id`, `beitrag`, `is_bezahlt`) VALUES (3872327, 11, 16, 11, 81, 0);
-INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `buch_id`, `exmpler_id`, `beitrag`, `is_bezahlt`) VALUES (6641850, 23, 479, 23, 179, 0);
-INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `buch_id`, `exmpler_id`, `beitrag`, `is_bezahlt`) VALUES (9622041, 3, 2, 3, 19, 1);
-INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `buch_id`, `exmpler_id`, `beitrag`, `is_bezahlt`) VALUES (15887451, 87, 82564769, 87, 170, 0);
-INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `buch_id`, `exmpler_id`, `beitrag`, `is_bezahlt`) VALUES (29092521, 42, 9189, 42, 199, 0);
-INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `buch_id`, `exmpler_id`, `beitrag`, `is_bezahlt`) VALUES (32454304, 76, 24957181, 76, 185, 0);
-INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `buch_id`, `exmpler_id`, `beitrag`, `is_bezahlt`) VALUES (34881603, 26, 923, 26, 40, 0);
-INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `buch_id`, `exmpler_id`, `beitrag`, `is_bezahlt`) VALUES (37101311, 82, 69313777, 82, 33, 0);
-INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `buch_id`, `exmpler_id`, `beitrag`, `is_bezahlt`) VALUES (56979681, 83, 72443576, 83, 7, 1);
-INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `buch_id`, `exmpler_id`, `beitrag`, `is_bezahlt`) VALUES (73518430, 88, 93541332, 88, 52, 1);
-INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `buch_id`, `exmpler_id`, `beitrag`, `is_bezahlt`) VALUES (79922888, 100, 985327608, 100, 2, 1);
-INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `buch_id`, `exmpler_id`, `beitrag`, `is_bezahlt`) VALUES (85115950, 32, 3941, 32, 158, 0);
-INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `buch_id`, `exmpler_id`, `beitrag`, `is_bezahlt`) VALUES (110037716, 80, 48763647, 80, 77, 0);
-INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `buch_id`, `exmpler_id`, `beitrag`, `is_bezahlt`) VALUES (259361606, 15, 55, 15, 127, 1);
-INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `buch_id`, `exmpler_id`, `beitrag`, `is_bezahlt`) VALUES (388252176, 53, 97379, 53, 199, 0);
-INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `buch_id`, `exmpler_id`, `beitrag`, `is_bezahlt`) VALUES (434549859, 19, 179, 19, 110, 0);
-INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `buch_id`, `exmpler_id`, `beitrag`, `is_bezahlt`) VALUES (533629739, 29, 2852, 29, 182, 1);
-INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `buch_id`, `exmpler_id`, `beitrag`, `is_bezahlt`) VALUES (630675008, 40, 7695, 40, 91, 0);
-INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `buch_id`, `exmpler_id`, `beitrag`, `is_bezahlt`) VALUES (688078320, 31, 3854, 31, 15, 0);
-INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `buch_id`, `exmpler_id`, `beitrag`, `is_bezahlt`) VALUES (819593769, 79, 44359254, 79, 60, 0);
-INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `buch_id`, `exmpler_id`, `beitrag`, `is_bezahlt`) VALUES (882729156, 39, 6683, 39, 83, 1);
-INSERT INTO `Gebuhren` (`gebuhren_id`, `kunde_id`, `buch_id`, `exmpler_id`, `beitrag`, `is_bezahlt`) VALUES (928234515, 21, 320, 21, 28, 0);
+#
+# TABLE STRUCTURE FOR: Mensch
+#
+
+DROP TABLE IF EXISTS `Mensch`;
+
+CREATE TABLE `Mensch` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `vorname` varchar(60) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `nachname` varchar(60) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `email` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `phone` varchar(15) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `email` (`email`,`phone`)
+) ENGINE=InnoDB AUTO_INCREMENT=101 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+INSERT INTO `Mensch` (`id`, `vorname`, `nachname`, `email`, `phone`) VALUES (1, 'Newell', 'Swaniawski', 'lamar.fay@example.com', '(629)391-8335x7');
+INSERT INTO `Mensch` (`id`, `vorname`, `nachname`, `email`, `phone`) VALUES (2, 'Nathan', 'Gutkowski', 'ebba60@example.com', '301-832-7223x65');
+INSERT INTO `Mensch` (`id`, `vorname`, `nachname`, `email`, `phone`) VALUES (3, 'Harrison', 'Sawayn', 'elise50@example.org', '1-913-804-4998x');
+INSERT INTO `Mensch` (`id`, `vorname`, `nachname`, `email`, `phone`) VALUES (4, 'Kaylin', 'Thiel', 'nathaniel.herman@example.org', '816-589-9948');
+INSERT INTO `Mensch` (`id`, `vorname`, `nachname`, `email`, `phone`) VALUES (5, 'Oma', 'Bayer', 'sdare@example.com', '1-760-683-9430x');
+INSERT INTO `Mensch` (`id`, `vorname`, `nachname`, `email`, `phone`) VALUES (6, 'Jayde', 'Rippin', 'swift.leone@example.org', '374.000.2231x03');
+INSERT INTO `Mensch` (`id`, `vorname`, `nachname`, `email`, `phone`) VALUES (7, 'Alysson', 'Watsica', 'bkeeling@example.com', '+81(4)238698087');
+INSERT INTO `Mensch` (`id`, `vorname`, `nachname`, `email`, `phone`) VALUES (8, 'Clair', 'Ziemann', 'danielle17@example.com', '986.479.2404x90');
+INSERT INTO `Mensch` (`id`, `vorname`, `nachname`, `email`, `phone`) VALUES (9, 'Pearlie', 'Zboncak', 'melyna75@example.net', '562-473-4166x72');
+INSERT INTO `Mensch` (`id`, `vorname`, `nachname`, `email`, `phone`) VALUES (10, 'Renee', 'Spencer', 'nienow.larue@example.org', '+69(5)846059494');
+INSERT INTO `Mensch` (`id`, `vorname`, `nachname`, `email`, `phone`) VALUES (11, 'Cary', 'Heller', 'merl16@example.net', '315.796.3750');
+INSERT INTO `Mensch` (`id`, `vorname`, `nachname`, `email`, `phone`) VALUES (12, 'Norbert', 'Beatty', 'angelica.connelly@example.com', '(854)181-6315x7');
+INSERT INTO `Mensch` (`id`, `vorname`, `nachname`, `email`, `phone`) VALUES (13, 'Joshuah', 'Hilll', 'wintheiser.heather@example.net', '1-597-527-8662x');
+INSERT INTO `Mensch` (`id`, `vorname`, `nachname`, `email`, `phone`) VALUES (14, 'Jaycee', 'Rice', 'dulce15@example.com', '506-919-6533x43');
+INSERT INTO `Mensch` (`id`, `vorname`, `nachname`, `email`, `phone`) VALUES (15, 'Joshuah', 'Harris', 'elisabeth34@example.org', '(240)405-7000');
+INSERT INTO `Mensch` (`id`, `vorname`, `nachname`, `email`, `phone`) VALUES (16, 'Ulises', 'Goyette', 'goyette.denis@example.com', '745-014-2568');
+INSERT INTO `Mensch` (`id`, `vorname`, `nachname`, `email`, `phone`) VALUES (17, 'Noah', 'Skiles', 'beth.heathcote@example.org', '1-664-773-4930x');
+INSERT INTO `Mensch` (`id`, `vorname`, `nachname`, `email`, `phone`) VALUES (18, 'Rhoda', 'Fahey', 'williamson.mateo@example.com', '01056665807');
+INSERT INTO `Mensch` (`id`, `vorname`, `nachname`, `email`, `phone`) VALUES (19, 'Andrew', 'Bahringer', 'anibal68@example.com', '+57(8)332034927');
+INSERT INTO `Mensch` (`id`, `vorname`, `nachname`, `email`, `phone`) VALUES (20, 'Benjamin', 'Feil', 'jaydon40@example.org', '525.407.8049x20');
+INSERT INTO `Mensch` (`id`, `vorname`, `nachname`, `email`, `phone`) VALUES (21, 'Chelsea', 'Purdy', 'jesus42@example.com', '1-362-207-7998x');
+INSERT INTO `Mensch` (`id`, `vorname`, `nachname`, `email`, `phone`) VALUES (22, 'Perry', 'Reynolds', 'ytowne@example.com', '735-390-4723x14');
+INSERT INTO `Mensch` (`id`, `vorname`, `nachname`, `email`, `phone`) VALUES (23, 'Omari', 'Marvin', 'nitzsche.bethany@example.net', '08195919407');
+INSERT INTO `Mensch` (`id`, `vorname`, `nachname`, `email`, `phone`) VALUES (24, 'Carlie', 'Lindgren', 'jbogan@example.net', '865-464-5272');
+INSERT INTO `Mensch` (`id`, `vorname`, `nachname`, `email`, `phone`) VALUES (25, 'Dillon', 'Wolff', 'kirk.spencer@example.org', '509.129.8370');
+INSERT INTO `Mensch` (`id`, `vorname`, `nachname`, `email`, `phone`) VALUES (26, 'Tracy', 'Prosacco', 'schuyler.kuphal@example.net', '1-803-234-3534x');
+INSERT INTO `Mensch` (`id`, `vorname`, `nachname`, `email`, `phone`) VALUES (27, 'Keshawn', 'Runte', 'qrenner@example.org', '(227)414-8667x6');
+INSERT INTO `Mensch` (`id`, `vorname`, `nachname`, `email`, `phone`) VALUES (28, 'Damian', 'Anderson', 'citlalli.bayer@example.com', '801-584-2645');
+INSERT INTO `Mensch` (`id`, `vorname`, `nachname`, `email`, `phone`) VALUES (29, 'Regan', 'Carter', 'phickle@example.org', '+45(4)326170499');
+INSERT INTO `Mensch` (`id`, `vorname`, `nachname`, `email`, `phone`) VALUES (30, 'Collin', 'Wisozk', 'mwolff@example.org', '06965956811');
+INSERT INTO `Mensch` (`id`, `vorname`, `nachname`, `email`, `phone`) VALUES (31, 'Noelia', 'Collier', 'andreanne94@example.net', '474-117-4164x09');
+INSERT INTO `Mensch` (`id`, `vorname`, `nachname`, `email`, `phone`) VALUES (32, 'Willie', 'Kshlerin', 'lgutmann@example.net', '998-245-6302x96');
+INSERT INTO `Mensch` (`id`, `vorname`, `nachname`, `email`, `phone`) VALUES (33, 'Olaf', 'Renner', 'mshanahan@example.com', '(982)114-9118x5');
+INSERT INTO `Mensch` (`id`, `vorname`, `nachname`, `email`, `phone`) VALUES (34, 'Bernita', 'Nader', 'abins@example.com', '700-939-3769');
+INSERT INTO `Mensch` (`id`, `vorname`, `nachname`, `email`, `phone`) VALUES (35, 'Willow', 'Barton', 'nauer@example.net', '678.402.3157');
+INSERT INTO `Mensch` (`id`, `vorname`, `nachname`, `email`, `phone`) VALUES (36, 'Cedrick', 'Powlowski', 'brandy.kuphal@example.org', '(025)181-1523x5');
+INSERT INTO `Mensch` (`id`, `vorname`, `nachname`, `email`, `phone`) VALUES (37, 'Fritz', 'West', 'tate.corwin@example.org', '787-913-4674');
+INSERT INTO `Mensch` (`id`, `vorname`, `nachname`, `email`, `phone`) VALUES (38, 'Stacey', 'Fay', 'msmith@example.org', '(247)318-1605x8');
+INSERT INTO `Mensch` (`id`, `vorname`, `nachname`, `email`, `phone`) VALUES (39, 'Laurence', 'Hessel', 'maribel41@example.org', '(247)917-7078x7');
+INSERT INTO `Mensch` (`id`, `vorname`, `nachname`, `email`, `phone`) VALUES (40, 'Selena', 'Abbott', 'name.braun@example.org', '1-980-697-0898x');
+INSERT INTO `Mensch` (`id`, `vorname`, `nachname`, `email`, `phone`) VALUES (41, 'Delilah', 'Cole', 'volkman.cleveland@example.net', '(270)182-6154x2');
+INSERT INTO `Mensch` (`id`, `vorname`, `nachname`, `email`, `phone`) VALUES (42, 'Herman', 'Kovacek', 'vandervort.melyssa@example.net', '(094)856-6216x8');
+INSERT INTO `Mensch` (`id`, `vorname`, `nachname`, `email`, `phone`) VALUES (43, 'Malika', 'Cole', 'wframi@example.org', '1-647-113-7201x');
+INSERT INTO `Mensch` (`id`, `vorname`, `nachname`, `email`, `phone`) VALUES (44, 'Johnnie', 'Waters', 'edward.white@example.net', '+43(6)953801745');
+INSERT INTO `Mensch` (`id`, `vorname`, `nachname`, `email`, `phone`) VALUES (45, 'Nathanial', 'Legros', 'newton31@example.org', '281-741-3239x80');
+INSERT INTO `Mensch` (`id`, `vorname`, `nachname`, `email`, `phone`) VALUES (46, 'Sidney', 'Lebsack', 'cali91@example.net', '00094934699');
+INSERT INTO `Mensch` (`id`, `vorname`, `nachname`, `email`, `phone`) VALUES (47, 'Shayne', 'Koelpin', 'phoebe.towne@example.org', '123.379.0619x92');
+INSERT INTO `Mensch` (`id`, `vorname`, `nachname`, `email`, `phone`) VALUES (48, 'Natalie', 'West', 'mchamplin@example.net', '1-983-469-2066x');
+INSERT INTO `Mensch` (`id`, `vorname`, `nachname`, `email`, `phone`) VALUES (49, 'Viva', 'Botsford', 'golda.bernhard@example.net', '(849)574-3427');
+INSERT INTO `Mensch` (`id`, `vorname`, `nachname`, `email`, `phone`) VALUES (50, 'Sandra', 'Rosenbaum', 'hrenner@example.org', '(783)178-8965x2');
+INSERT INTO `Mensch` (`id`, `vorname`, `nachname`, `email`, `phone`) VALUES (51, 'Francesco', 'Schaefer', 'junius.doyle@example.net', '820.474.3268x02');
+INSERT INTO `Mensch` (`id`, `vorname`, `nachname`, `email`, `phone`) VALUES (52, 'Solon', 'Littel', 'colten58@example.com', '+98(3)382194718');
+INSERT INTO `Mensch` (`id`, `vorname`, `nachname`, `email`, `phone`) VALUES (53, 'Monique', 'Lueilwitz', 'jewel.hansen@example.net', '08817624334');
+INSERT INTO `Mensch` (`id`, `vorname`, `nachname`, `email`, `phone`) VALUES (54, 'Mose', 'Dietrich', 'bernier.daija@example.com', '(175)518-6102');
+INSERT INTO `Mensch` (`id`, `vorname`, `nachname`, `email`, `phone`) VALUES (55, 'Newell', 'Pollich', 'marcus.deckow@example.net', '836-706-1257x01');
+INSERT INTO `Mensch` (`id`, `vorname`, `nachname`, `email`, `phone`) VALUES (56, 'Beryl', 'Shanahan', 'lkoepp@example.org', '05904688685');
+INSERT INTO `Mensch` (`id`, `vorname`, `nachname`, `email`, `phone`) VALUES (57, 'Loren', 'Kiehn', 'delfina99@example.org', '(037)863-5586x6');
+INSERT INTO `Mensch` (`id`, `vorname`, `nachname`, `email`, `phone`) VALUES (58, 'Brown', 'Pfannerstill', 'goodwin.gustave@example.com', '(638)372-8934x0');
+INSERT INTO `Mensch` (`id`, `vorname`, `nachname`, `email`, `phone`) VALUES (59, 'Wilson', 'Strosin', 'ruecker.zack@example.com', '177-012-3066x75');
+INSERT INTO `Mensch` (`id`, `vorname`, `nachname`, `email`, `phone`) VALUES (60, 'Georgiana', 'Bruen', 'conroy.vella@example.net', '1-320-030-2224x');
+INSERT INTO `Mensch` (`id`, `vorname`, `nachname`, `email`, `phone`) VALUES (61, 'Mathilde', 'Goyette', 'gertrude79@example.net', '+03(2)557574027');
+INSERT INTO `Mensch` (`id`, `vorname`, `nachname`, `email`, `phone`) VALUES (62, 'Eloisa', 'Will', 'newell95@example.net', '502.637.5785');
+INSERT INTO `Mensch` (`id`, `vorname`, `nachname`, `email`, `phone`) VALUES (63, 'Fermin', 'Beatty', 'geovanny.herzog@example.org', '+48(3)839496969');
+INSERT INTO `Mensch` (`id`, `vorname`, `nachname`, `email`, `phone`) VALUES (64, 'Lonie', 'Keeling', 'aebert@example.com', '(345)964-7799');
+INSERT INTO `Mensch` (`id`, `vorname`, `nachname`, `email`, `phone`) VALUES (65, 'Garett', 'O\'Connell', 'jesse53@example.net', '567.824.0083x28');
+INSERT INTO `Mensch` (`id`, `vorname`, `nachname`, `email`, `phone`) VALUES (66, 'Kathlyn', 'Fadel', 'roy03@example.net', '1-515-443-7124');
+INSERT INTO `Mensch` (`id`, `vorname`, `nachname`, `email`, `phone`) VALUES (67, 'Demarcus', 'Erdman', 'vita28@example.org', '295.929.8614x19');
+INSERT INTO `Mensch` (`id`, `vorname`, `nachname`, `email`, `phone`) VALUES (68, 'Jacinto', 'O\'Keefe', 'christian13@example.org', '1-889-423-4082x');
+INSERT INTO `Mensch` (`id`, `vorname`, `nachname`, `email`, `phone`) VALUES (69, 'Jalen', 'Balistreri', 'zieme.dejuan@example.org', '02476111792');
+INSERT INTO `Mensch` (`id`, `vorname`, `nachname`, `email`, `phone`) VALUES (70, 'Grace', 'Feest', 'rippin.elbert@example.org', '(851)677-4485');
+INSERT INTO `Mensch` (`id`, `vorname`, `nachname`, `email`, `phone`) VALUES (71, 'Hollie', 'Brakus', 'hilma82@example.org', '(593)161-8509');
+INSERT INTO `Mensch` (`id`, `vorname`, `nachname`, `email`, `phone`) VALUES (72, 'Lue', 'Kunde', 'blake.stamm@example.org', '1-549-501-2238x');
+INSERT INTO `Mensch` (`id`, `vorname`, `nachname`, `email`, `phone`) VALUES (73, 'Maegan', 'Keeling', 'ortiz.jon@example.org', '(141)137-6819');
+INSERT INTO `Mensch` (`id`, `vorname`, `nachname`, `email`, `phone`) VALUES (74, 'Anna', 'Lowe', 'hermiston.braxton@example.org', '(436)281-0095x2');
+INSERT INTO `Mensch` (`id`, `vorname`, `nachname`, `email`, `phone`) VALUES (75, 'Meggie', 'Goldner', 'greenfelder.alexandro@example.net', '743-943-5689');
+INSERT INTO `Mensch` (`id`, `vorname`, `nachname`, `email`, `phone`) VALUES (76, 'Marguerite', 'Kassulke', 'isobel66@example.com', '(455)916-0114');
+INSERT INTO `Mensch` (`id`, `vorname`, `nachname`, `email`, `phone`) VALUES (77, 'Addie', 'Towne', 'khahn@example.org', '1-546-065-7765');
+INSERT INTO `Mensch` (`id`, `vorname`, `nachname`, `email`, `phone`) VALUES (78, 'Keaton', 'Wisoky', 'major86@example.com', '09170474643');
+INSERT INTO `Mensch` (`id`, `vorname`, `nachname`, `email`, `phone`) VALUES (79, 'Loraine', 'Wyman', 'turcotte.ezequiel@example.org', '986-120-3462');
+INSERT INTO `Mensch` (`id`, `vorname`, `nachname`, `email`, `phone`) VALUES (80, 'Kelsi', 'Friesen', 'lamont.hickle@example.com', '747.220.2283');
+INSERT INTO `Mensch` (`id`, `vorname`, `nachname`, `email`, `phone`) VALUES (81, 'Anastasia', 'Stokes', 'madisen98@example.net', '+83(1)991467408');
+INSERT INTO `Mensch` (`id`, `vorname`, `nachname`, `email`, `phone`) VALUES (82, 'Randall', 'Hayes', 'wolf.urban@example.org', '787-431-8503');
+INSERT INTO `Mensch` (`id`, `vorname`, `nachname`, `email`, `phone`) VALUES (83, 'Elian', 'Cremin', 'edickinson@example.com', '456.132.9788');
+INSERT INTO `Mensch` (`id`, `vorname`, `nachname`, `email`, `phone`) VALUES (84, 'Giuseppe', 'Kuhlman', 'gilda.kutch@example.net', '285-981-3584x50');
+INSERT INTO `Mensch` (`id`, `vorname`, `nachname`, `email`, `phone`) VALUES (85, 'Crystal', 'Cronin', 'rterry@example.net', '07425783689');
+INSERT INTO `Mensch` (`id`, `vorname`, `nachname`, `email`, `phone`) VALUES (86, 'Vergie', 'Waelchi', 'holly30@example.net', '1-027-369-5323x');
+INSERT INTO `Mensch` (`id`, `vorname`, `nachname`, `email`, `phone`) VALUES (87, 'Kayleigh', 'Kerluke', 'qtillman@example.org', '+31(2)914142940');
+INSERT INTO `Mensch` (`id`, `vorname`, `nachname`, `email`, `phone`) VALUES (88, 'Elaina', 'Hyatt', 'tara.blanda@example.org', '658-769-0663');
+INSERT INTO `Mensch` (`id`, `vorname`, `nachname`, `email`, `phone`) VALUES (89, 'Alexandre', 'Kuhn', 'aufderhar.pierce@example.org', '038-393-0535');
+INSERT INTO `Mensch` (`id`, `vorname`, `nachname`, `email`, `phone`) VALUES (90, 'Earnestine', 'Pouros', 'holly89@example.net', '(348)635-9724');
+INSERT INTO `Mensch` (`id`, `vorname`, `nachname`, `email`, `phone`) VALUES (91, 'Skye', 'Ferry', 'quinten.mitchell@example.com', '264.129.5206x47');
+INSERT INTO `Mensch` (`id`, `vorname`, `nachname`, `email`, `phone`) VALUES (92, 'Kaitlin', 'Hessel', 'kutch.sage@example.com', '999.968.7624');
+INSERT INTO `Mensch` (`id`, `vorname`, `nachname`, `email`, `phone`) VALUES (93, 'Trevion', 'Wolf', 'greenfelder.kianna@example.org', '1-521-574-8150x');
+INSERT INTO `Mensch` (`id`, `vorname`, `nachname`, `email`, `phone`) VALUES (94, 'Vergie', 'Thompson', 'pattie21@example.net', '(038)192-2937');
+INSERT INTO `Mensch` (`id`, `vorname`, `nachname`, `email`, `phone`) VALUES (95, 'Nina', 'Price', 'aglae.runolfsdottir@example.org', '(601)156-4920');
+INSERT INTO `Mensch` (`id`, `vorname`, `nachname`, `email`, `phone`) VALUES (96, 'Eleonore', 'Leuschke', 'belle06@example.com', '+70(8)749500209');
+INSERT INTO `Mensch` (`id`, `vorname`, `nachname`, `email`, `phone`) VALUES (97, 'Eloy', 'Jaskolski', 'abby34@example.com', '960.258.4704');
+INSERT INTO `Mensch` (`id`, `vorname`, `nachname`, `email`, `phone`) VALUES (98, 'Houston', 'Hodkiewicz', 'winnifred18@example.com', '772-901-9167x13');
+INSERT INTO `Mensch` (`id`, `vorname`, `nachname`, `email`, `phone`) VALUES (99, 'Birdie', 'Pfeffer', 'yleannon@example.com', '(193)888-7358x3');
+INSERT INTO `Mensch` (`id`, `vorname`, `nachname`, `email`, `phone`) VALUES (100, 'Noe', 'Shields', 'jorn@example.com', '993-185-6343x80');
+
+
+#
+# TABLE STRUCTURE FOR: Mensh_adresse
+#
+
+DROP TABLE IF EXISTS `Mensh_adresse`;
+
+CREATE TABLE `Mensh_adresse` (
+  `mensch_id` int(10) unsigned NOT NULL,
+  `Ad_Str` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `Ad_haus_nr` int(10) unsigned NOT NULL,
+  `Ad_Plz` int(10) unsigned NOT NULL,
+  `Ad_std` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+  KEY `mensch_id` (`mensch_id`),
+  CONSTRAINT `Mensh_adresse_ibfk_1` FOREIGN KEY (`mensch_id`) REFERENCES `Mensch` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+INSERT INTO `Mensh_adresse` (`mensch_id`, `Ad_Str`, `Ad_haus_nr`, `Ad_Plz`, `Ad_std`) VALUES (1, 'Christa Shore', 8, 12352, 'town');
+INSERT INTO `Mensh_adresse` (`mensch_id`, `Ad_Str`, `Ad_haus_nr`, `Ad_Plz`, `Ad_std`) VALUES (2, 'Laurine Well', 1, 27428, 'bury');
+INSERT INTO `Mensh_adresse` (`mensch_id`, `Ad_Str`, `Ad_haus_nr`, `Ad_Plz`, `Ad_std`) VALUES (3, 'Josh Drive', 8, 91191, 'port');
+INSERT INTO `Mensh_adresse` (`mensch_id`, `Ad_Str`, `Ad_haus_nr`, `Ad_Plz`, `Ad_std`) VALUES (4, 'Goodwin Forges', 0, 48133, 'mouth');
+INSERT INTO `Mensh_adresse` (`mensch_id`, `Ad_Str`, `Ad_haus_nr`, `Ad_Plz`, `Ad_std`) VALUES (5, 'Daija Passage', 8, 25812, 'mouth');
+INSERT INTO `Mensh_adresse` (`mensch_id`, `Ad_Str`, `Ad_haus_nr`, `Ad_Plz`, `Ad_std`) VALUES (6, 'Deangelo Ridges', 9, 25771, 'fort');
+INSERT INTO `Mensh_adresse` (`mensch_id`, `Ad_Str`, `Ad_haus_nr`, `Ad_Plz`, `Ad_std`) VALUES (7, 'Vivianne Stravenue', 7, 7058, 'chester');
+INSERT INTO `Mensh_adresse` (`mensch_id`, `Ad_Str`, `Ad_haus_nr`, `Ad_Plz`, `Ad_std`) VALUES (8, 'Wolff Crescent', 0, 24867, 'mouth');
+INSERT INTO `Mensh_adresse` (`mensch_id`, `Ad_Str`, `Ad_haus_nr`, `Ad_Plz`, `Ad_std`) VALUES (9, 'Leffler Trace', 3, 88559, 'side');
+INSERT INTO `Mensh_adresse` (`mensch_id`, `Ad_Str`, `Ad_haus_nr`, `Ad_Plz`, `Ad_std`) VALUES (10, 'Jaskolski Parkways', 5, 23310, 'shire');
+INSERT INTO `Mensh_adresse` (`mensch_id`, `Ad_Str`, `Ad_haus_nr`, `Ad_Plz`, `Ad_std`) VALUES (11, 'Linnie Mount', 4, 25764, 'land');
+INSERT INTO `Mensh_adresse` (`mensch_id`, `Ad_Str`, `Ad_haus_nr`, `Ad_Plz`, `Ad_std`) VALUES (12, 'Adams Valley', 8, 4721, 'mouth');
+INSERT INTO `Mensh_adresse` (`mensch_id`, `Ad_Str`, `Ad_haus_nr`, `Ad_Plz`, `Ad_std`) VALUES (13, 'Earl Freeway', 0, 81163, 'side');
+INSERT INTO `Mensh_adresse` (`mensch_id`, `Ad_Str`, `Ad_haus_nr`, `Ad_Plz`, `Ad_std`) VALUES (14, 'Zena Knolls', 3, 48085, 'port');
+INSERT INTO `Mensh_adresse` (`mensch_id`, `Ad_Str`, `Ad_haus_nr`, `Ad_Plz`, `Ad_std`) VALUES (15, 'Fritsch Common', 9, 68732, 'town');
+INSERT INTO `Mensh_adresse` (`mensch_id`, `Ad_Str`, `Ad_haus_nr`, `Ad_Plz`, `Ad_std`) VALUES (16, 'Savanna Trafficway', 2, 3897, 'view');
+INSERT INTO `Mensh_adresse` (`mensch_id`, `Ad_Str`, `Ad_haus_nr`, `Ad_Plz`, `Ad_std`) VALUES (17, 'Ullrich Fields', 4, 18302, 'mouth');
+INSERT INTO `Mensh_adresse` (`mensch_id`, `Ad_Str`, `Ad_haus_nr`, `Ad_Plz`, `Ad_std`) VALUES (18, 'Earlene Avenue', 4, 33652, 'ton');
+INSERT INTO `Mensh_adresse` (`mensch_id`, `Ad_Str`, `Ad_haus_nr`, `Ad_Plz`, `Ad_std`) VALUES (19, 'Dickinson Point', 3, 17898, 'stad');
+INSERT INTO `Mensh_adresse` (`mensch_id`, `Ad_Str`, `Ad_haus_nr`, `Ad_Plz`, `Ad_std`) VALUES (20, 'Lottie Burg', 0, 27227, 'haven');
+INSERT INTO `Mensh_adresse` (`mensch_id`, `Ad_Str`, `Ad_haus_nr`, `Ad_Plz`, `Ad_std`) VALUES (21, 'Ziemann Overpass', 6, 17282, 'view');
+INSERT INTO `Mensh_adresse` (`mensch_id`, `Ad_Str`, `Ad_haus_nr`, `Ad_Plz`, `Ad_std`) VALUES (22, 'Shea Circle', 1, 45322, 'land');
+INSERT INTO `Mensh_adresse` (`mensch_id`, `Ad_Str`, `Ad_haus_nr`, `Ad_Plz`, `Ad_std`) VALUES (23, 'Ullrich Flat', 8, 44674, 'chester');
+INSERT INTO `Mensh_adresse` (`mensch_id`, `Ad_Str`, `Ad_haus_nr`, `Ad_Plz`, `Ad_std`) VALUES (24, 'Pollich Ranch', 0, 5694, 'burgh');
+INSERT INTO `Mensh_adresse` (`mensch_id`, `Ad_Str`, `Ad_haus_nr`, `Ad_Plz`, `Ad_std`) VALUES (25, 'Deckow Turnpike', 0, 40739, 'ville');
+INSERT INTO `Mensh_adresse` (`mensch_id`, `Ad_Str`, `Ad_haus_nr`, `Ad_Plz`, `Ad_std`) VALUES (26, 'Weber Points', 4, 6836, 'side');
+INSERT INTO `Mensh_adresse` (`mensch_id`, `Ad_Str`, `Ad_haus_nr`, `Ad_Plz`, `Ad_std`) VALUES (27, 'Gladys Cliffs', 6, 39318, 'shire');
+INSERT INTO `Mensh_adresse` (`mensch_id`, `Ad_Str`, `Ad_haus_nr`, `Ad_Plz`, `Ad_std`) VALUES (28, 'Schaefer Knolls', 6, 80239, 'ville');
+INSERT INTO `Mensh_adresse` (`mensch_id`, `Ad_Str`, `Ad_haus_nr`, `Ad_Plz`, `Ad_std`) VALUES (29, 'Claudine Estates', 3, 20065, 'view');
+INSERT INTO `Mensh_adresse` (`mensch_id`, `Ad_Str`, `Ad_haus_nr`, `Ad_Plz`, `Ad_std`) VALUES (30, 'Corbin Land', 9, 76364, 'borough');
+INSERT INTO `Mensh_adresse` (`mensch_id`, `Ad_Str`, `Ad_haus_nr`, `Ad_Plz`, `Ad_std`) VALUES (31, 'Heller Rest', 0, 56528, 'shire');
+INSERT INTO `Mensh_adresse` (`mensch_id`, `Ad_Str`, `Ad_haus_nr`, `Ad_Plz`, `Ad_std`) VALUES (32, 'Muller Parkways', 2, 89641, 'port');
+INSERT INTO `Mensh_adresse` (`mensch_id`, `Ad_Str`, `Ad_haus_nr`, `Ad_Plz`, `Ad_std`) VALUES (33, 'Johns Rapids', 7, 17139, 'town');
+INSERT INTO `Mensh_adresse` (`mensch_id`, `Ad_Str`, `Ad_haus_nr`, `Ad_Plz`, `Ad_std`) VALUES (34, 'Schmidt Ranch', 7, 34947, 'land');
+INSERT INTO `Mensh_adresse` (`mensch_id`, `Ad_Str`, `Ad_haus_nr`, `Ad_Plz`, `Ad_std`) VALUES (35, 'Kitty Shoals', 3, 39258, 'haven');
+INSERT INTO `Mensh_adresse` (`mensch_id`, `Ad_Str`, `Ad_haus_nr`, `Ad_Plz`, `Ad_std`) VALUES (36, 'Cora Ferry', 0, 27172, 'view');
+INSERT INTO `Mensh_adresse` (`mensch_id`, `Ad_Str`, `Ad_haus_nr`, `Ad_Plz`, `Ad_std`) VALUES (37, 'Terry Village', 7, 71490, 'port');
+INSERT INTO `Mensh_adresse` (`mensch_id`, `Ad_Str`, `Ad_haus_nr`, `Ad_Plz`, `Ad_std`) VALUES (38, 'Blaze Estate', 4, 28730, 'view');
+INSERT INTO `Mensh_adresse` (`mensch_id`, `Ad_Str`, `Ad_haus_nr`, `Ad_Plz`, `Ad_std`) VALUES (39, 'Anya Mill', 5, 20831, 'borough');
+INSERT INTO `Mensh_adresse` (`mensch_id`, `Ad_Str`, `Ad_haus_nr`, `Ad_Plz`, `Ad_std`) VALUES (40, 'Janelle Corner', 9, 18117, 'port');
+INSERT INTO `Mensh_adresse` (`mensch_id`, `Ad_Str`, `Ad_haus_nr`, `Ad_Plz`, `Ad_std`) VALUES (41, 'Jacobson Lock', 1, 42371, 'mouth');
+INSERT INTO `Mensh_adresse` (`mensch_id`, `Ad_Str`, `Ad_haus_nr`, `Ad_Plz`, `Ad_std`) VALUES (42, 'Wuckert Mill', 3, 11234, 'view');
+INSERT INTO `Mensh_adresse` (`mensch_id`, `Ad_Str`, `Ad_haus_nr`, `Ad_Plz`, `Ad_std`) VALUES (43, 'Emiliano Freeway', 9, 58365, 'burgh');
+INSERT INTO `Mensh_adresse` (`mensch_id`, `Ad_Str`, `Ad_haus_nr`, `Ad_Plz`, `Ad_std`) VALUES (44, 'Gorczany Shores', 6, 16147, 'borough');
+INSERT INTO `Mensh_adresse` (`mensch_id`, `Ad_Str`, `Ad_haus_nr`, `Ad_Plz`, `Ad_std`) VALUES (45, 'Horacio Rapid', 3, 73680, 'view');
+INSERT INTO `Mensh_adresse` (`mensch_id`, `Ad_Str`, `Ad_haus_nr`, `Ad_Plz`, `Ad_std`) VALUES (46, 'Beahan Union', 5, 79959, 'berg');
+INSERT INTO `Mensh_adresse` (`mensch_id`, `Ad_Str`, `Ad_haus_nr`, `Ad_Plz`, `Ad_std`) VALUES (47, 'Gleichner Shore', 0, 98222, 'ton');
+INSERT INTO `Mensh_adresse` (`mensch_id`, `Ad_Str`, `Ad_haus_nr`, `Ad_Plz`, `Ad_std`) VALUES (48, 'Deckow Shore', 6, 61591, 'town');
+INSERT INTO `Mensh_adresse` (`mensch_id`, `Ad_Str`, `Ad_haus_nr`, `Ad_Plz`, `Ad_std`) VALUES (49, 'Tamara Trace', 4, 37961, 'mouth');
+INSERT INTO `Mensh_adresse` (`mensch_id`, `Ad_Str`, `Ad_haus_nr`, `Ad_Plz`, `Ad_std`) VALUES (50, 'Leuschke Plain', 7, 26838, 'stad');
+INSERT INTO `Mensh_adresse` (`mensch_id`, `Ad_Str`, `Ad_haus_nr`, `Ad_Plz`, `Ad_std`) VALUES (51, 'Evalyn Station', 9, 66423, 'mouth');
+INSERT INTO `Mensh_adresse` (`mensch_id`, `Ad_Str`, `Ad_haus_nr`, `Ad_Plz`, `Ad_std`) VALUES (52, 'Amelia Walk', 3, 89424, 'furt');
+INSERT INTO `Mensh_adresse` (`mensch_id`, `Ad_Str`, `Ad_haus_nr`, `Ad_Plz`, `Ad_std`) VALUES (53, 'Nayeli Junction', 2, 37459, 'fort');
+INSERT INTO `Mensh_adresse` (`mensch_id`, `Ad_Str`, `Ad_haus_nr`, `Ad_Plz`, `Ad_std`) VALUES (54, 'Boyle Vista', 4, 29882, 'stad');
+INSERT INTO `Mensh_adresse` (`mensch_id`, `Ad_Str`, `Ad_haus_nr`, `Ad_Plz`, `Ad_std`) VALUES (55, 'Hassie Ridges', 7, 72784, 'burgh');
+INSERT INTO `Mensh_adresse` (`mensch_id`, `Ad_Str`, `Ad_haus_nr`, `Ad_Plz`, `Ad_std`) VALUES (56, 'Thompson Inlet', 0, 79062, 'view');
+INSERT INTO `Mensh_adresse` (`mensch_id`, `Ad_Str`, `Ad_haus_nr`, `Ad_Plz`, `Ad_std`) VALUES (57, 'Hazle Dale', 8, 11187, 'chester');
+INSERT INTO `Mensh_adresse` (`mensch_id`, `Ad_Str`, `Ad_haus_nr`, `Ad_Plz`, `Ad_std`) VALUES (58, 'Beer Isle', 9, 66294, 'stad');
+INSERT INTO `Mensh_adresse` (`mensch_id`, `Ad_Str`, `Ad_haus_nr`, `Ad_Plz`, `Ad_std`) VALUES (59, 'Abbott Junctions', 6, 43493, 'side');
+INSERT INTO `Mensh_adresse` (`mensch_id`, `Ad_Str`, `Ad_haus_nr`, `Ad_Plz`, `Ad_std`) VALUES (60, 'Ondricka Valley', 1, 35104, 'berg');
+INSERT INTO `Mensh_adresse` (`mensch_id`, `Ad_Str`, `Ad_haus_nr`, `Ad_Plz`, `Ad_std`) VALUES (61, 'Gleichner Summit', 3, 50739, 'burgh');
+INSERT INTO `Mensh_adresse` (`mensch_id`, `Ad_Str`, `Ad_haus_nr`, `Ad_Plz`, `Ad_std`) VALUES (62, 'Osinski Greens', 7, 96219, 'fort');
+INSERT INTO `Mensh_adresse` (`mensch_id`, `Ad_Str`, `Ad_haus_nr`, `Ad_Plz`, `Ad_std`) VALUES (63, 'Christop Gardens', 8, 15450, 'bury');
+INSERT INTO `Mensh_adresse` (`mensch_id`, `Ad_Str`, `Ad_haus_nr`, `Ad_Plz`, `Ad_std`) VALUES (64, 'Maxwell Row', 7, 34668, 'ton');
+INSERT INTO `Mensh_adresse` (`mensch_id`, `Ad_Str`, `Ad_haus_nr`, `Ad_Plz`, `Ad_std`) VALUES (65, 'Kautzer Coves', 9, 45932, 'ton');
+INSERT INTO `Mensh_adresse` (`mensch_id`, `Ad_Str`, `Ad_haus_nr`, `Ad_Plz`, `Ad_std`) VALUES (66, 'Franecki Row', 1, 50741, 'view');
+INSERT INTO `Mensh_adresse` (`mensch_id`, `Ad_Str`, `Ad_haus_nr`, `Ad_Plz`, `Ad_std`) VALUES (67, 'Schmidt Parkway', 7, 41598, 'fort');
+INSERT INTO `Mensh_adresse` (`mensch_id`, `Ad_Str`, `Ad_haus_nr`, `Ad_Plz`, `Ad_std`) VALUES (68, 'Eichmann Vista', 6, 57991, 'borough');
+INSERT INTO `Mensh_adresse` (`mensch_id`, `Ad_Str`, `Ad_haus_nr`, `Ad_Plz`, `Ad_std`) VALUES (69, 'Liza Summit', 1, 92345, 'side');
+INSERT INTO `Mensh_adresse` (`mensch_id`, `Ad_Str`, `Ad_haus_nr`, `Ad_Plz`, `Ad_std`) VALUES (70, 'Lind Alley', 0, 64267, 'burgh');
+INSERT INTO `Mensh_adresse` (`mensch_id`, `Ad_Str`, `Ad_haus_nr`, `Ad_Plz`, `Ad_std`) VALUES (71, 'Chelsea Ports', 0, 13788, 'chester');
+INSERT INTO `Mensh_adresse` (`mensch_id`, `Ad_Str`, `Ad_haus_nr`, `Ad_Plz`, `Ad_std`) VALUES (72, 'Tomasa Spurs', 2, 65218, 'port');
+INSERT INTO `Mensh_adresse` (`mensch_id`, `Ad_Str`, `Ad_haus_nr`, `Ad_Plz`, `Ad_std`) VALUES (73, 'Kerluke Circle', 1, 51049, 'mouth');
+INSERT INTO `Mensh_adresse` (`mensch_id`, `Ad_Str`, `Ad_haus_nr`, `Ad_Plz`, `Ad_std`) VALUES (74, 'Koepp Fort', 8, 99522, 'chester');
+INSERT INTO `Mensh_adresse` (`mensch_id`, `Ad_Str`, `Ad_haus_nr`, `Ad_Plz`, `Ad_std`) VALUES (75, 'Wiegand Lock', 8, 57726, 'burgh');
+INSERT INTO `Mensh_adresse` (`mensch_id`, `Ad_Str`, `Ad_haus_nr`, `Ad_Plz`, `Ad_std`) VALUES (76, 'Thiel Ridge', 0, 18918, 'furt');
+INSERT INTO `Mensh_adresse` (`mensch_id`, `Ad_Str`, `Ad_haus_nr`, `Ad_Plz`, `Ad_std`) VALUES (77, 'Buster Junctions', 1, 9548, 'borough');
+INSERT INTO `Mensh_adresse` (`mensch_id`, `Ad_Str`, `Ad_haus_nr`, `Ad_Plz`, `Ad_std`) VALUES (78, 'Bechtelar Port', 4, 92837, 'view');
+INSERT INTO `Mensh_adresse` (`mensch_id`, `Ad_Str`, `Ad_haus_nr`, `Ad_Plz`, `Ad_std`) VALUES (79, 'Sporer Ridge', 1, 53348, 'chester');
+INSERT INTO `Mensh_adresse` (`mensch_id`, `Ad_Str`, `Ad_haus_nr`, `Ad_Plz`, `Ad_std`) VALUES (80, 'Runolfsson Port', 4, 56979, 'burgh');
+INSERT INTO `Mensh_adresse` (`mensch_id`, `Ad_Str`, `Ad_haus_nr`, `Ad_Plz`, `Ad_std`) VALUES (81, 'Jarod Grove', 6, 85302, 'mouth');
+INSERT INTO `Mensh_adresse` (`mensch_id`, `Ad_Str`, `Ad_haus_nr`, `Ad_Plz`, `Ad_std`) VALUES (82, 'Hayes Trafficway', 4, 37686, 'bury');
+INSERT INTO `Mensh_adresse` (`mensch_id`, `Ad_Str`, `Ad_haus_nr`, `Ad_Plz`, `Ad_std`) VALUES (83, 'Anderson Row', 5, 76760, 'furt');
+INSERT INTO `Mensh_adresse` (`mensch_id`, `Ad_Str`, `Ad_haus_nr`, `Ad_Plz`, `Ad_std`) VALUES (84, 'White Landing', 9, 2031, 'haven');
+INSERT INTO `Mensh_adresse` (`mensch_id`, `Ad_Str`, `Ad_haus_nr`, `Ad_Plz`, `Ad_std`) VALUES (85, 'Stark Crest', 2, 75099, 'port');
+INSERT INTO `Mensh_adresse` (`mensch_id`, `Ad_Str`, `Ad_haus_nr`, `Ad_Plz`, `Ad_std`) VALUES (86, 'Brionna Plaza', 1, 28611, 'shire');
+INSERT INTO `Mensh_adresse` (`mensch_id`, `Ad_Str`, `Ad_haus_nr`, `Ad_Plz`, `Ad_std`) VALUES (87, 'Satterfield Roads', 8, 57308, 'side');
+INSERT INTO `Mensh_adresse` (`mensch_id`, `Ad_Str`, `Ad_haus_nr`, `Ad_Plz`, `Ad_std`) VALUES (88, 'Sienna Creek', 7, 62232, 'burgh');
+INSERT INTO `Mensh_adresse` (`mensch_id`, `Ad_Str`, `Ad_haus_nr`, `Ad_Plz`, `Ad_std`) VALUES (89, 'Walker Parkway', 7, 66628, 'stad');
+INSERT INTO `Mensh_adresse` (`mensch_id`, `Ad_Str`, `Ad_haus_nr`, `Ad_Plz`, `Ad_std`) VALUES (90, 'Hugh Villages', 1, 15574, 'ton');
+INSERT INTO `Mensh_adresse` (`mensch_id`, `Ad_Str`, `Ad_haus_nr`, `Ad_Plz`, `Ad_std`) VALUES (91, 'Weimann Rapid', 2, 55673, 'furt');
+INSERT INTO `Mensh_adresse` (`mensch_id`, `Ad_Str`, `Ad_haus_nr`, `Ad_Plz`, `Ad_std`) VALUES (92, 'Sawayn Road', 9, 6227, 'land');
+INSERT INTO `Mensh_adresse` (`mensch_id`, `Ad_Str`, `Ad_haus_nr`, `Ad_Plz`, `Ad_std`) VALUES (93, 'Evert Track', 3, 31625, 'mouth');
+INSERT INTO `Mensh_adresse` (`mensch_id`, `Ad_Str`, `Ad_haus_nr`, `Ad_Plz`, `Ad_std`) VALUES (94, 'Schmitt Summit', 1, 27029, 'mouth');
+INSERT INTO `Mensh_adresse` (`mensch_id`, `Ad_Str`, `Ad_haus_nr`, `Ad_Plz`, `Ad_std`) VALUES (95, 'Retta Rue', 7, 6502, 'burgh');
+INSERT INTO `Mensh_adresse` (`mensch_id`, `Ad_Str`, `Ad_haus_nr`, `Ad_Plz`, `Ad_std`) VALUES (96, 'Heidenreich Heights', 6, 60862, 'chester');
+INSERT INTO `Mensh_adresse` (`mensch_id`, `Ad_Str`, `Ad_haus_nr`, `Ad_Plz`, `Ad_std`) VALUES (97, 'Smith Prairie', 7, 27752, 'bury');
+INSERT INTO `Mensh_adresse` (`mensch_id`, `Ad_Str`, `Ad_haus_nr`, `Ad_Plz`, `Ad_std`) VALUES (98, 'Aleen Way', 3, 74189, 'stad');
+INSERT INTO `Mensh_adresse` (`mensch_id`, `Ad_Str`, `Ad_haus_nr`, `Ad_Plz`, `Ad_std`) VALUES (99, 'Shields Freeway', 4, 2569, 'port');
+INSERT INTO `Mensh_adresse` (`mensch_id`, `Ad_Str`, `Ad_haus_nr`, `Ad_Plz`, `Ad_std`) VALUES (100, 'Adolph Cliffs', 3, 58151, 'mouth');
 
 
 #
 # TABLE STRUCTURE FOR: buch_ausliehen
 #
 
+DROP TABLE IF EXISTS `buch_ausliehen`;
 
-INSERT INTO `buch_ausliehen` (`kunde_id`, `buch_id`, `exmpler_id`, `von_datum`, `bis_datum`) VALUES (1, 0, 1, '2021-03-10', '2005-02-09');
-INSERT INTO `buch_ausliehen` (`kunde_id`, `buch_id`, `exmpler_id`, `von_datum`, `bis_datum`) VALUES (2, 1, 2, '2021-03-10', '2009-03-29');
-INSERT INTO `buch_ausliehen` (`kunde_id`, `buch_id`, `exmpler_id`, `von_datum`, `bis_datum` ) VALUES (3, 2, 3, '2021-03-10', '1975-03-08');
-INSERT INTO `buch_ausliehen` (`kunde_id`, `buch_id`, `exmpler_id`, `von_datum`, `bis_datum`) VALUES (4, 3, 4, '2021-03-10', '1974-02-28');
-INSERT INTO `buch_ausliehen` (`kunde_id`, `buch_id`, `exmpler_id`, `von_datum`, `bis_datum`) VALUES (5, 4, 5, '2021-03-10', '2020-03-24');
-INSERT INTO `buch_ausliehen` (`kunde_id`, `buch_id`, `exmpler_id`, `von_datum`, `bis_datum`) VALUES (6, 5, 6, '2021-03-10', '2003-07-12');
-INSERT INTO `buch_ausliehen` (`kunde_id`, `buch_id`, `exmpler_id`, `von_datum`, `bis_datum`) VALUES (7, 6, 7, '2021-03-10', '2003-11-06');
-INSERT INTO `buch_ausliehen` (`kunde_id`, `buch_id`, `exmpler_id`, `von_datum`, `bis_datum`) VALUES (8, 8, 8, '2021-03-10', '1976-03-07');
-INSERT INTO `buch_ausliehen` (`kunde_id`, `buch_id`, `exmpler_id`, `von_datum`, `bis_datum`) VALUES (9, 9, 9, '2021-03-10', '2005-04-05');
-INSERT INTO `buch_ausliehen` (`kunde_id`, `buch_id`, `exmpler_id`, `von_datum`, `bis_datum`) VALUES (10, 15, 10, '2021-03-10', '1978-11-10');
-INSERT INTO `buch_ausliehen` (`kunde_id`, `buch_id`, `exmpler_id`, `von_datum`, `bis_datum`) VALUES (11, 16, 11, '2021-03-10', '1997-06-11');
-INSERT INTO `buch_ausliehen` (`kunde_id`, `buch_id`, `exmpler_id`, `von_datum`, `bis_datum`) VALUES (12, 34, 12, '2021-03-10', '1983-04-18');
-INSERT INTO `buch_ausliehen` (`kunde_id`, `buch_id`, `exmpler_id`, `von_datum`, `bis_datum`) VALUES (13, 36, 13, '2021-03-10', '2017-03-27');
-INSERT INTO `buch_ausliehen` (`kunde_id`, `buch_id`, `exmpler_id`, `von_datum`, `bis_datum`) VALUES (14, 49, 14, '2021-03-10', '1982-11-24');
-INSERT INTO `buch_ausliehen` (`kunde_id`, `buch_id`, `exmpler_id`, `von_datum`,`bis_datum`) VALUES (15, 55, 15, '2021-03-10', '1978-09-09');
-INSERT INTO `buch_ausliehen` (`kunde_id`, `buch_id`, `exmpler_id`, `von_datum`, `bis_datum`) VALUES (16, 65, 16, '2021-03-10', '1996-01-18');
-INSERT INTO `buch_ausliehen` (`kunde_id`, `buch_id`, `exmpler_id`, `von_datum`, `bis_datum`) VALUES (17, 86, 17, '2021-03-10', '2011-07-23');
-INSERT INTO `buch_ausliehen` (`kunde_id`, `buch_id`, `exmpler_id`, `von_datum`, `bis_datum`) VALUES (18, 126, 18, '2021-03-10', '1989-06-06');
-INSERT INTO `buch_ausliehen` (`kunde_id`, `buch_id`, `exmpler_id`, `von_datum`, `bis_datum`) VALUES (19, 179, 19, '2021-03-10', '2003-09-28');
-INSERT INTO `buch_ausliehen` (`kunde_id`, `buch_id`, `exmpler_id`, `von_datum`, `bis_datum`) VALUES (20, 319, 20, '2021-03-10', '1975-05-08');
-INSERT INTO `buch_ausliehen` (`kunde_id`, `buch_id`, `exmpler_id`, `von_datum`, `bis_datum`) VALUES (21, 320, 21, '2021-03-10', '1974-09-04');
-INSERT INTO `buch_ausliehen` (`kunde_id`, `buch_id`, `exmpler_id`, `von_datum`, `bis_datum`) VALUES (22, 450, 22, '2021-03-10', '1990-06-03');
-INSERT INTO `buch_ausliehen` (`kunde_id`, `buch_id`, `exmpler_id`, `von_datum`, `bis_datum`) VALUES (23, 479, 23, '2021-03-10', '1992-11-10');
-INSERT INTO `buch_ausliehen` (`kunde_id`, `buch_id`, `exmpler_id`, `von_datum`, `bis_datum`) VALUES (24, 828, 24, '2021-03-10', '1992-09-01');
-INSERT INTO `buch_ausliehen` (`kunde_id`, `buch_id`, `exmpler_id`, `von_datum`, `bis_datum`) VALUES (25, 896, 25, '2021-03-10', '2012-06-11');
-INSERT INTO `buch_ausliehen` (`kunde_id`, `buch_id`, `exmpler_id`, `von_datum`, `bis_datum`) VALUES (26, 923, 26, '2021-03-10', '1986-02-02');
-INSERT INTO `buch_ausliehen` (`kunde_id`, `buch_id`, `exmpler_id`, `von_datum`, `bis_datum`) VALUES (27, 1834, 27, '2021-03-10', '1998-09-13');
-INSERT INTO `buch_ausliehen` (`kunde_id`, `buch_id`, `exmpler_id`, `von_datum`, `bis_datum`) VALUES (28, 2320, 28, '2021-03-10', '1996-07-31');
-INSERT INTO `buch_ausliehen` (`kunde_id`, `buch_id`, `exmpler_id`, `von_datum`, `bis_datum`) VALUES (29, 2852, 29, '2021-03-10', '2010-08-14');
-INSERT INTO `buch_ausliehen` (`kunde_id`, `buch_id`, `exmpler_id`, `von_datum`, `bis_datum`)VALUES (30, 3805, 30, '2021-03-10', '1978-04-29');
-INSERT INTO `buch_ausliehen` (`kunde_id`, `buch_id`, `exmpler_id`, `von_datum`, `bis_datum`) VALUES (31, 3854, 31, '2021-03-10', '2012-03-23');
-INSERT INTO `buch_ausliehen` (`kunde_id`, `buch_id`, `exmpler_id`, `von_datum`, `bis_datum`) VALUES (32, 3941, 32, '2021-03-10', '1994-01-23');
-INSERT INTO `buch_ausliehen` (`kunde_id`, `buch_id`, `exmpler_id`, `von_datum`,  `bis_datum`) VALUES (33, 4198, 33, '2021-03-10', '1978-03-13');
-INSERT INTO `buch_ausliehen` (`kunde_id`, `buch_id`, `exmpler_id`, `von_datum`,  `bis_datum`) VALUES (34, 4261, 34, '2021-03-10', '1987-10-06');
-INSERT INTO `buch_ausliehen` (`kunde_id`, `buch_id`, `exmpler_id`, `von_datum`,  `bis_datum`) VALUES (35, 4435, 35, '2021-03-10', '1972-05-18');
-INSERT INTO `buch_ausliehen` (`kunde_id`, `buch_id`, `exmpler_id`, `von_datum`,  `bis_datum`) VALUES (36, 4799, 36, '2021-03-10', '2015-06-21');
-INSERT INTO `buch_ausliehen` (`kunde_id`, `buch_id`, `exmpler_id`, `von_datum`,  `bis_datum`) VALUES (37, 5449, 37, '2021-03-10', '1972-07-15');
-INSERT INTO `buch_ausliehen` (`kunde_id`, `buch_id`, `exmpler_id`, `von_datum`,  `bis_datum`) VALUES (38, 5517, 38, '2021-03-10', '1985-09-02');
-INSERT INTO `buch_ausliehen` (`kunde_id`, `buch_id`, `exmpler_id`, `von_datum`, `bis_datum`) VALUES (39, 6683, 39, '2021-03-10', '1986-07-29');
-INSERT INTO `buch_ausliehen` (`kunde_id`, `buch_id`, `exmpler_id`, `von_datum`, `bis_datum`) VALUES (40, 7695, 40, '2021-03-10', '1988-06-02');
-INSERT INTO `buch_ausliehen` (`kunde_id`, `buch_id`, `exmpler_id`, `von_datum`, `bis_datum`) VALUES (41, 8587, 41, '2021-03-10', '2016-10-03');
-INSERT INTO `buch_ausliehen` (`kunde_id`, `buch_id`, `exmpler_id`, `von_datum`, `bis_datum`) VALUES (42, 9189, 42, '2021-03-10', '1988-08-17');
-INSERT INTO `buch_ausliehen` (`kunde_id`, `buch_id`, `exmpler_id`, `von_datum`, `bis_datum`) VALUES (43, 9432, 43, '2021-03-10', '1974-04-20');
-INSERT INTO `buch_ausliehen` (`kunde_id`, `buch_id`, `exmpler_id`, `von_datum`, `bis_datum`) VALUES (44, 9960, 44, '2021-03-10', '2005-07-14');
-INSERT INTO `buch_ausliehen` (`kunde_id`, `buch_id`, `exmpler_id`, `von_datum`, `bis_datum`) VALUES (45, 13878, 45, '2021-03-10', '1984-05-23');
-INSERT INTO `buch_ausliehen` (`kunde_id`, `buch_id`, `exmpler_id`, `von_datum`, `bis_datum`) VALUES (46, 21160, 46, '2021-03-10', '1990-06-12');
-INSERT INTO `buch_ausliehen` (`kunde_id`, `buch_id`, `exmpler_id`, `von_datum`, `bis_datum`) VALUES (47, 33705, 47, '2021-03-10', '2005-06-01');
-INSERT INTO `buch_ausliehen` (`kunde_id`, `buch_id`, `exmpler_id`, `von_datum`, `bis_datum`) VALUES (48, 56762, 48, '2021-03-10', '1992-12-09');
-INSERT INTO `buch_ausliehen` (`kunde_id`, `buch_id`, `exmpler_id`, `von_datum`, `bis_datum`) VALUES (49, 58283, 49, '2021-03-10', '1986-11-18');
-INSERT INTO `buch_ausliehen` (`kunde_id`, `buch_id`, `exmpler_id`, `von_datum`, `bis_datum`) VALUES (50, 78161, 50, '2021-03-10', '1987-07-26');
-INSERT INTO `buch_ausliehen` (`kunde_id`, `buch_id`, `exmpler_id`, `von_datum`, `bis_datum`) VALUES (51, 90617, 51, '2021-03-10', '1993-04-17');
-INSERT INTO `buch_ausliehen` (`kunde_id`, `buch_id`, `exmpler_id`, `von_datum`, `bis_datum`) VALUES (52, 97116, 52, '2021-03-10', '1986-01-03');
-INSERT INTO `buch_ausliehen` (`kunde_id`, `buch_id`, `exmpler_id`, `von_datum`, `bis_datum`) VALUES (53, 97379, 53, '2021-03-10', '2016-02-19');
-INSERT INTO `buch_ausliehen` (`kunde_id`, `buch_id`, `exmpler_id`, `von_datum`, `bis_datum`) VALUES (54, 101923, 54, '2021-03-10', '1992-02-22');
-INSERT INTO `buch_ausliehen` (`kunde_id`, `buch_id`, `exmpler_id`, `von_datum`, `bis_datum`) VALUES (55, 267638, 55, '2021-03-10', '1978-05-02');
-INSERT INTO `buch_ausliehen` (`kunde_id`, `buch_id`, `exmpler_id`, `von_datum`, `bis_datum`) VALUES (56, 286714, 56, '2021-03-10', '2019-12-01');
-INSERT INTO `buch_ausliehen` (`kunde_id`, `buch_id`, `exmpler_id`, `von_datum`, `bis_datum`) VALUES (57, 361271, 57, '2021-03-10', '2002-07-22');
-INSERT INTO `buch_ausliehen` (`kunde_id`, `buch_id`, `exmpler_id`, `von_datum`, `bis_datum`) VALUES (58, 362893, 58, '2021-03-10', '1997-05-11');
-INSERT INTO `buch_ausliehen` (`kunde_id`, `buch_id`, `exmpler_id`, `von_datum`, `bis_datum`) VALUES (59, 413858, 59, '2021-03-10', '1980-03-22');
-INSERT INTO `buch_ausliehen` (`kunde_id`, `buch_id`, `exmpler_id`, `von_datum`, `bis_datum`) VALUES (60, 622825, 60, '2021-03-10', '1973-10-19');
-INSERT INTO `buch_ausliehen` (`kunde_id`, `buch_id`, `exmpler_id`, `von_datum`, `bis_datum`) VALUES (61, 645698, 61, '2021-03-10', '1978-10-06');
-INSERT INTO `buch_ausliehen` (`kunde_id`, `buch_id`, `exmpler_id`, `von_datum`, `bis_datum`) VALUES (62, 685716, 62, '2021-03-10', '1993-02-23');
-INSERT INTO `buch_ausliehen` (`kunde_id`, `buch_id`, `exmpler_id`, `von_datum`, `bis_datum`) VALUES (63, 706295, 63, '2021-03-10', '2016-08-16');
-INSERT INTO `buch_ausliehen` (`kunde_id`, `buch_id`, `exmpler_id`, `von_datum`, `bis_datum`) VALUES (64, 788840, 64, '2021-03-10', '2014-08-11');
-INSERT INTO `buch_ausliehen` (`kunde_id`, `buch_id`, `exmpler_id`, `von_datum`, `bis_datum`) VALUES (65, 827225, 65, '2021-03-10', '1970-03-29');
-INSERT INTO `buch_ausliehen` (`kunde_id`, `buch_id`, `exmpler_id`, `von_datum`, `bis_datum`) VALUES (66, 1057064, 66, '2021-03-10', '1972-09-05');
-INSERT INTO `buch_ausliehen` (`kunde_id`, `buch_id`, `exmpler_id`, `von_datum`, `bis_datum`) VALUES (67, 3270223, 67, '2021-03-10', '1983-03-01');
-INSERT INTO `buch_ausliehen` (`kunde_id`, `buch_id`, `exmpler_id`, `von_datum`, `bis_datum`) VALUES (68, 5623014, 68, '2021-03-10', '1975-05-04');
-INSERT INTO `buch_ausliehen` (`kunde_id`, `buch_id`, `exmpler_id`, `von_datum`, `bis_datum`) VALUES (69, 6301383, 69, '2021-03-10', '1989-11-24');
-INSERT INTO `buch_ausliehen` (`kunde_id`, `buch_id`, `exmpler_id`, `von_datum`, `bis_datum`) VALUES (70, 7142182, 70, '2021-03-10', '2016-02-01');
-INSERT INTO `buch_ausliehen` (`kunde_id`, `buch_id`, `exmpler_id`, `von_datum`, `bis_datum`) VALUES (71, 7331279, 71, '2021-03-10', '2006-05-03');
-INSERT INTO `buch_ausliehen` (`kunde_id`, `buch_id`, `exmpler_id`, `von_datum`, `bis_datum`) VALUES (72, 7651303, 72, '2021-03-10', '2013-08-11');
-INSERT INTO `buch_ausliehen` (`kunde_id`, `buch_id`, `exmpler_id`, `von_datum`, `bis_datum`) VALUES (73, 8027727, 73, '2021-03-10', '1989-07-23');
-INSERT INTO `buch_ausliehen` (`kunde_id`, `buch_id`, `exmpler_id`, `von_datum`, `bis_datum`) VALUES (74, 8896473, 74, '2021-03-10', '2012-11-05');
-INSERT INTO `buch_ausliehen` (`kunde_id`, `buch_id`, `exmpler_id`, `von_datum`, `bis_datum`) VALUES (75, 9000751, 75, '2021-03-10', '2017-11-10');
-INSERT INTO `buch_ausliehen` (`kunde_id`, `buch_id`, `exmpler_id`, `von_datum`, `bis_datum`) VALUES (76, 24957181, 76, '2021-03-10', '2010-03-30');
-INSERT INTO `buch_ausliehen` (`kunde_id`, `buch_id`, `exmpler_id`, `von_datum`, `bis_datum`) VALUES (77, 39674677, 77, '2021-03-10', '1971-04-04');
-INSERT INTO `buch_ausliehen` (`kunde_id`, `buch_id`, `exmpler_id`, `von_datum`, `bis_datum`) VALUES (78, 42763127, 78, '2021-03-10', '2012-06-01');
-INSERT INTO `buch_ausliehen` (`kunde_id`, `buch_id`, `exmpler_id`, `von_datum`, `bis_datum`) VALUES (79, 44359254, 79, '2021-03-10', '1986-02-06');
-INSERT INTO `buch_ausliehen` (`kunde_id`, `buch_id`, `exmpler_id`, `von_datum`, `bis_datum`) VALUES (80, 48763647, 80, '2021-03-10', '1988-08-08');
-INSERT INTO `buch_ausliehen` (`kunde_id`, `buch_id`, `exmpler_id`, `von_datum`, `bis_datum`) VALUES (81, 64438595, 81, '2021-03-10', '2009-11-15');
-INSERT INTO `buch_ausliehen` (`kunde_id`, `buch_id`, `exmpler_id`, `von_datum`, `bis_datum`) VALUES (82, 69313777, 82, '2021-03-10', '2016-10-27');
-INSERT INTO `buch_ausliehen` (`kunde_id`, `buch_id`, `exmpler_id`, `von_datum`, `bis_datum`) VALUES (83, 72443576, 83, '2021-03-10', '2012-02-05');
-INSERT INTO `buch_ausliehen` (`kunde_id`, `buch_id`, `exmpler_id`, `von_datum`, `bis_datum`) VALUES (84, 72480251, 84, '2021-03-10', '2015-01-31');
-INSERT INTO `buch_ausliehen` (`kunde_id`, `buch_id`, `exmpler_id`, `von_datum`, `bis_datum`) VALUES (85, 76678247, 85, '2021-03-10', '1993-01-18');
-INSERT INTO `buch_ausliehen` (`kunde_id`, `buch_id`, `exmpler_id`, `von_datum`, `bis_datum`) VALUES (86, 78750398, 86, '2021-03-10', '2012-09-22');
-INSERT INTO `buch_ausliehen` (`kunde_id`, `buch_id`, `exmpler_id`, `von_datum`, `bis_datum`) VALUES (87, 82564769, 87, '2021-03-10', '1986-07-02');
-INSERT INTO `buch_ausliehen` (`kunde_id`, `buch_id`, `exmpler_id`, `von_datum`, `bis_datum`) VALUES (88, 93541332, 88, '2021-03-10', '2015-05-06');
-INSERT INTO `buch_ausliehen` (`kunde_id`, `buch_id`, `exmpler_id`, `von_datum`, `bis_datum`) VALUES (89, 113389499, 89, '2021-03-10', '2009-10-12');
-INSERT INTO `buch_ausliehen` (`kunde_id`, `buch_id`, `exmpler_id`, `von_datum`, `bis_datum`) VALUES (90, 374071784, 90, '2021-03-10', '2020-08-02');
-INSERT INTO `buch_ausliehen` (`kunde_id`, `buch_id`, `exmpler_id`, `von_datum`, `bis_datum`) VALUES (91, 478873780, 91, '2021-03-10', '1975-08-14');
-INSERT INTO `buch_ausliehen` (`kunde_id`, `buch_id`, `exmpler_id`, `von_datum`, `bis_datum`) VALUES (92, 502498382, 92, '2021-03-10', '2020-09-22');
-INSERT INTO `buch_ausliehen` (`kunde_id`, `buch_id`, `exmpler_id`, `von_datum`, `bis_datum`) VALUES (93, 618295225, 93, '2021-03-10', '1977-11-05');
-INSERT INTO `buch_ausliehen` (`kunde_id`, `buch_id`, `exmpler_id`, `von_datum`, `bis_datum`) VALUES (94, 709578845, 94, '2021-03-10', '2008-09-19');
-INSERT INTO `buch_ausliehen` (`kunde_id`, `buch_id`, `exmpler_id`, `von_datum`, `bis_datum`) VALUES (95, 776707412, 95, '2021-03-10', '2012-02-28');
-INSERT INTO `buch_ausliehen` (`kunde_id`, `buch_id`, `exmpler_id`, `von_datum`, `bis_datum`) VALUES (96, 852369380, 96, '2021-03-10', '2002-09-14');
-INSERT INTO `buch_ausliehen` (`kunde_id`, `buch_id`, `exmpler_id`, `von_datum`, `bis_datum`) VALUES (97, 855843305, 97, '2021-03-10', '2000-03-04');
-INSERT INTO `buch_ausliehen` (`kunde_id`, `buch_id`, `exmpler_id`, `von_datum`, `bis_datum`) VALUES (98, 870852451, 98, '2021-03-10', '1974-04-30');
-INSERT INTO `buch_ausliehen` (`kunde_id`, `buch_id`, `exmpler_id`, `von_datum`, `bis_datum`) VALUES (99, 967924437, 99, '2021-03-10', '1988-09-10');
-INSERT INTO `buch_ausliehen` (`kunde_id`, `buch_id`, `exmpler_id`, `von_datum`, `bis_datum`) VALUES (100, 985327608, 100, '2021-03-10', '1974-10-27');
-
-
-#
-# TABLE STRUCTURE FOR: kunde
-#
-
-
-INSERT INTO `kunde` (`kunde_ID`, `vorname`, `nachname`, `sorte`, `email`, `phone`, `strasse`, `hausnummer`, `plz`, `stadt`) VALUES (1, 'Heidi', 'Stark', 'Student', 'parisian.kailey@example.net', '1-128-268-1368x', 'Kling Squares', 7, 78026, 'port');
-INSERT INTO `kunde` (`kunde_ID`, `vorname`, `nachname`, `sorte`, `email`, `phone`, `strasse`, `hausnummer`, `plz`, `stadt`) VALUES (2, 'Luna', 'Koepp', 'Normal', 'whilll@example.net', '557-225-5074x61', 'Rodriguez Vista', 5, 57001, 'town');
-INSERT INTO `kunde` (`kunde_ID`, `vorname`, `nachname`, `sorte`, `email`, `phone`, `strasse`, `hausnummer`, `plz`, `stadt`) VALUES (3, 'Ellie', 'Kovacek', 'Student', 'anderson.allen@example.org', '663-568-5241', 'Elizabeth Spurs', 1, 45273, 'borough');
-INSERT INTO `kunde` (`kunde_ID`, `vorname`, `nachname`, `sorte`, `email`, `phone`, `strasse`, `hausnummer`, `plz`, `stadt`) VALUES (4, 'Grace', 'Simonis', 'Student', 'randall22@example.org', '1-067-242-6286', 'Jacobson Camp', 4, 88325, 'view');
-INSERT INTO `kunde` (`kunde_ID`, `vorname`, `nachname`, `sorte`, `email`, `phone`, `strasse`, `hausnummer`, `plz`, `stadt`) VALUES (5, 'Lucas', 'Swaniawski', 'Student', 'lchamplin@example.com', '000.305.9762x18', 'Daniela Walk', 8, 27224, 'bury');
-INSERT INTO `kunde` (`kunde_ID`, `vorname`, `nachname`, `sorte`, `email`, `phone`, `strasse`, `hausnummer`, `plz`, `stadt`) VALUES (6, 'Nellie', 'Purdy', 'Senior', 'margarita.abshire@example.net', '02973057561', 'Osbaldo Vista', 4, 24904, 'ville');
-INSERT INTO `kunde` (`kunde_ID`, `vorname`, `nachname`, `sorte`, `email`, `phone`, `strasse`, `hausnummer`, `plz`, `stadt`) VALUES (7, 'Lupe', 'Bailey', 'Student', 'qbashirian@example.com', '000.199.1264x84', 'Kovacek Plains', 3, 23573, 'chester');
-INSERT INTO `kunde` (`kunde_ID`, `vorname`, `nachname`, `sorte`, `email`, `phone`, `strasse`, `hausnummer`, `plz`, `stadt`) VALUES (8, 'Colby', 'Toy', 'Normal', 'rebeka.treutel@example.com', '(629)753-7268', 'Langworth Squares', 5, 28829, 'view');
-INSERT INTO `kunde` (`kunde_ID`, `vorname`, `nachname`, `sorte`, `email`, `phone`, `strasse`, `hausnummer`, `plz`, `stadt`) VALUES (9, 'Vita', 'Lueilwitz', 'Student', 'lamar.nader@example.net', '1-556-952-1916', 'Laurel Drives', 5, 3007, 'ton');
-INSERT INTO `kunde` (`kunde_ID`, `vorname`, `nachname`, `sorte`, `email`, `phone`, `strasse`, `hausnummer`, `plz`, `stadt`) VALUES (10, 'Bradly', 'Schneider', 'Normal', 'joseph.shanahan@example.net', '(548)770-9318x5', 'Helen Points', 5, 98826, 'shire');
-INSERT INTO `kunde` (`kunde_ID`, `vorname`, `nachname`, `sorte`, `email`, `phone`, `strasse`, `hausnummer`, `plz`, `stadt`) VALUES (11, 'Josie', 'Leffler', 'Student', 'stanton.annie@example.com', '468-968-8120x00', 'Alexandro Loaf', 2, 6716, 'chester');
-INSERT INTO `kunde` (`kunde_ID`, `vorname`, `nachname`, `sorte`, `email`, `phone`, `strasse`, `hausnummer`, `plz`, `stadt`) VALUES (12, 'Carroll', 'Kunze', 'Student', 'shany01@example.org', '+87(9)619608997', 'Mikel Inlet', 2, 64735, 'burgh');
-INSERT INTO `kunde` (`kunde_ID`, `vorname`, `nachname`, `sorte`, `email`, `phone`, `strasse`, `hausnummer`, `plz`, `stadt`) VALUES (13, 'Percy', 'Little', 'Student', 'vwunsch@example.com', '(321)028-8347', 'Nelda Union', 4, 31610, 'haven');
-INSERT INTO `kunde` (`kunde_ID`, `vorname`, `nachname`, `sorte`, `email`, `phone`, `strasse`, `hausnummer`, `plz`, `stadt`) VALUES (14, 'Roberta', 'Hodkiewicz', 'Normal', 'anabel.kessler@example.org', '530-177-5990', 'Ebert Island', 4, 66989, 'town');
-INSERT INTO `kunde` (`kunde_ID`, `vorname`, `nachname`, `sorte`, `email`, `phone`, `strasse`, `hausnummer`, `plz`, `stadt`) VALUES (15, 'Clare', 'Langworth', 'Normal', 'vlegros@example.com', '+44(4)125341905', 'Tina Gardens', 1, 66951, 'bury');
-INSERT INTO `kunde` (`kunde_ID`, `vorname`, `nachname`, `sorte`, `email`, `phone`, `strasse`, `hausnummer`, `plz`, `stadt`) VALUES (16, 'Austin', 'Zboncak', 'Senior', 'allie35@example.org', '(306)962-4066', 'Schamberger Island', 1, 69359, 'borough');
-INSERT INTO `kunde` (`kunde_ID`, `vorname`, `nachname`, `sorte`, `email`, `phone`, `strasse`, `hausnummer`, `plz`, `stadt`) VALUES (17, 'Janet', 'Barton', 'Normal', 'alden94@example.net', '1-274-700-4960x', 'Satterfield Field', 7, 6624, 'port');
-INSERT INTO `kunde` (`kunde_ID`, `vorname`, `nachname`, `sorte`, `email`, `phone`, `strasse`, `hausnummer`, `plz`, `stadt`) VALUES (18, 'Brisa', 'Gottlieb', 'Senior', 'elmira.reichert@example.org', '181-316-9659x29', 'Sid Circle', 9, 93094, 'shire');
-INSERT INTO `kunde` (`kunde_ID`, `vorname`, `nachname`, `sorte`, `email`, `phone`, `strasse`, `hausnummer`, `plz`, `stadt`) VALUES (19, 'Lauren', 'Hamill', 'Senior', 'fhettinger@example.net', '034.621.4154x57', 'Hoppe Forest', 6, 2400, 'burgh');
-INSERT INTO `kunde` (`kunde_ID`, `vorname`, `nachname`, `sorte`, `email`, `phone`, `strasse`, `hausnummer`, `plz`, `stadt`) VALUES (20, 'Mustafa', 'Lockman', 'Senior', 'qlemke@example.org', '564-261-1182x22', 'Garrison Branch', 1, 52000, 'fort');
-INSERT INTO `kunde` (`kunde_ID`, `vorname`, `nachname`, `sorte`, `email`, `phone`, `strasse`, `hausnummer`, `plz`, `stadt`) VALUES (21, 'Maureen', 'Feil', 'Normal', 'napoleon55@example.org', '005-355-5705', 'Corkery Rest', 6, 49277, 'view');
-INSERT INTO `kunde` (`kunde_ID`, `vorname`, `nachname`, `sorte`, `email`, `phone`, `strasse`, `hausnummer`, `plz`, `stadt`) VALUES (22, 'Freida', 'Hilpert', 'Senior', 'pgorczany@example.org', '(575)759-3762x2', 'Zack Lodge', 7, 74693, 'land');
-INSERT INTO `kunde` (`kunde_ID`, `vorname`, `nachname`, `sorte`, `email`, `phone`, `strasse`, `hausnummer`, `plz`, `stadt`) VALUES (23, 'Brycen', 'Powlowski', 'Senior', 'boyer.delphine@example.com', '05702192287', 'Peyton Manors', 3, 48940, 'view');
-INSERT INTO `kunde` (`kunde_ID`, `vorname`, `nachname`, `sorte`, `email`, `phone`, `strasse`, `hausnummer`, `plz`, `stadt`) VALUES (24, 'Joelle', 'Daugherty', 'Student', 'yjacobi@example.net', '1-787-905-6112', 'Volkman Forges', 8, 52789, 'land');
-INSERT INTO `kunde` (`kunde_ID`, `vorname`, `nachname`, `sorte`, `email`, `phone`, `strasse`, `hausnummer`, `plz`, `stadt`) VALUES (25, 'Deangelo', 'Ward', 'Normal', 'grogahn@example.com', '(821)499-2910x1', 'Kulas Path', 2, 62299, 'land');
-INSERT INTO `kunde` (`kunde_ID`, `vorname`, `nachname`, `sorte`, `email`, `phone`, `strasse`, `hausnummer`, `plz`, `stadt`) VALUES (26, 'Jewel', 'Schowalter', 'Senior', 'schaden.mikayla@example.com', '113-056-0682x55', 'Sage Causeway', 1, 89197, 'fort');
-INSERT INTO `kunde` (`kunde_ID`, `vorname`, `nachname`, `sorte`, `email`, `phone`, `strasse`, `hausnummer`, `plz`, `stadt`) VALUES (27, 'Nina', 'Becker', 'Normal', 'altenwerth.ena@example.net', '1-039-393-2534x', 'Ron Mall', 6, 86190, 'haven');
-INSERT INTO `kunde` (`kunde_ID`, `vorname`, `nachname`, `sorte`, `email`, `phone`, `strasse`, `hausnummer`, `plz`, `stadt`) VALUES (28, 'Trey', 'Bauch', 'Normal', 'yesenia.dicki@example.org', '1-205-907-9190x', 'Robert Common', 4, 37857, 'land');
-INSERT INTO `kunde` (`kunde_ID`, `vorname`, `nachname`, `sorte`, `email`, `phone`, `strasse`, `hausnummer`, `plz`, `stadt`) VALUES (29, 'Tommie', 'Abernathy', 'Normal', 'amparo.parisian@example.org', '807.794.9389', 'Marques Walk', 3, 85094, 'side');
-INSERT INTO `kunde` (`kunde_ID`, `vorname`, `nachname`, `sorte`, `email`, `phone`, `strasse`, `hausnummer`, `plz`, `stadt`) VALUES (30, 'Jailyn', 'Brekke', 'Senior', 'samson28@example.org', '1-591-339-9125', 'Lulu Ways', 6, 96469, 'fort');
-INSERT INTO `kunde` (`kunde_ID`, `vorname`, `nachname`, `sorte`, `email`, `phone`, `strasse`, `hausnummer`, `plz`, `stadt`) VALUES (31, 'Dorthy', 'Stehr', 'Senior', 'pete90@example.com', '(298)001-0478', 'Ayana Orchard', 3, 8821, 'berg');
-INSERT INTO `kunde` (`kunde_ID`, `vorname`, `nachname`, `sorte`, `email`, `phone`, `strasse`, `hausnummer`, `plz`, `stadt`) VALUES (32, 'Conner', 'Gibson', 'Normal', 'delores.schamberger@example.com', '1-225-562-5515', 'Karina Meadow', 4, 25755, 'view');
-INSERT INTO `kunde` (`kunde_ID`, `vorname`, `nachname`, `sorte`, `email`, `phone`, `strasse`, `hausnummer`, `plz`, `stadt`) VALUES (33, 'Novella', 'Farrell', 'Senior', 'windler.erich@example.net', '(631)567-3290', 'Nina View', 2, 19445, 'port');
-INSERT INTO `kunde` (`kunde_ID`, `vorname`, `nachname`, `sorte`, `email`, `phone`, `strasse`, `hausnummer`, `plz`, `stadt`) VALUES (34, 'Kelsie', 'Hoppe', 'Normal', 'alf.reinger@example.org', '747-396-7173', 'Schuppe Field', 3, 10047, 'mouth');
-INSERT INTO `kunde` (`kunde_ID`, `vorname`, `nachname`, `sorte`, `email`, `phone`, `strasse`, `hausnummer`, `plz`, `stadt`) VALUES (35, 'Yolanda', 'Breitenberg', 'Normal', 'lemuel.roberts@example.org', '(965)229-4299x9', 'Brooks View', 6, 32998, 'bury');
-INSERT INTO `kunde` (`kunde_ID`, `vorname`, `nachname`, `sorte`, `email`, `phone`, `strasse`, `hausnummer`, `plz`, `stadt`) VALUES (36, 'Garret', 'Zieme', 'Senior', 'jennyfer.bailey@example.net', '897.104.7186x91', 'Katharina Valleys', 9, 10421, 'shire');
-INSERT INTO `kunde` (`kunde_ID`, `vorname`, `nachname`, `sorte`, `email`, `phone`, `strasse`, `hausnummer`, `plz`, `stadt`) VALUES (37, 'Earlene', 'Mosciski', 'Student', 'charlotte.heller@example.com', '309.062.2359x49', 'Cordia Key', 7, 48325, 'mouth');
-INSERT INTO `kunde` (`kunde_ID`, `vorname`, `nachname`, `sorte`, `email`, `phone`, `strasse`, `hausnummer`, `plz`, `stadt`) VALUES (38, 'David', 'Gerlach', 'Normal', 'padberg.cecil@example.org', '1-611-941-6990x', 'Hoppe Trafficway', 9, 30278, 'furt');
-INSERT INTO `kunde` (`kunde_ID`, `vorname`, `nachname`, `sorte`, `email`, `phone`, `strasse`, `hausnummer`, `plz`, `stadt`) VALUES (39, 'Jose', 'Mueller', 'Normal', 'jefferey.lindgren@example.net', '582.234.0826x73', 'Murphy Dale', 4, 87301, 'furt');
-INSERT INTO `kunde` (`kunde_ID`, `vorname`, `nachname`, `sorte`, `email`, `phone`, `strasse`, `hausnummer`, `plz`, `stadt`) VALUES (40, 'Josie', 'Hessel', 'Senior', 'vwisoky@example.net', '1-699-475-3095x', 'Mosciski Flats', 6, 7752, 'haven');
-INSERT INTO `kunde` (`kunde_ID`, `vorname`, `nachname`, `sorte`, `email`, `phone`, `strasse`, `hausnummer`, `plz`, `stadt`) VALUES (41, 'Ward', 'Bins', 'Senior', 'jack48@example.net', '200.798.6346', 'Green Walks', 2, 53054, 'chester');
-INSERT INTO `kunde` (`kunde_ID`, `vorname`, `nachname`, `sorte`, `email`, `phone`, `strasse`, `hausnummer`, `plz`, `stadt`) VALUES (42, 'Archibald', 'McGlynn', 'Senior', 'darren.considine@example.com', '(737)904-3942', 'Kari Place', 8, 43990, 'land');
-INSERT INTO `kunde` (`kunde_ID`, `vorname`, `nachname`, `sorte`, `email`, `phone`, `strasse`, `hausnummer`, `plz`, `stadt`) VALUES (43, 'Onie', 'Stroman', 'Student', 'hank.lind@example.com', '855.631.0968x04', 'Jordi Field', 1, 40519, 'shire');
-INSERT INTO `kunde` (`kunde_ID`, `vorname`, `nachname`, `sorte`, `email`, `phone`, `strasse`, `hausnummer`, `plz`, `stadt`) VALUES (44, 'Dayna', 'Stoltenberg', 'Student', 'favian.toy@example.com', '1-718-976-9117x', 'Geo Plain', 9, 28032, 'stad');
-INSERT INTO `kunde` (`kunde_ID`, `vorname`, `nachname`, `sorte`, `email`, `phone`, `strasse`, `hausnummer`, `plz`, `stadt`) VALUES (45, 'Ramona', 'Terry', 'Normal', 'connor.lang@example.org', '(542)101-8199x7', 'Connelly Harbor', 7, 36945, 'mouth');
-INSERT INTO `kunde` (`kunde_ID`, `vorname`, `nachname`, `sorte`, `email`, `phone`, `strasse`, `hausnummer`, `plz`, `stadt`) VALUES (46, 'Deon', 'Ebert', 'Senior', 'zharber@example.org', '234.386.5395x83', 'Llewellyn Circles', 7, 21863, 'ville');
-INSERT INTO `kunde` (`kunde_ID`, `vorname`, `nachname`, `sorte`, `email`, `phone`, `strasse`, `hausnummer`, `plz`, `stadt`) VALUES (47, 'Haylie', 'Williamson', 'Student', 'golda.bednar@example.com', '(615)408-8842', 'Satterfield Loaf', 3, 65887, 'mouth');
-INSERT INTO `kunde` (`kunde_ID`, `vorname`, `nachname`, `sorte`, `email`, `phone`, `strasse`, `hausnummer`, `plz`, `stadt`) VALUES (48, 'Katelin', 'Heathcote', 'Senior', 'cortney58@example.net', '807.648.4932x58', 'Branson Union', 1, 31219, 'land');
-INSERT INTO `kunde` (`kunde_ID`, `vorname`, `nachname`, `sorte`, `email`, `phone`, `strasse`, `hausnummer`, `plz`, `stadt`) VALUES (49, 'Josefa', 'Hettinger', 'Normal', 'maymie.corwin@example.org', '120-592-7113', 'Effertz Land', 4, 62741, 'shire');
-INSERT INTO `kunde` (`kunde_ID`, `vorname`, `nachname`, `sorte`, `email`, `phone`, `strasse`, `hausnummer`, `plz`, `stadt`) VALUES (50, 'Cheyenne', 'Keeling', 'Student', 'grayson69@example.net', '+30(6)644084754', 'Senger Mount', 3, 32473, 'shire');
-INSERT INTO `kunde` (`kunde_ID`, `vorname`, `nachname`, `sorte`, `email`, `phone`, `strasse`, `hausnummer`, `plz`, `stadt`) VALUES (51, 'Clare', 'Tromp', 'Normal', 'martine25@example.org', '1-102-943-1352x', 'Lowe Light', 3, 65152, 'view');
-INSERT INTO `kunde` (`kunde_ID`, `vorname`, `nachname`, `sorte`, `email`, `phone`, `strasse`, `hausnummer`, `plz`, `stadt`) VALUES (52, 'Rosamond', 'Homenick', 'Normal', 'imani.dickinson@example.org', '470-140-4335x34', 'Oberbrunner Branch', 3, 36632, 'mouth');
-INSERT INTO `kunde` (`kunde_ID`, `vorname`, `nachname`, `sorte`, `email`, `phone`, `strasse`, `hausnummer`, `plz`, `stadt`) VALUES (53, 'Delilah', 'Ledner', 'Senior', 'eeichmann@example.com', '(985)266-8320', 'Zemlak Streets', 1, 29885, 'mouth');
-INSERT INTO `kunde` (`kunde_ID`, `vorname`, `nachname`, `sorte`, `email`, `phone`, `strasse`, `hausnummer`, `plz`, `stadt`) VALUES (54, 'Thad', 'Hamill', 'Normal', 'xpaucek@example.net', '1-552-672-8468x', 'Tommie Parkway', 6, 11539, 'bury');
-INSERT INTO `kunde` (`kunde_ID`, `vorname`, `nachname`, `sorte`, `email`, `phone`, `strasse`, `hausnummer`, `plz`, `stadt`) VALUES (55, 'Alexis', 'Farrell', 'Normal', 'davonte.stoltenberg@example.org', '(829)749-2929x2', 'Bode Track', 7, 85511, 'berg');
-INSERT INTO `kunde` (`kunde_ID`, `vorname`, `nachname`, `sorte`, `email`, `phone`, `strasse`, `hausnummer`, `plz`, `stadt`) VALUES (56, 'Foster', 'Wilderman', 'Senior', 'newell09@example.com', '588-381-4610x25', 'Corkery Creek', 6, 93145, 'view');
-INSERT INTO `kunde` (`kunde_ID`, `vorname`, `nachname`, `sorte`, `email`, `phone`, `strasse`, `hausnummer`, `plz`, `stadt`) VALUES (57, 'Adrienne', 'Doyle', 'Normal', 'rosemary85@example.com', '(726)853-2410x2', 'Zemlak Cove', 3, 61933, 'chester');
-INSERT INTO `kunde` (`kunde_ID`, `vorname`, `nachname`, `sorte`, `email`, `phone`, `strasse`, `hausnummer`, `plz`, `stadt`) VALUES (58, 'Cristina', 'Murazik', 'Student', 'lyundt@example.com', '+53(4)145714462', 'Hahn Corners', 2, 13411, 'shire');
-INSERT INTO `kunde` (`kunde_ID`, `vorname`, `nachname`, `sorte`, `email`, `phone`, `strasse`, `hausnummer`, `plz`, `stadt`) VALUES (59, 'Maximo', 'Kihn', 'Student', 'kreiger.hermann@example.com', '03522330817', 'Kathleen Cove', 7, 29649, 'bury');
-INSERT INTO `kunde` (`kunde_ID`, `vorname`, `nachname`, `sorte`, `email`, `phone`, `strasse`, `hausnummer`, `plz`, `stadt`) VALUES (60, 'Dortha', 'Mante', 'Normal', 'casper.block@example.com', '405.628.2786x56', 'Donny Extension', 7, 81402, 'port');
-INSERT INTO `kunde` (`kunde_ID`, `vorname`, `nachname`, `sorte`, `email`, `phone`, `strasse`, `hausnummer`, `plz`, `stadt`) VALUES (61, 'Russel', 'Fay', 'Normal', 'kendra.tillman@example.org', '1-700-077-1554', 'Wiza Key', 7, 87452, 'burgh');
-INSERT INTO `kunde` (`kunde_ID`, `vorname`, `nachname`, `sorte`, `email`, `phone`, `strasse`, `hausnummer`, `plz`, `stadt`) VALUES (62, 'Cornell', 'Fisher', 'Senior', 'qtillman@example.org', '899-755-3968', 'Alexandre Club', 3, 45716, 'side');
-INSERT INTO `kunde` (`kunde_ID`, `vorname`, `nachname`, `sorte`, `email`, `phone`, `strasse`, `hausnummer`, `plz`, `stadt`) VALUES (63, 'Cara', 'Hamill', 'Normal', 'ho\'hara@example.org', '235-963-3374', 'Sanford Glens', 9, 92196, 'side');
-INSERT INTO `kunde` (`kunde_ID`, `vorname`, `nachname`, `sorte`, `email`, `phone`, `strasse`, `hausnummer`, `plz`, `stadt`) VALUES (64, 'Mckayla', 'Robel', 'Student', 'eleanora75@example.net', '748-447-7102x22', 'Cremin Hill', 5, 59533, 'bury');
-INSERT INTO `kunde` (`kunde_ID`, `vorname`, `nachname`, `sorte`, `email`, `phone`, `strasse`, `hausnummer`, `plz`, `stadt`) VALUES (65, 'Kenya', 'Littel', 'Normal', 'viola.fisher@example.net', '295-118-4471', 'Barton Tunnel', 5, 29952, 'chester');
-INSERT INTO `kunde` (`kunde_ID`, `vorname`, `nachname`, `sorte`, `email`, `phone`, `strasse`, `hausnummer`, `plz`, `stadt`) VALUES (66, 'Leanna', 'Kuhlman', 'Student', 'hills.adrain@example.com', '754-750-4929', 'Jude Port', 7, 9517, 'ton');
-INSERT INTO `kunde` (`kunde_ID`, `vorname`, `nachname`, `sorte`, `email`, `phone`, `strasse`, `hausnummer`, `plz`, `stadt`) VALUES (67, 'Nova', 'Boyle', 'Normal', 'sydni63@example.net', '218-329-7109x57', 'Demarcus Walk', 5, 86537, 'haven');
-INSERT INTO `kunde` (`kunde_ID`, `vorname`, `nachname`, `sorte`, `email`, `phone`, `strasse`, `hausnummer`, `plz`, `stadt`) VALUES (68, 'Alta', 'Kiehn', 'Student', 'kirk70@example.net', '+47(2)622839114', 'Sabrina Ridge', 5, 42375, 'shire');
-INSERT INTO `kunde` (`kunde_ID`, `vorname`, `nachname`, `sorte`, `email`, `phone`, `strasse`, `hausnummer`, `plz`, `stadt`) VALUES (69, 'Micheal', 'Torphy', 'Student', 'borer.grayson@example.org', '1-412-882-5327x', 'Mohr Track', 6, 82672, 'mouth');
-INSERT INTO `kunde` (`kunde_ID`, `vorname`, `nachname`, `sorte`, `email`, `phone`, `strasse`, `hausnummer`, `plz`, `stadt`) VALUES (70, 'Boyd', 'Pfeffer', 'Senior', 'monahan.mable@example.com', '(785)250-0165x1', 'Dejon Tunnel', 6, 30156, 'town');
-INSERT INTO `kunde` (`kunde_ID`, `vorname`, `nachname`, `sorte`, `email`, `phone`, `strasse`, `hausnummer`, `plz`, `stadt`) VALUES (71, 'Trace', 'Sipes', 'Normal', 'ghegmann@example.com', '+06(9)592882470', 'Luigi Path', 1, 71689, 'furt');
-INSERT INTO `kunde` (`kunde_ID`, `vorname`, `nachname`, `sorte`, `email`, `phone`, `strasse`, `hausnummer`, `plz`, `stadt`) VALUES (72, 'Dino', 'Bauch', 'Student', 'welch.imelda@example.com', '03967168402', 'Homenick Green', 7, 53109, 'ville');
-INSERT INTO `kunde` (`kunde_ID`, `vorname`, `nachname`, `sorte`, `email`, `phone`, `strasse`, `hausnummer`, `plz`, `stadt`) VALUES (73, 'Tyrique', 'Eichmann', 'Student', 'adaline.paucek@example.com', '036-711-0591', 'Jared Islands', 1, 41192, 'shire');
-INSERT INTO `kunde` (`kunde_ID`, `vorname`, `nachname`, `sorte`, `email`, `phone`, `strasse`, `hausnummer`, `plz`, `stadt`) VALUES (74, 'Etha', 'Schowalter', 'Student', 'boyd36@example.com', '(204)125-7455', 'Robel Spring', 1, 2349, 'port');
-INSERT INTO `kunde` (`kunde_ID`, `vorname`, `nachname`, `sorte`, `email`, `phone`, `strasse`, `hausnummer`, `plz`, `stadt`) VALUES (75, 'Mackenzie', 'Collier', 'Normal', 'dicki.pansy@example.com', '605-898-7126x37', 'Maggio Shoals', 9, 26547, 'land');
-INSERT INTO `kunde` (`kunde_ID`, `vorname`, `nachname`, `sorte`, `email`, `phone`, `strasse`, `hausnummer`, `plz`, `stadt`) VALUES (76, 'Orlando', 'Kub', 'Senior', 'kleuschke@example.com', '+11(1)451050429', 'Jast Alley', 2, 2249, 'fort');
-INSERT INTO `kunde` (`kunde_ID`, `vorname`, `nachname`, `sorte`, `email`, `phone`, `strasse`, `hausnummer`, `plz`, `stadt`) VALUES (77, 'Willow', 'Mueller', 'Normal', 'dmacejkovic@example.net', '(200)543-8250', 'Shanny Fort', 8, 47278, 'view');
-INSERT INTO `kunde` (`kunde_ID`, `vorname`, `nachname`, `sorte`, `email`, `phone`, `strasse`, `hausnummer`, `plz`, `stadt`) VALUES (78, 'Domenico', 'Bode', 'Normal', 'tskiles@example.org', '(441)395-1174x5', 'Geo Meadows', 4, 13932, 'stad');
-INSERT INTO `kunde` (`kunde_ID`, `vorname`, `nachname`, `sorte`, `email`, `phone`, `strasse`, `hausnummer`, `plz`, `stadt`) VALUES (79, 'Lavinia', 'Keeling', 'Senior', 'zdickinson@example.net', '088-323-1590', 'O\'Conner Camp', 4, 94239, 'berg');
-INSERT INTO `kunde` (`kunde_ID`, `vorname`, `nachname`, `sorte`, `email`, `phone`, `strasse`, `hausnummer`, `plz`, `stadt`) VALUES (80, 'Lesley', 'Hudson', 'Normal', 'lilyan.becker@example.net', '+27(6)151616006', 'Hilll Inlet', 3, 8799, 'borough');
-INSERT INTO `kunde` (`kunde_ID`, `vorname`, `nachname`, `sorte`, `email`, `phone`, `strasse`, `hausnummer`, `plz`, `stadt`) VALUES (81, 'Lucinda', 'Cassin', 'Senior', 'richard17@example.com', '(174)816-8479x7', 'Easton Glen', 7, 9040, 'berg');
-INSERT INTO `kunde` (`kunde_ID`, `vorname`, `nachname`, `sorte`, `email`, `phone`, `strasse`, `hausnummer`, `plz`, `stadt`) VALUES (82, 'Vincenza', 'Aufderhar', 'Student', 'giovanni.huel@example.org', '+54(2)505800504', 'McCullough Avenue', 7, 74315, 'land');
-INSERT INTO `kunde` (`kunde_ID`, `vorname`, `nachname`, `sorte`, `email`, `phone`, `strasse`, `hausnummer`, `plz`, `stadt`) VALUES (83, 'Destiney', 'Kuphal', 'Student', 'jeanette.wilderman@example.com', '177-096-3314', 'Vella Drive', 3, 28364, 'port');
-INSERT INTO `kunde` (`kunde_ID`, `vorname`, `nachname`, `sorte`, `email`, `phone`, `strasse`, `hausnummer`, `plz`, `stadt`) VALUES (84, 'Olga', 'Sporer', 'Normal', 'jace.crooks@example.org', '(904)455-7650x9', 'Felicita Crossing', 7, 37498, 'burgh');
-INSERT INTO `kunde` (`kunde_ID`, `vorname`, `nachname`, `sorte`, `email`, `phone`, `strasse`, `hausnummer`, `plz`, `stadt`) VALUES (85, 'Giuseppe', 'Ondricka', 'Normal', 'vsimonis@example.net', '+48(4)186709660', 'Morissette Plaza', 9, 44066, 'port');
-INSERT INTO `kunde` (`kunde_ID`, `vorname`, `nachname`, `sorte`, `email`, `phone`, `strasse`, `hausnummer`, `plz`, `stadt`) VALUES (86, 'Glenda', 'Hilll', 'Normal', 'doyle.leilani@example.net', '+00(1)358973623', 'Austin Mall', 5, 86015, 'view');
-INSERT INTO `kunde` (`kunde_ID`, `vorname`, `nachname`, `sorte`, `email`, `phone`, `strasse`, `hausnummer`, `plz`, `stadt`) VALUES (87, 'Elroy', 'Ernser', 'Senior', 'darrell15@example.org', '459.209.6625', 'Lillie Lane', 3, 32738, 'borough');
-INSERT INTO `kunde` (`kunde_ID`, `vorname`, `nachname`, `sorte`, `email`, `phone`, `strasse`, `hausnummer`, `plz`, `stadt`) VALUES (88, 'Leopold', 'Sauer', 'Senior', 'price.josue@example.org', '365-697-8310', 'Flavio Stravenue', 2, 73487, 'land');
-INSERT INTO `kunde` (`kunde_ID`, `vorname`, `nachname`, `sorte`, `email`, `phone`, `strasse`, `hausnummer`, `plz`, `stadt`) VALUES (89, 'Santos', 'Koelpin', 'Student', 'schuster.cathy@example.net', '1-257-980-4224', 'Abbott Flat', 4, 87456, 'borough');
-INSERT INTO `kunde` (`kunde_ID`, `vorname`, `nachname`, `sorte`, `email`, `phone`, `strasse`, `hausnummer`, `plz`, `stadt`) VALUES (90, 'Santos', 'Terry', 'Normal', 'rafael.robel@example.com', '(742)894-2157x0', 'Tad Ways', 8, 98299, 'chester');
-INSERT INTO `kunde` (`kunde_ID`, `vorname`, `nachname`, `sorte`, `email`, `phone`, `strasse`, `hausnummer`, `plz`, `stadt`) VALUES (91, 'Horacio', 'Johns', 'Normal', 'lklocko@example.com', '+82(9)954602758', 'Mia Passage', 1, 77913, 'mouth');
-INSERT INTO `kunde` (`kunde_ID`, `vorname`, `nachname`, `sorte`, `email`, `phone`, `strasse`, `hausnummer`, `plz`, `stadt`) VALUES (92, 'Jordan', 'Gleichner', 'Normal', 'solson@example.org', '1-824-545-0678', 'Ora Walks', 9, 31848, 'burgh');
-INSERT INTO `kunde` (`kunde_ID`, `vorname`, `nachname`, `sorte`, `email`, `phone`, `strasse`, `hausnummer`, `plz`, `stadt`) VALUES (93, 'Marcelina', 'Schneider', 'Senior', 'mohr.elva@example.com', '1-200-095-1044x', 'Homenick Garden', 7, 12250, 'borough');
-INSERT INTO `kunde` (`kunde_ID`, `vorname`, `nachname`, `sorte`, `email`, `phone`, `strasse`, `hausnummer`, `plz`, `stadt`) VALUES (94, 'Carrie', 'Jaskolski', 'Normal', 'kimberly00@example.net', '384.123.8809x79', 'Wuckert Trace', 6, 11329, 'stad');
-INSERT INTO `kunde` (`kunde_ID`, `vorname`, `nachname`, `sorte`, `email`, `phone`, `strasse`, `hausnummer`, `plz`, `stadt`) VALUES (95, 'Rahul', 'Schaefer', 'Normal', 'gudrun31@example.org', '694.993.4422x27', 'Crist Inlet', 3, 24093, 'furt');
-INSERT INTO `kunde` (`kunde_ID`, `vorname`, `nachname`, `sorte`, `email`, `phone`, `strasse`, `hausnummer`, `plz`, `stadt`) VALUES (96, 'Jasper', 'Ullrich', 'Senior', 'ifisher@example.com', '553-172-1741', 'Germaine Roads', 7, 37597, 'land');
-INSERT INTO `kunde` (`kunde_ID`, `vorname`, `nachname`, `sorte`, `email`, `phone`, `strasse`, `hausnummer`, `plz`, `stadt`) VALUES (97, 'Eduardo', 'Crist', 'Senior', 'leffler.melba@example.com', '640-546-6296x59', 'Zboncak Curve', 3, 23101, 'land');
-INSERT INTO `kunde` (`kunde_ID`, `vorname`, `nachname`, `sorte`, `email`, `phone`, `strasse`, `hausnummer`, `plz`, `stadt`) VALUES (98, 'Maxwell', 'Mohr', 'Senior', 'litzy.lockman@example.net', '687.095.5607x67', 'Mraz Unions', 2, 19224, 'ton');
-INSERT INTO `kunde` (`kunde_ID`, `vorname`, `nachname`, `sorte`, `email`, `phone`, `strasse`, `hausnummer`, `plz`, `stadt`) VALUES (99, 'Harley', 'Ritchie', 'Senior', 'kemmer.cornelius@example.org', '428.758.3199x78', 'Olson Field', 2, 50095, 'port');
-INSERT INTO `kunde` (`kunde_ID`, `vorname`, `nachname`, `sorte`, `email`, `phone`, `strasse`, `hausnummer`, `plz`, `stadt`) VALUES (100, 'Madelyn', 'Schmitt', 'Normal', 'gmcglynn@example.com', '493.478.7616x89', 'Laverne Roads', 2, 60472, 'fort');
+CREATE TABLE `buch_ausliehen` (
+  `kunde_id` int(10) unsigned DEFAULT NULL,
+  `buch_id` int(10) unsigned NOT NULL,
+  `exemplar_id` int(10) unsigned NOT NULL,
+  `von_datum` date NOT NULL,
+  `bis_datum` date NOT NULL,
+  `strafArt` tinyint(1) GENERATED ALWAYS AS (`bis_datum` - `von_datum` <= 10) VIRTUAL,
+  KEY `kunde_id` (`kunde_id`),
+  KEY `buch_id` (`buch_id`),
+  CONSTRAINT `buch_ausliehen_ibfk_1` FOREIGN KEY (`kunde_id`) REFERENCES `Mensch` (`id`),
+  CONSTRAINT `buch_ausliehen_ibfk_2` FOREIGN KEY (`buch_id`) REFERENCES `Buch` (`buch_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+INSERT INTO `buch_ausliehen` (`kunde_id`, `buch_id`, `exemplar_id`, `von_datum`, `bis_datum`) VALUES (1,0,1,'2021-02-22','2020-07-13'),
+(2,1,2,'2020-10-31','2020-09-03'),
+(3,2,3,'2021-01-18','2020-05-23'),
+(4,4,4,'2020-08-10','2021-01-04'),
+(5,5,5,'2020-07-30','2021-02-04'),
+(6,6,6,'2021-01-31','2020-12-12'),
+(7,17,7,'2020-10-26','2020-06-21'),
+(8,38,8,'2020-05-26','2020-06-18'),
+(9,48,9,'2021-02-27','2021-04-01'),
+(10,54,10,'2020-07-05','2020-04-20'),
+(11,59,11,'2020-12-02','2021-01-17'),
+(12,62,12,'2020-07-19','2021-04-05'),
+(13,67,13,'2020-05-24','2020-07-11'),
+(14,73,14,'2020-09-01','2020-11-07'),
+(15,82,15,'2020-06-06','2020-10-30'),
+(16,95,16,'2020-05-25','2020-06-02'),
+(17,98,17,'2020-09-16','2020-09-26'),
+(18,131,18,'2020-04-30','2020-04-18'),
+(19,139,19,'2021-02-12','2020-10-30'),
+(20,157,20,'2020-06-24','2020-12-19'),
+(21,272,21,'2020-08-15','2020-11-01'),
+(22,420,22,'2020-07-08','2021-03-14'),
+(23,644,23,'2020-09-13','2020-05-29'),
+(24,778,24,'2020-11-24','2021-03-26'),
+(25,812,25,'2021-01-05','2020-07-07'),
+(26,876,26,'2020-06-01','2020-07-06'),
+(27,935,27,'2020-10-08','2020-07-16'),
+(28,947,28,'2021-01-24','2021-02-24'),
+(29,1884,29,'2020-06-19','2020-04-25'),
+(30,2055,30,'2020-06-16','2021-03-17'),
+(31,2169,31,'2020-06-22','2020-12-12'),
+(32,2711,32,'2020-06-19','2020-05-03'),
+(33,4246,33,'2020-12-26','2020-10-15'),
+(34,5555,34,'2020-10-24','2020-07-25'),
+(35,6318,35,'2020-12-25','2020-08-22'),
+(36,6351,36,'2021-01-25','2020-06-26'),
+(37,6379,37,'2021-02-10','2020-04-14'),
+(38,6668,38,'2020-06-02','2021-01-11'),
+(39,7090,39,'2020-06-06','2020-05-21'),
+(40,7530,40,'2020-09-21','2020-12-17'),
+(41,8404,41,'2020-04-25','2020-09-18'),
+(42,9397,42,'2020-06-19','2020-12-09'),
+(43,10345,43,'2020-08-18','2020-07-07'),
+(44,26020,44,'2020-09-26','2020-11-05');
 
 
 #
 # TABLE STRUCTURE FOR: verfasst
 #
 
+DROP TABLE IF EXISTS `verfasst`;
 
-INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (52, 30);
-INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (1, 3);
-INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (2, 4);
-INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (3, 5);
-INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (4, 6);
-INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (5, 7);
-INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (6, 8);
-INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (8, 9);
-INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (9, 12);
-INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (15, 15);
-INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (16, 33);
-INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (34, 34);
-INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (36, 47);
-INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (49, 74);
-INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (55, 76);
-INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (65, 83);
-INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (86, 91);
-INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (126, 95);
-INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (179, 356);
-INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (319, 379);
-INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (320, 606);
-INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (450, 676);
-INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (479, 691);
-INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (828, 881);
-INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (896, 934);
-INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (923, 987);
-INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (1834, 1490);
-INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (2320, 1630);
-INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (2852, 2212);
-INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (3805, 2501);
-INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (3854, 2579);
-INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (3941, 2707);
-INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (4198, 2948);
-INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (4261, 3764);
-INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (4435, 3903);
-INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (4799, 4278);
-INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (5449, 7427);
-INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (5517, 8608);
-INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (6683, 9705);
-INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (7695, 12455);
-INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (8587, 17448);
-INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (9189, 20310);
-INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (9432, 20441);
-INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (9960, 26841);
-INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (13878, 28644);
-INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (21160, 32328);
-INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (33705, 48066);
-INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (56762, 56561);
-INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (58283, 65489);
-INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (78161, 67152);
-INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (90617, 79405);
-INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (97116, 230602);
-INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (97379, 271289);
-INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (101923, 315906);
-INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (267638, 381357);
-INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (286714, 420429);
-INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (361271, 476289);
-INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (362893, 539566);
-INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (413858, 670369);
-INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (622825, 758724);
-INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (645698, 923558);
-INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (685716, 995374);
-INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (706295, 1300432);
-INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (788840, 2024210);
-INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (827225, 2947029);
-INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (1057064, 4117493);
-INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (3270223, 4789635);
-INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (5623014, 6350731);
-INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (6301383, 6790531);
-INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (7142182, 6816622);
-INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (7331279, 6923581);
-INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (7651303, 7064655);
-INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (8027727, 7657916);
-INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (8896473, 7802282);
-INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (9000751, 8251999);
-INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (24957181, 8716240);
-INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (39674677, 9097494);
-INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (42763127, 9102049);
-INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (44359254, 9761807);
-INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (48763647, 17160105);
-INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (64438595, 19134193);
-INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (69313777, 38931020);
-INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (72443576, 51774246);
-INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (72480251, 56660333);
-INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (76678247, 72227000);
-INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (78750398, 73388614);
-INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (82564769, 77521558);
-INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (93541332, 93438479);
-INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (113389499, 93781921);
-INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (374071784, 95996233);
-INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (478873780, 167473801);
-INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (502498382, 236529279);
-INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (618295225, 272268115);
-INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (709578845, 273274142);
-INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (776707412, 418583356);
-INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (852369380, 569258091);
-INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (855843305, 578243590);
-INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (870852451, 733414862);
-INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (967924437, 792162635);
-INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (985327608, 827992836);
+CREATE TABLE `verfasst` (
+  `buch_id` int(10) unsigned NOT NULL,
+  `autor_id` int(10) unsigned DEFAULT NULL,
+  UNIQUE KEY `buch_id` (`buch_id`),
+  KEY `autor_id` (`autor_id`),
+  CONSTRAINT `verfasst_ibfk_1` FOREIGN KEY (`buch_id`) REFERENCES `Buch` (`buch_id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `verfasst_ibfk_2` FOREIGN KEY (`autor_id`) REFERENCES `Autor` (`autor_id`) ON DELETE SET NULL ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (0, 0);
+INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (1, 1);
+INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (2, 2);
+INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (4, 4);
+INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (5, 5);
+INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (6, 6);
+INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (17, 8);
+INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (38, 9);
+INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (48, 16);
+INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (54, 36);
+INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (59, 61);
+INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (62, 63);
+INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (67, 64);
+INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (73, 84);
+INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (82, 92);
+INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (95, 133);
+INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (98, 136);
+INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (131, 176);
+INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (139, 236);
+INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (157, 448);
+INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (272, 454);
+INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (420, 462);
+INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (644, 508);
+INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (778, 512);
+INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (812, 527);
+INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (876, 599);
+INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (935, 602);
+INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (947, 651);
+INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (1884, 674);
+INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (2055, 719);
+INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (2169, 784);
+INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (2711, 890);
+INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (4246, 900);
+INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (5555, 1704);
+INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (6318, 2278);
+INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (6351, 3403);
+INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (6379, 4013);
+INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (6668, 4635);
+INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (7090, 4891);
+INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (7530, 5168);
+INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (8404, 7758);
+INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (9397, 8415);
+INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (10345, 8887);
+INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (26020, 12745);
+INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (28999, 22848);
+INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (39147, 27370);
+INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (44255, 44762);
+INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (50046, 46517);
+INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (53192, 65510);
+INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (56067, 73409);
+INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (57714, 77954);
+INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (59089, 87158);
+INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (60302, 98141);
+INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (61185, 98263);
+INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (75360, 98810);
+INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (99844, 119361);
+INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (172845, 266375);
+INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (283441, 307581);
+INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (286328, 374809);
+INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (295129, 694950);
+INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (303426, 750441);
+INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (384587, 798993);
+INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (555783, 802608);
+INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (607686, 868423);
+INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (656105, 1406100);
+INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (836974, 1558376);
+INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (863365, 2739826);
+INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (3227287, 3302502);
+INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (4126267, 4002053);
+INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (4388248, 4577906);
+INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (4987394, 5004777);
+INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (5948789, 5674668);
+INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (6294152, 6714694);
+INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (8347890, 7841260);
+INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (8623284, 9085997);
+INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (8885164, 9789968);
+INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (9006496, 16850003);
+INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (9726243, 24394489);
+INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (9830650, 24543377);
+INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (28529092, 27398579);
+INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (41765941, 29459212);
+INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (47399601, 33427865);
+INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (49724630, 34213177);
+INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (54896814, 34705922);
+INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (61468312, 51006760);
+INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (74520596, 57501454);
+INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (77175221, 72623116);
+INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (79486453, 88946950);
+INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (86487044, 93911184);
+INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (97112517, 98072659);
+INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (99149544, 98896814);
+INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (198664812, 98899890);
+INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (322733655, 228986987);
+INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (336249894, 237153979);
+INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (340997513, 367257916);
+INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (559284373, 427283291);
+INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (726478778, 517181981);
+INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (784870112, 527322718);
+INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (951389647, 625329486);
+INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (989406400, 675414763);
+
+select * from exemplar;
 
 #
 # TABLE STRUCTURE FOR: verwaltet
@@ -857,106 +1032,114 @@ INSERT INTO `verfasst` (`buch_id`, `autor_id`) VALUES (985327608, 827992836);
 
 DROP TABLE IF EXISTS `verwaltet`;
 
+CREATE TABLE `verwaltet` (
+  `bib_id` int(10) unsigned DEFAULT NULL,
+  `kunde_id` int(10) unsigned DEFAULT NULL,
+  KEY `bib_id` (`bib_id`),
+  KEY `kunde_id` (`kunde_id`),
+  CONSTRAINT `verwaltet_ibfk_1` FOREIGN KEY (`bib_id`) REFERENCES `Bibliothekar` (`bib_id`),
+  CONSTRAINT `verwaltet_ibfk_2` FOREIGN KEY (`kunde_id`) REFERENCES `Mensch` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
-INSERT INTO `verwaltet` (`bib_id`, `kunde_ID`) VALUES (0, 1);
-INSERT INTO `verwaltet` (`bib_id`, `kunde_ID`) VALUES (1, 2);
-INSERT INTO `verwaltet` (`bib_id`, `kunde_ID`) VALUES (2, 3);
-INSERT INTO `verwaltet` (`bib_id`, `kunde_ID`) VALUES (3, 4);
-INSERT INTO `verwaltet` (`bib_id`, `kunde_ID`) VALUES (5, 5);
-INSERT INTO `verwaltet` (`bib_id`, `kunde_ID`) VALUES (6, 6);
-INSERT INTO `verwaltet` (`bib_id`, `kunde_ID`) VALUES (7, 7);
-INSERT INTO `verwaltet` (`bib_id`, `kunde_ID`) VALUES (8, 8);
-INSERT INTO `verwaltet` (`bib_id`, `kunde_ID`) VALUES (9, 9);
-INSERT INTO `verwaltet` (`bib_id`, `kunde_ID`) VALUES (11, 10);
-INSERT INTO `verwaltet` (`bib_id`, `kunde_ID`) VALUES (13, 11);
-INSERT INTO `verwaltet` (`bib_id`, `kunde_ID`) VALUES (22, 12);
-INSERT INTO `verwaltet` (`bib_id`, `kunde_ID`) VALUES (58, 13);
-INSERT INTO `verwaltet` (`bib_id`, `kunde_ID`) VALUES (96, 14);
-INSERT INTO `verwaltet` (`bib_id`, `kunde_ID`) VALUES (133, 15);
-INSERT INTO `verwaltet` (`bib_id`, `kunde_ID`) VALUES (148, 16);
-INSERT INTO `verwaltet` (`bib_id`, `kunde_ID`) VALUES (265, 17);
-INSERT INTO `verwaltet` (`bib_id`, `kunde_ID`) VALUES (298, 18);
-INSERT INTO `verwaltet` (`bib_id`, `kunde_ID`) VALUES (342, 19);
-INSERT INTO `verwaltet` (`bib_id`, `kunde_ID`) VALUES (436, 20);
-INSERT INTO `verwaltet` (`bib_id`, `kunde_ID`) VALUES (449, 21);
-INSERT INTO `verwaltet` (`bib_id`, `kunde_ID`) VALUES (478, 22);
-INSERT INTO `verwaltet` (`bib_id`, `kunde_ID`) VALUES (495, 23);
-INSERT INTO `verwaltet` (`bib_id`, `kunde_ID`) VALUES (612, 24);
-INSERT INTO `verwaltet` (`bib_id`, `kunde_ID`) VALUES (628, 25);
-INSERT INTO `verwaltet` (`bib_id`, `kunde_ID`) VALUES (723, 26);
-INSERT INTO `verwaltet` (`bib_id`, `kunde_ID`) VALUES (765, 27);
-INSERT INTO `verwaltet` (`bib_id`, `kunde_ID`) VALUES (773, 28);
-INSERT INTO `verwaltet` (`bib_id`, `kunde_ID`) VALUES (955, 29);
-INSERT INTO `verwaltet` (`bib_id`, `kunde_ID`) VALUES (1778, 30);
-INSERT INTO `verwaltet` (`bib_id`, `kunde_ID`) VALUES (2515, 31);
-INSERT INTO `verwaltet` (`bib_id`, `kunde_ID`) VALUES (3843, 32);
-INSERT INTO `verwaltet` (`bib_id`, `kunde_ID`) VALUES (4134, 33);
-INSERT INTO `verwaltet` (`bib_id`, `kunde_ID`) VALUES (5204, 34);
-INSERT INTO `verwaltet` (`bib_id`, `kunde_ID`) VALUES (5374, 35);
-INSERT INTO `verwaltet` (`bib_id`, `kunde_ID`) VALUES (5621, 36);
-INSERT INTO `verwaltet` (`bib_id`, `kunde_ID`) VALUES (5986, 37);
-INSERT INTO `verwaltet` (`bib_id`, `kunde_ID`) VALUES (6440, 38);
-INSERT INTO `verwaltet` (`bib_id`, `kunde_ID`) VALUES (8133, 39);
-INSERT INTO `verwaltet` (`bib_id`, `kunde_ID`) VALUES (8258, 40);
-INSERT INTO `verwaltet` (`bib_id`, `kunde_ID`) VALUES (10926, 41);
-INSERT INTO `verwaltet` (`bib_id`, `kunde_ID`) VALUES (24115, 42);
-INSERT INTO `verwaltet` (`bib_id`, `kunde_ID`) VALUES (29903, 43);
-INSERT INTO `verwaltet` (`bib_id`, `kunde_ID`) VALUES (39064, 44);
-INSERT INTO `verwaltet` (`bib_id`, `kunde_ID`) VALUES (41186, 45);
-INSERT INTO `verwaltet` (`bib_id`, `kunde_ID`) VALUES (42112, 46);
-INSERT INTO `verwaltet` (`bib_id`, `kunde_ID`) VALUES (62295, 47);
-INSERT INTO `verwaltet` (`bib_id`, `kunde_ID`) VALUES (71929, 48);
-INSERT INTO `verwaltet` (`bib_id`, `kunde_ID`) VALUES (76080, 49);
-INSERT INTO `verwaltet` (`bib_id`, `kunde_ID`) VALUES (79959, 50);
-INSERT INTO `verwaltet` (`bib_id`, `kunde_ID`) VALUES (92791, 51);
-INSERT INTO `verwaltet` (`bib_id`, `kunde_ID`) VALUES (116765, 52);
-INSERT INTO `verwaltet` (`bib_id`, `kunde_ID`) VALUES (153869, 53);
-INSERT INTO `verwaltet` (`bib_id`, `kunde_ID`) VALUES (260946, 54);
-INSERT INTO `verwaltet` (`bib_id`, `kunde_ID`) VALUES (261980, 55);
-INSERT INTO `verwaltet` (`bib_id`, `kunde_ID`) VALUES (366846, 56);
-INSERT INTO `verwaltet` (`bib_id`, `kunde_ID`) VALUES (416208, 57);
-INSERT INTO `verwaltet` (`bib_id`, `kunde_ID`) VALUES (448011, 58);
-INSERT INTO `verwaltet` (`bib_id`, `kunde_ID`) VALUES (498215, 59);
-INSERT INTO `verwaltet` (`bib_id`, `kunde_ID`) VALUES (513633, 60);
-INSERT INTO `verwaltet` (`bib_id`, `kunde_ID`) VALUES (534305, 61);
-INSERT INTO `verwaltet` (`bib_id`, `kunde_ID`) VALUES (556408, 62);
-INSERT INTO `verwaltet` (`bib_id`, `kunde_ID`) VALUES (688995, 63);
-INSERT INTO `verwaltet` (`bib_id`, `kunde_ID`) VALUES (1281041, 64);
-INSERT INTO `verwaltet` (`bib_id`, `kunde_ID`) VALUES (1767471, 65);
-INSERT INTO `verwaltet` (`bib_id`, `kunde_ID`) VALUES (1983427, 66);
-INSERT INTO `verwaltet` (`bib_id`, `kunde_ID`) VALUES (2692141, 67);
-INSERT INTO `verwaltet` (`bib_id`, `kunde_ID`) VALUES (3812763, 68);
-INSERT INTO `verwaltet` (`bib_id`, `kunde_ID`) VALUES (4312179, 69);
-INSERT INTO `verwaltet` (`bib_id`, `kunde_ID`) VALUES (4409996, 70);
-INSERT INTO `verwaltet` (`bib_id`, `kunde_ID`) VALUES (4610884, 71);
-INSERT INTO `verwaltet` (`bib_id`, `kunde_ID`) VALUES (5153865, 72);
-INSERT INTO `verwaltet` (`bib_id`, `kunde_ID`) VALUES (5633492, 73);
-INSERT INTO `verwaltet` (`bib_id`, `kunde_ID`) VALUES (8438979, 74);
-INSERT INTO `verwaltet` (`bib_id`, `kunde_ID`) VALUES (12790038, 75);
-INSERT INTO `verwaltet` (`bib_id`, `kunde_ID`) VALUES (12933202, 76);
-INSERT INTO `verwaltet` (`bib_id`, `kunde_ID`) VALUES (27807364, 77);
-INSERT INTO `verwaltet` (`bib_id`, `kunde_ID`) VALUES (48156039, 78);
-INSERT INTO `verwaltet` (`bib_id`, `kunde_ID`) VALUES (50939272, 79);
-INSERT INTO `verwaltet` (`bib_id`, `kunde_ID`) VALUES (53531108, 80);
-INSERT INTO `verwaltet` (`bib_id`, `kunde_ID`) VALUES (54044415, 81);
-INSERT INTO `verwaltet` (`bib_id`, `kunde_ID`) VALUES (57022309, 82);
-INSERT INTO `verwaltet` (`bib_id`, `kunde_ID`) VALUES (58692427, 83);
-INSERT INTO `verwaltet` (`bib_id`, `kunde_ID`) VALUES (61773777, 84);
-INSERT INTO `verwaltet` (`bib_id`, `kunde_ID`) VALUES (62579248, 85);
-INSERT INTO `verwaltet` (`bib_id`, `kunde_ID`) VALUES (66469573, 86);
-INSERT INTO `verwaltet` (`bib_id`, `kunde_ID`) VALUES (77821499, 87);
-INSERT INTO `verwaltet` (`bib_id`, `kunde_ID`) VALUES (179028114, 88);
-INSERT INTO `verwaltet` (`bib_id`, `kunde_ID`) VALUES (262349308, 89);
-INSERT INTO `verwaltet` (`bib_id`, `kunde_ID`) VALUES (309329959, 90);
-INSERT INTO `verwaltet` (`bib_id`, `kunde_ID`) VALUES (366196901, 91);
-INSERT INTO `verwaltet` (`bib_id`, `kunde_ID`) VALUES (458467356, 92);
-INSERT INTO `verwaltet` (`bib_id`, `kunde_ID`) VALUES (589004707, 93);
-INSERT INTO `verwaltet` (`bib_id`, `kunde_ID`) VALUES (622097842, 94);
-INSERT INTO `verwaltet` (`bib_id`, `kunde_ID`) VALUES (628081745, 95);
-INSERT INTO `verwaltet` (`bib_id`, `kunde_ID`) VALUES (853954281, 96);
-INSERT INTO `verwaltet` (`bib_id`, `kunde_ID`) VALUES (874703200, 97);
-INSERT INTO `verwaltet` (`bib_id`, `kunde_ID`) VALUES (900073664, 98);
-INSERT INTO `verwaltet` (`bib_id`, `kunde_ID`) VALUES (909554054, 99);
-INSERT INTO `verwaltet` (`bib_id`, `kunde_ID`) VALUES (988570955, 100);
+INSERT INTO `verwaltet` (`bib_id`, `kunde_id`) VALUES (0, 1);
+INSERT INTO `verwaltet` (`bib_id`, `kunde_id`) VALUES (156, 2);
+INSERT INTO `verwaltet` (`bib_id`, `kunde_id`) VALUES (546, 3);
+INSERT INTO `verwaltet` (`bib_id`, `kunde_id`) VALUES (549, 4);
+INSERT INTO `verwaltet` (`bib_id`, `kunde_id`) VALUES (28978, 5);
+INSERT INTO `verwaltet` (`bib_id`, `kunde_id`) VALUES (46329, 6);
+INSERT INTO `verwaltet` (`bib_id`, `kunde_id`) VALUES (62534, 7);
+INSERT INTO `verwaltet` (`bib_id`, `kunde_id`) VALUES (92680, 8);
+INSERT INTO `verwaltet` (`bib_id`, `kunde_id`) VALUES (3538669, 9);
+INSERT INTO `verwaltet` (`bib_id`, `kunde_id`) VALUES (83085171, 10);
+INSERT INTO `verwaltet` (`bib_id`, `kunde_id`) VALUES (0, 11);
+INSERT INTO `verwaltet` (`bib_id`, `kunde_id`) VALUES (156, 12);
+INSERT INTO `verwaltet` (`bib_id`, `kunde_id`) VALUES (546, 13);
+INSERT INTO `verwaltet` (`bib_id`, `kunde_id`) VALUES (549, 14);
+INSERT INTO `verwaltet` (`bib_id`, `kunde_id`) VALUES (28978, 15);
+INSERT INTO `verwaltet` (`bib_id`, `kunde_id`) VALUES (46329, 16);
+INSERT INTO `verwaltet` (`bib_id`, `kunde_id`) VALUES (62534, 17);
+INSERT INTO `verwaltet` (`bib_id`, `kunde_id`) VALUES (92680, 18);
+INSERT INTO `verwaltet` (`bib_id`, `kunde_id`) VALUES (3538669, 19);
+INSERT INTO `verwaltet` (`bib_id`, `kunde_id`) VALUES (83085171, 20);
+INSERT INTO `verwaltet` (`bib_id`, `kunde_id`) VALUES (0, 21);
+INSERT INTO `verwaltet` (`bib_id`, `kunde_id`) VALUES (156, 22);
+INSERT INTO `verwaltet` (`bib_id`, `kunde_id`) VALUES (546, 23);
+INSERT INTO `verwaltet` (`bib_id`, `kunde_id`) VALUES (549, 24);
+INSERT INTO `verwaltet` (`bib_id`, `kunde_id`) VALUES (28978, 25);
+INSERT INTO `verwaltet` (`bib_id`, `kunde_id`) VALUES (46329, 26);
+INSERT INTO `verwaltet` (`bib_id`, `kunde_id`) VALUES (62534, 27);
+INSERT INTO `verwaltet` (`bib_id`, `kunde_id`) VALUES (92680, 28);
+INSERT INTO `verwaltet` (`bib_id`, `kunde_id`) VALUES (3538669, 29);
+INSERT INTO `verwaltet` (`bib_id`, `kunde_id`) VALUES (83085171, 30);
+INSERT INTO `verwaltet` (`bib_id`, `kunde_id`) VALUES (0, 31);
+INSERT INTO `verwaltet` (`bib_id`, `kunde_id`) VALUES (156, 32);
+INSERT INTO `verwaltet` (`bib_id`, `kunde_id`) VALUES (546, 33);
+INSERT INTO `verwaltet` (`bib_id`, `kunde_id`) VALUES (549, 34);
+INSERT INTO `verwaltet` (`bib_id`, `kunde_id`) VALUES (28978, 35);
+INSERT INTO `verwaltet` (`bib_id`, `kunde_id`) VALUES (46329, 36);
+INSERT INTO `verwaltet` (`bib_id`, `kunde_id`) VALUES (62534, 37);
+INSERT INTO `verwaltet` (`bib_id`, `kunde_id`) VALUES (92680, 38);
+INSERT INTO `verwaltet` (`bib_id`, `kunde_id`) VALUES (3538669, 39);
+INSERT INTO `verwaltet` (`bib_id`, `kunde_id`) VALUES (83085171, 40);
+INSERT INTO `verwaltet` (`bib_id`, `kunde_id`) VALUES (0, 41);
+INSERT INTO `verwaltet` (`bib_id`, `kunde_id`) VALUES (156, 42);
+INSERT INTO `verwaltet` (`bib_id`, `kunde_id`) VALUES (546, 43);
+INSERT INTO `verwaltet` (`bib_id`, `kunde_id`) VALUES (549, 44);
+INSERT INTO `verwaltet` (`bib_id`, `kunde_id`) VALUES (28978, 45);
+INSERT INTO `verwaltet` (`bib_id`, `kunde_id`) VALUES (46329, 46);
+INSERT INTO `verwaltet` (`bib_id`, `kunde_id`) VALUES (62534, 47);
+INSERT INTO `verwaltet` (`bib_id`, `kunde_id`) VALUES (92680, 48);
+INSERT INTO `verwaltet` (`bib_id`, `kunde_id`) VALUES (3538669, 49);
+INSERT INTO `verwaltet` (`bib_id`, `kunde_id`) VALUES (83085171, 50);
+INSERT INTO `verwaltet` (`bib_id`, `kunde_id`) VALUES (0, 51);
+INSERT INTO `verwaltet` (`bib_id`, `kunde_id`) VALUES (156, 52);
+INSERT INTO `verwaltet` (`bib_id`, `kunde_id`) VALUES (546, 53);
+INSERT INTO `verwaltet` (`bib_id`, `kunde_id`) VALUES (549, 54);
+INSERT INTO `verwaltet` (`bib_id`, `kunde_id`) VALUES (28978, 55);
+INSERT INTO `verwaltet` (`bib_id`, `kunde_id`) VALUES (46329, 56);
+INSERT INTO `verwaltet` (`bib_id`, `kunde_id`) VALUES (62534, 57);
+INSERT INTO `verwaltet` (`bib_id`, `kunde_id`) VALUES (92680, 58);
+INSERT INTO `verwaltet` (`bib_id`, `kunde_id`) VALUES (3538669, 59);
+INSERT INTO `verwaltet` (`bib_id`, `kunde_id`) VALUES (83085171, 60);
+INSERT INTO `verwaltet` (`bib_id`, `kunde_id`) VALUES (0, 61);
+INSERT INTO `verwaltet` (`bib_id`, `kunde_id`) VALUES (156, 62);
+INSERT INTO `verwaltet` (`bib_id`, `kunde_id`) VALUES (546, 63);
+INSERT INTO `verwaltet` (`bib_id`, `kunde_id`) VALUES (549, 64);
+INSERT INTO `verwaltet` (`bib_id`, `kunde_id`) VALUES (28978, 65);
+INSERT INTO `verwaltet` (`bib_id`, `kunde_id`) VALUES (46329, 66);
+INSERT INTO `verwaltet` (`bib_id`, `kunde_id`) VALUES (62534, 67);
+INSERT INTO `verwaltet` (`bib_id`, `kunde_id`) VALUES (92680, 68);
+INSERT INTO `verwaltet` (`bib_id`, `kunde_id`) VALUES (3538669, 69);
+INSERT INTO `verwaltet` (`bib_id`, `kunde_id`) VALUES (83085171, 70);
+INSERT INTO `verwaltet` (`bib_id`, `kunde_id`) VALUES (0, 71);
+INSERT INTO `verwaltet` (`bib_id`, `kunde_id`) VALUES (156, 72);
+INSERT INTO `verwaltet` (`bib_id`, `kunde_id`) VALUES (546, 73);
+INSERT INTO `verwaltet` (`bib_id`, `kunde_id`) VALUES (549, 74);
+INSERT INTO `verwaltet` (`bib_id`, `kunde_id`) VALUES (28978, 75);
+INSERT INTO `verwaltet` (`bib_id`, `kunde_id`) VALUES (46329, 76);
+INSERT INTO `verwaltet` (`bib_id`, `kunde_id`) VALUES (62534, 77);
+INSERT INTO `verwaltet` (`bib_id`, `kunde_id`) VALUES (92680, 78);
+INSERT INTO `verwaltet` (`bib_id`, `kunde_id`) VALUES (3538669, 79);
+INSERT INTO `verwaltet` (`bib_id`, `kunde_id`) VALUES (83085171, 80);
+INSERT INTO `verwaltet` (`bib_id`, `kunde_id`) VALUES (0, 81);
+INSERT INTO `verwaltet` (`bib_id`, `kunde_id`) VALUES (156, 82);
+INSERT INTO `verwaltet` (`bib_id`, `kunde_id`) VALUES (546, 83);
+INSERT INTO `verwaltet` (`bib_id`, `kunde_id`) VALUES (549, 84);
+INSERT INTO `verwaltet` (`bib_id`, `kunde_id`) VALUES (28978, 85);
+INSERT INTO `verwaltet` (`bib_id`, `kunde_id`) VALUES (46329, 86);
+INSERT INTO `verwaltet` (`bib_id`, `kunde_id`) VALUES (62534, 87);
+INSERT INTO `verwaltet` (`bib_id`, `kunde_id`) VALUES (92680, 88);
+INSERT INTO `verwaltet` (`bib_id`, `kunde_id`) VALUES (3538669, 89);
+INSERT INTO `verwaltet` (`bib_id`, `kunde_id`) VALUES (83085171, 90);
+INSERT INTO `verwaltet` (`bib_id`, `kunde_id`) VALUES (0, 91);
+INSERT INTO `verwaltet` (`bib_id`, `kunde_id`) VALUES (156, 92);
+INSERT INTO `verwaltet` (`bib_id`, `kunde_id`) VALUES (546, 93);
+INSERT INTO `verwaltet` (`bib_id`, `kunde_id`) VALUES (549, 94);
+INSERT INTO `verwaltet` (`bib_id`, `kunde_id`) VALUES (28978, 95);
+INSERT INTO `verwaltet` (`bib_id`, `kunde_id`) VALUES (46329, 96);
+INSERT INTO `verwaltet` (`bib_id`, `kunde_id`) VALUES (62534, 97);
+INSERT INTO `verwaltet` (`bib_id`, `kunde_id`) VALUES (92680, 98);
+INSERT INTO `verwaltet` (`bib_id`, `kunde_id`) VALUES (3538669, 99);
+INSERT INTO `verwaltet` (`bib_id`, `kunde_id`) VALUES (83085171, 100);
 
 

@@ -1,52 +1,66 @@
 create database biblio1;
-use biblio1;
-CREATE TABLE  IF not  EXISTS kunde (
-kunde_ID INT  UNSIGNED NOT  NULL  AUTO_INCREMENT PRIMARY KEY,
+use biblio1; 
+
+
+ create table if not exists Mensch(
+ id INT  UNSIGNED NOT  NULL  AUTO_INCREMENT PRIMARY KEY,
 vorname VARCHAR(60) NOT NULL ,
 nachname VARCHAR(60) NOT NULL,
-sorte VARCHAR (50)not null,
 email VARCHAR(100) ,
 phone VARCHAR (15),
-strasse VARCHAR( 100) NOT NULL, 
-hausnummer INT UNSIGNED NOT NULL,
-plz INT UNSIGNED NOT NULL ,
-stadt VARCHAR (100) NOT NULL 
-)   ;
+unique(email,phone)
+);
+CREATE TABLE  IF not  EXISTS Kunde (
+kunde_id Int unsigned not null ,
+sorte enum ('student','Senior', 'Normal') not null,
+ foreign key (kunde_id) references Mensch (id) ON DELETE cascade ON UPDATE CASCADE
+);
+
+create table if not exists Mensh_adresse(
+mensch_id  INT  UNSIGNED NOT  NULL,
+Ad_Str VARCHAR (50) NOT NULL,
+ Ad_haus_nr int unsigned  NOT NULL,
+ Ad_Plz INT UNSIGNED  NOT NULL,
+ Ad_std VARCHAR (100) NOT NULL,
+
+foreign key (mensch_id ) references Mensch (id) ON DELETE cascade ON UPDATE CASCADE
+);
 
  CREATE TABLE  IF not  EXISTS Buch(
  buch_id INT  UNSIGNED NOT  NULL   PRIMARY KEY,  
  buchName VARCHAR (250) NOT NULL)
  ;
- 
-  CREATE TABLE  IF not  EXISTS  Exampler (
- exmpler_id INT  UNSIGNED NOT  NULL auto_increment  PRIMARY KEY, 
- buch_id INT  UNSIGNED NOT  NULL   , 
- exampler_zahl int unsigned default 1,
- exampler_JAHR date   not null, 
+ #rename table exampler to Exemplar ;
+  CREATE TABLE  IF not  EXISTS  Exemplar (
+ exemplar_id INT  UNSIGNED NOT  NULL auto_increment  PRIMARY KEY, 
+ buch_id INT  UNSIGNED NOT  NULL    , 
+ edition int unsigned default 1,
+erscheingsJahr date   not null, 
  foreign key (buch_id) references Buch(buch_id) ON DELETE cascade ON UPDATE CASCADE
  );
-Drop table buch_ausliehen;
-  CREATE TABLE  IF not  EXISTS buch_ausliehen (
+#  alter table Exemplar rename column  exampler_zahl to edition ;
+ #alter table Exemplar rename column  exampler_jahr to erscheingsJahr ;
+ 
+
+CREATE TABLE  IF not  EXISTS buch_ausliehen (
  kunde_id  INT  UNSIGNED  ,
  buch_id INT UNSIGNED NOT NULL,
- exmpler_id INT  UNSIGNED NOT  NULL , 
+ exemplar_id INT  UNSIGNED NOT  NULL , 
  von_datum DATE  NOT NULL,
  bis_datum DATE NOT NULL,
  strafArt  boolean  as (bis_datum-von_datum<=10),
- FOREIGN KEY(Kunde_id)REFERENCES kunde (kunde_id),
+ FOREIGN KEY(kunde_id)REFERENCES Mensch(id),
  FOREIGN KEY(buch_id)REFERENCES Buch (buch_id) 
  );
  
  CREATE TABLE  IF not  EXISTS Gebuhren (
  gebuhren_id int unsigned not null primary key,
  kunde_id int unsigned not null,
- buch_id INT UNSIGNED NOT NULL,
- exmpler_id int unsigned ,
+ exemplar_id int unsigned ,
  beitrag INT UNSIGNED ,
  is_bezahlt boolean,
- FOREIGN KEY(Kunde_id)REFERENCES buch_ausliehen (kunde_id) on update cascade   on delete Cascade,
- FOREIGN KEY(buch_id)REFERENCES buch_ausliehen (buch_id) on update cascade   on delete cascade,
-FOREIGN KEY(exmpler_id)REFERENCES Exampler(exmpler_id) 
+ FOREIGN KEY(kunde_id)REFERENCES Mensch(id) ,
+FOREIGN KEY(exemplar_id)REFERENCES Exemplar(exemplar_id) 
 );
 
   CREATE TABLE  IF not  EXISTS verfasst( 
@@ -63,21 +77,15 @@ FOREIGN KEY(exmpler_id)REFERENCES Exampler(exmpler_id)
  );
  
  CREATE TABLE  IF not  EXISTS Bibliothekar(
+ mensch_id INT  UNSIGNED NOT null ,
  bib_id INT  UNSIGNED NOT  NULL PRIMARY KEY,
- vorName VARCHAR(50) NOT NULL,
- nachName VARCHAR(50) NOT NULL,
- email VARCHAR(100)NOT NULL,
- phone VARCHAR(50) NOT NULL,
- Bib_Ad_Str VARCHAR (50) NOT NULL,
- Bib_Ad_haus_nr int unsigned  NOT NULL,
- Bib_Ad_Plz INT UNSIGNED  NOT NULL,
- Bib_Ad_std VARCHAR (100) NOT NULL
+ FOREIGN KEY (mensch_id)REFERENCES Mensch(id) 
  );
  create table if not exists verwaltet(
  bib_id INT  UNSIGNED ,
- kunde_ID INT  UNSIGNED,
- FOREIGN KEY (bib_id)REFERENCES Bibliothekar(bib_id) on delete set null on update cascade,
- FOREIGN KEY ( kunde_ID)REFERENCES kunde (kunde_id) on delete cascade  on update cascade
+ kunde_id INT  UNSIGNED,
+ FOREIGN KEY (bib_id)REFERENCES Bibliothekar(bib_id) ,
+ FOREIGN KEY ( kunde_id)REFERENCES Mensch(id) 
  );
  
   drop function  if exists istüberschritten;
