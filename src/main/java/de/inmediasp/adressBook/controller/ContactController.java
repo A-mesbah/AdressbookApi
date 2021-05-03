@@ -2,18 +2,23 @@ package de.inmediasp.adressBook.controller;
 
 import de.inmediasp.adressBook.model.Contact;
 import de.inmediasp.adressBook.service.ContactService;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @RestController
+@RequestMapping("/api/v1")
+@Api(value = "Contact", description = "Operation for ContactService ")
 public class ContactController {
     @Autowired
     private ContactService contactService;
 
     @GetMapping("/contacts")
+    @ApiOperation(value = "View a list of available Contacts ", response = Contact.class)
     public List<Contact> getAllContacts() {
         return contactService.getAllContacts();
     }
@@ -24,28 +29,30 @@ public class ContactController {
         return contactService.getContact(id);
     }
 
-
+    @ResponseStatus(value = HttpStatus.CREATED, reason = "contact Added Successfully")
     @PostMapping("/contact")
-    public String addContact(@RequestBody Contact contact) {
+    public void addContact(@RequestBody Contact contact) {
         contactService.addContact(contact);
-        return "contact added Successfully";
     }
-    @PostMapping("/addcontacts")
-    public String addContactsList(@RequestParam List<Contact>contacts){
+
+    @ResponseStatus(value = HttpStatus.CREATED)
+    @PostMapping("/contacts")
+    public void addContactsList(@RequestParam List<Contact> contacts) {
         contactService.addListContacts(contacts);
-        return "The list of contacts added successfully";
+
     }
 
+    @ResponseStatus(value = HttpStatus.OK, reason = "contact updated Successfully")
     @PutMapping("/contact")
-    public String updateContact(@RequestBody Contact contact) {
+    public void updateContact(@RequestBody Contact contact) {
         contactService.addContact(contact);
-        return "contact updated Successfully";
+
     }
 
+    @ResponseStatus(value = HttpStatus.OK, reason = "Contact successfully deleted")
     @DeleteMapping("/contact")
-    public String deleteContact(@RequestParam Long id) {
+    public void deleteContact(@RequestParam Long id) {
         contactService.deleteContact(id);
-        return "Contact successfully deleted";
     }
 
 }
