@@ -1,4 +1,4 @@
-package de.inmediasp.adressBook.service;
+package de.inmediasp.adressBook;
 
 import org.springframework.context.annotation.Configuration;
 import springfox.documentation.builders.RequestHandlerSelectors;
