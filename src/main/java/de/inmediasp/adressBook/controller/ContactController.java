@@ -1,5 +1,6 @@
 package de.inmediasp.adressBook.controller;
 
+import de.inmediasp.adressBook.exception.ApiRequestException;
 import de.inmediasp.adressBook.model.Contact;
 import de.inmediasp.adressBook.service.ContactServiceImp;
 import io.swagger.annotations.Api;
@@ -19,7 +20,7 @@ public class ContactController {
 
     @GetMapping("/contacts")
     @ApiOperation(value = "View a list of available Contacts ", response = Contact.class)
-    public List<Contact> getAllContacts() {
+    public List<Contact> getAllContacts(){
         return contactServiceImp.getAllContacts();
     }
 
