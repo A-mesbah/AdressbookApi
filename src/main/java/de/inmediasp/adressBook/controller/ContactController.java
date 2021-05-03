@@ -1,7 +1,7 @@
 package de.inmediasp.adressBook.controller;
 
 import de.inmediasp.adressBook.model.Contact;
-import de.inmediasp.adressBook.service.ContactService;
+import de.inmediasp.adressBook.service.ContactServiceImp;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,44 +15,44 @@ import java.util.List;
 @Api(value = "Contact", description = "Operation for ContactService ")
 public class ContactController {
     @Autowired
-    private ContactService contactService;
+    private ContactServiceImp contactServiceImp;
 
     @GetMapping("/contacts")
     @ApiOperation(value = "View a list of available Contacts ", response = Contact.class)
     public List<Contact> getAllContacts() {
-        return contactService.getAllContacts();
+        return contactServiceImp.getAllContacts();
     }
 
     //you can use con/{id}but instead of @RequestParam use @PathVariable Long id
     @GetMapping("/contact/{id}")
     public Contact getContactWithId(@PathVariable Long id) {
-        return contactService.getContact(id);
+        return contactServiceImp.getContact(id);
     }
 
     @ResponseStatus(value = HttpStatus.CREATED, reason = "contact Added Successfully")
     @PostMapping("/contact")
     public void addContact(@RequestBody Contact contact) {
-        contactService.addContact(contact);
+        contactServiceImp.addContact(contact);
     }
 
     @ResponseStatus(value = HttpStatus.CREATED)
     @PostMapping("/contacts")
     public void addContactsList(@RequestParam List<Contact> contacts) {
-        contactService.addListContacts(contacts);
+        contactServiceImp.addListContacts(contacts);
 
     }
 
     @ResponseStatus(value = HttpStatus.OK, reason = "contact updated Successfully")
     @PutMapping("/contact")
     public void updateContact(@RequestBody Contact contact) {
-        contactService.addContact(contact);
+        contactServiceImp.addContact(contact);
 
     }
 
     @ResponseStatus(value = HttpStatus.OK, reason = "Contact successfully deleted")
     @DeleteMapping("/contact")
     public void deleteContact(@RequestParam Long id) {
-        contactService.deleteContact(id);
+        contactServiceImp.deleteContact(id);
     }
 
 }
