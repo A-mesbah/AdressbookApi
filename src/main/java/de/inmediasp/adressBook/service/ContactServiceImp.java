@@ -10,7 +10,9 @@ import java.util.List;
 @Service
 public class ContactServiceImp implements ContactService {
     @Autowired
-    ContactRepo contactRepo;
+   private  ContactRepo contactRepo;
+
+
 
     @Override
     public List<Contact> getAllContacts() {
