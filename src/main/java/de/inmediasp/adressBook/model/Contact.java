@@ -1,5 +1,7 @@
 package de.inmediasp.adressBook.model;
 
+import lombok.Data;
+
 import javax.persistence.*;
 
 @Entity
@@ -17,6 +19,15 @@ public class Contact {
     private String Email;
 
     public Contact() {
+    }
+
+    public Contact(String fName, String lName, String street, String postcode, String country, String email) {
+        this.fName = fName;
+        this.lName = lName;
+        this.street = street;
+        this.postcode = postcode;
+        this.country = country;
+        Email = email;
     }
 
     public Contact(Long id, String fName, String lName, String street, String postcode, String country, String email) {

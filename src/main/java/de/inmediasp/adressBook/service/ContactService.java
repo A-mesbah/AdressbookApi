@@ -1,21 +1,22 @@
 package de.inmediasp.adressBook.service;
 
 import de.inmediasp.adressBook.model.Contact;
+import de.inmediasp.adressBook.model.ContactEntery;
 
 import java.util.List;
 
 public interface ContactService {
 
-    public List<Contact> getAllContacts();
+    public List<ContactEntery> getAllContacts();
 
-    public Contact getContact(Long id);
+    public ContactEntery getContact(Long id);
 
 
-    public void addContact(Contact contact);
+    public void addContact(ContactEntery contact);
 
-    public void updateContact(Contact contact);
+    public void updateContact(ContactEntery contact);
 
     public void deleteContact(Long id);
 
-    public void addListContacts(List<Contact> contacts);
+    public void addListContacts(List<ContactEntery > contacts);
 }
