@@ -20,7 +20,7 @@ public class ContactController {
 
     @GetMapping("/contacts")
     @ApiOperation(value = "View a list of available Contacts ", response = Contact.class)
-    public List<ContactEntery> getAllContacts() {
+    public List<ContactEntery> getAllContacts(){
         return contactServiceImp.getAllContacts();
     }
 
