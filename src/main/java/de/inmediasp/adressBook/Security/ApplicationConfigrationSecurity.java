@@ -13,7 +13,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 
 @Configuration
-@EnableWebSecurity
+@EnableWebSecurity//with this two @notations we will config every thing related with Security
 public class ApplicationConfigrationSecurity extends WebSecurityConfigurerAdapter {
 
     private final PasswordEncoder passwordEncoder;
@@ -25,12 +25,13 @@ public class ApplicationConfigrationSecurity extends WebSecurityConfigurerAdapte
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http
-                .authorizeRequests()
-                .antMatchers("/","index").permitAll()
-                .anyRequest()
-                .authenticated()
-                .and()
-                .httpBasic();
+                .authorizeRequests()//simple to say here "what is your permissions in this System  ??"
+                .antMatchers("/","index")//what i want to show to users without any permission "this available for everyone without any Authentication "
+                .permitAll()//to permit everyone to see this html page "index"--> just enter the root "localhost:8080 "
+                .anyRequest()//you ask here "any request you get "
+                .authenticated()//ask the owner of this request "Who are you ??"
+                .and()//and
+                .httpBasic();//i think this a type to encrypt my password to 64bit to make my password not readable to anyone hack the system
     }
 
     @Override
