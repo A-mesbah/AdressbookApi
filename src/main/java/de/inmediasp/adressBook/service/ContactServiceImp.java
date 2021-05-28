@@ -1,9 +1,13 @@
 package de.inmediasp.adressBook.service;
 
+import de.inmediasp.adressBook.exception.ApiException;
+import de.inmediasp.adressBook.exception.ApiExceptionHandler;
+import de.inmediasp.adressBook.exception.ApiRequestException;
 import de.inmediasp.adressBook.model.Contact;
 import de.inmediasp.adressBook.model.ContactEntery;
 import de.inmediasp.adressBook.repository.ContactRepo;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -12,8 +16,7 @@ import java.util.List;
 @Service
 public class ContactServiceImp implements ContactService {
     @Autowired
-   private  ContactRepo contactRepo;
-
+    private ContactRepo contactRepo;
 
 
     @Override
@@ -40,7 +43,8 @@ public class ContactServiceImp implements ContactService {
 
     @Override
     public ContactEntery getContact(Long id) {
-        var result = contactRepo.findById(id).orElseThrow(() -> null);
+        var result = contactRepo.findById(id).
+                orElseThrow(() -> new ApiRequestException("this Id not found "));
         return new ContactEntery(
                 result.getfName(),
                 result.getlName(),
@@ -77,8 +81,8 @@ public class ContactServiceImp implements ContactService {
 
     @Override
     public void deleteContact(Long id) {
+            contactRepo.deleteById(id);
 
-        contactRepo.deleteById(id);
     }
 
     @Override
@@ -98,6 +102,12 @@ public class ContactServiceImp implements ContactService {
         }
         contactRepo.saveAll(contacts);
     }
+
+    // public List<Contact> getContactWithFristAndLastName(String fristname, String lastName) {
+    //  return contactRepo.findByFNameANDLName(fristname, lastName);
+
+    // }
+
 
 }
   /* public List<Contact> getContactByFristName (String name  ){

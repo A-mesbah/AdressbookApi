@@ -5,6 +5,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 
+import java.io.IOException;
 import java.time.ZoneId;
 import java.time.ZonedDateTime;
 
@@ -18,5 +19,15 @@ public class ApiExceptionHandler {
                 badRequest,
                 ZonedDateTime.now(ZoneId.of("Z")));
         return new ResponseEntity<>(apiException, badRequest);
+    }
+
+    @ExceptionHandler(value = {IOException.class})
+    public ResponseEntity<Object> handleIOException(IOException ex) {
+        ApiException apiException = new ApiException(
+                ex.getMessage(),
+                HttpStatus.MULTI_STATUS,
+                ZonedDateTime.now(ZoneId.of("Z"))
+        );
+        return new ResponseEntity<>(apiException, HttpStatus.MULTI_STATUS);
     }
 }

@@ -1,12 +1,17 @@
 package de.inmediasp.adressBook.controller;
 
+import de.inmediasp.adressBook.AdressBookApplication;
 import de.inmediasp.adressBook.model.Contact;
 import de.inmediasp.adressBook.model.ContactEntery;
 import de.inmediasp.adressBook.service.ContactServiceImp;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -14,14 +19,20 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/v1")
 @Api(value = "Contact", description = "Operation for ContactService ")
+
 public class ContactController {
+    private static Logger logger = LogManager.getLogger(ContactController.class);
     @Autowired
     private ContactServiceImp contactServiceImp;
 
     @GetMapping("/contacts")
     @ApiOperation(value = "View a list of available Contacts ", response = Contact.class)
-    public List<ContactEntery> getAllContacts(){
-        return contactServiceImp.getAllContacts();
+    public ResponseEntity <List<ContactEntery>> getAllContacts() {
+        String msg="this is all contacts in my DB";
+        HttpHeaders httpHeader=new HttpHeaders();
+        httpHeader.add("description","online contacts ");
+        var x=contactServiceImp.getAllContacts();
+        return ResponseEntity.status(HttpStatus.OK).headers(httpHeader).body(x);
     }
 
     //you can use con/{id}but instead of @RequestParam use @PathVariable Long id

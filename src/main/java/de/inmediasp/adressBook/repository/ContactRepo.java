@@ -10,6 +10,8 @@ import java.util.List;
 
 @Repository
 public interface ContactRepo extends JpaRepository<Contact,Long>   {
+  //@Query("SELECT a FROM contact a WHERE a.fName=?1 AND a.lName =?" )
+   //List<Contact>findByFNameANDLName(String fristname, String lastName );
 
 // findByFNameIgnoreCase -->this an another function may i use later
 //public List<Contact> findByFName (String fristName );
