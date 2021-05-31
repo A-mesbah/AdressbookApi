@@ -10,7 +10,7 @@ public class Contact {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-    @Column(name = "fristName")
+    @Column(name = "firstName")
     private String fName;
     private String lName;
     private String street;

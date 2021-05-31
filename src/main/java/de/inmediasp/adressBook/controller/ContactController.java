@@ -1,8 +1,7 @@
 package de.inmediasp.adressBook.controller;
 
-import de.inmediasp.adressBook.AdressBookApplication;
 import de.inmediasp.adressBook.model.Contact;
-import de.inmediasp.adressBook.model.ContactEntery;
+import de.inmediasp.adressBook.model.ContactEntry;
 import de.inmediasp.adressBook.service.ContactServiceImp;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -27,36 +26,36 @@ public class ContactController {
 
     @GetMapping("/contacts")
     @ApiOperation(value = "View a list of available Contacts ", response = Contact.class)
-    public ResponseEntity <List<ContactEntery>> getAllContacts() {
-        String msg="this is all contacts in my DB";
-        HttpHeaders httpHeader=new HttpHeaders();
-        httpHeader.add("description","online contacts ");
-        var x=contactServiceImp.getAllContacts();
+    public ResponseEntity<List<ContactEntry>> getAllContacts() {
+        HttpHeaders httpHeader = new HttpHeaders();
+        httpHeader.add("description", "online contacts ");
+        var x = contactServiceImp.getAllContacts();
+
         return ResponseEntity.status(HttpStatus.OK).headers(httpHeader).body(x);
     }
 
     //you can use con/{id}but instead of @RequestParam use @PathVariable Long id
     @GetMapping("/contact/{id}")
-    public ContactEntery getContactWithId(@PathVariable Long id) {
+    public ContactEntry getContactWithId(@PathVariable Long id) {
         return contactServiceImp.getContact(id);
     }
 
     @ResponseStatus(value = HttpStatus.CREATED, reason = "contact Added Successfully")
     @PostMapping("/contact")
-    public void addContact(@RequestBody ContactEntery contact) {
+    public void addContact(@RequestBody ContactEntry contact) {
         contactServiceImp.addContact(contact);
     }
 
     @ResponseStatus(value = HttpStatus.CREATED)
     @PostMapping("/contacts")
-    public void addContactsList(@RequestParam List<ContactEntery> contacts) {
+    public void addContactsList(@RequestParam List<ContactEntry> contacts) {
         contactServiceImp.addListContacts(contacts);
 
     }
 
     @ResponseStatus(value = HttpStatus.OK, reason = "contact updated Successfully")
     @PutMapping("/contact")
-    public void updateContact(@RequestBody ContactEntery contact) {
+    public void updateContact(@RequestBody ContactEntry contact) {
         contactServiceImp.addContact(contact);
 
     }

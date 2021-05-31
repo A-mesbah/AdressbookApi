@@ -14,11 +14,12 @@ import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 
 @Configuration
 @EnableWebSecurity//with this two @notations we will config every thing related with Security
-public class ApplicationConfigrationSecurity extends WebSecurityConfigurerAdapter {
-
-    private final PasswordEncoder passwordEncoder;
+public class applicationConfigurationSecurity extends WebSecurityConfigurerAdapter {
     @Autowired
-    public ApplicationConfigrationSecurity(PasswordEncoder passwordEncoder) {
+    private final PasswordEncoder passwordEncoder;
+
+    @Autowired
+    public applicationConfigurationSecurity(PasswordEncoder passwordEncoder) {
         this.passwordEncoder = passwordEncoder;
     }
 
@@ -26,7 +27,7 @@ public class ApplicationConfigrationSecurity extends WebSecurityConfigurerAdapte
     protected void configure(HttpSecurity http) throws Exception {
         http
                 .authorizeRequests()//simple to say here "what is your permissions in this System  ??"
-                .antMatchers("/","index")//what i want to show to users without any permission "this available for everyone without any Authentication "
+                .antMatchers("/", "index")//what i want to show to users without any permission "this available for everyone without any Authentication "
                 .permitAll()//to permit everyone to see this html page "index"--> just enter the root "localhost:8080 "
                 .anyRequest()//you ask here "any request you get "
                 .authenticated()//ask the owner of this request "Who are you ??"
@@ -37,11 +38,21 @@ public class ApplicationConfigrationSecurity extends WebSecurityConfigurerAdapte
     @Override
     @Bean
     protected UserDetailsService userDetailsService() {
-        UserDetails user=User.builder()
+        UserDetails user = User.builder()
                 .username("ahmed")
                 .password(passwordEncoder.encode("123456"))
                 .roles("contacts")
                 .build();
-        return  new InMemoryUserDetailsManager(user);
+        return new InMemoryUserDetailsManager(user);
+    }
+
+    @Bean
+    protected UserDetailsService passwordEncoder() {
+        UserDetails user = User.builder()
+                .username("ahmed")
+                .password(passwordEncoder.encode("123456"))
+                .roles("contacts")
+                .build();
+        return new InMemoryUserDetailsManager(user);
     }
 }

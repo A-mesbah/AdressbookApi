@@ -1,13 +1,10 @@
 package de.inmediasp.adressBook.service;
 
-import de.inmediasp.adressBook.exception.ApiException;
-import de.inmediasp.adressBook.exception.ApiExceptionHandler;
 import de.inmediasp.adressBook.exception.ApiRequestException;
 import de.inmediasp.adressBook.model.Contact;
-import de.inmediasp.adressBook.model.ContactEntery;
+import de.inmediasp.adressBook.model.ContactEntry;
 import de.inmediasp.adressBook.repository.ContactRepo;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -15,18 +12,23 @@ import java.util.List;
 
 @Service
 public class ContactServiceImp implements ContactService {
+
+    private final ContactRepo contactRepo;
+
     @Autowired
-    private ContactRepo contactRepo;
+    public ContactServiceImp(ContactRepo contactRepo){
+        this.contactRepo = contactRepo;
+    }
 
 
     @Override
-    public List<ContactEntery> getAllContacts() {
+    public List<ContactEntry> getAllContacts() {
         var entries = contactRepo.findAll();
 
-        List results = new ArrayList<ContactEntery>();
+        List results = new ArrayList<ContactEntry>();
 
         for (Contact contact : entries) {
-            results.add(new ContactEntery(
+            results.add(new ContactEntry(
                             contact.getfName(),
                             contact.getfName(),
                             contact.getStreet(),
@@ -42,10 +44,10 @@ public class ContactServiceImp implements ContactService {
     }
 
     @Override
-    public ContactEntery getContact(Long id) {
+    public ContactEntry getContact(Long id) {
         var result = contactRepo.findById(id).
                 orElseThrow(() -> new ApiRequestException("this Id not found "));
-        return new ContactEntery(
+        return new ContactEntry(
                 result.getfName(),
                 result.getlName(),
                 result.getStreet(),
@@ -56,7 +58,7 @@ public class ContactServiceImp implements ContactService {
     }
 
     @Override
-    public void addContact(ContactEntery tempContact) {
+    public void addContact(ContactEntry tempContact) {
         Contact con = new Contact(
                 tempContact.getFName(),
                 tempContact.getLName(),
@@ -68,7 +70,7 @@ public class ContactServiceImp implements ContactService {
     }
 
     @Override
-    public void updateContact(ContactEntery tempContact) {
+    public void updateContact(ContactEntry tempContact) {
         Contact con = new Contact(
                 tempContact.getFName(),
                 tempContact.getLName(),
@@ -81,14 +83,19 @@ public class ContactServiceImp implements ContactService {
 
     @Override
     public void deleteContact(Long id) {
+        try {
             contactRepo.deleteById(id);
+        }catch (RuntimeException EX){
+            throw new ApiRequestException("this id not exists ");
+        }
+
 
     }
 
     @Override
-    public void addListContacts(List<ContactEntery> tempContacts) {
+    public void addListContacts(List<ContactEntry> tempContacts) {
         List<Contact> contacts = new ArrayList<>();
-        for (ContactEntery contact : tempContacts) {
+        for (ContactEntry contact : tempContacts) {
             contacts.add(new Contact(
                             contact.getFName(),
                             contact.getLName(),
