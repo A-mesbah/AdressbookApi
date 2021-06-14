@@ -1,122 +1,63 @@
 package de.inmediasp.adressBook.service;
-
 import de.inmediasp.adressBook.exception.ApiRequestException;
-import de.inmediasp.adressBook.model.Contact;
-import de.inmediasp.adressBook.model.ContactEntry;
+import de.inmediasp.adressBook.model.ContactEntity;
+import de.inmediasp.adressBook.model.ContactDTO;
 import de.inmediasp.adressBook.repository.ContactRepo;
+import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 public class ContactServiceImp implements ContactService {
-
     private final ContactRepo contactRepo;
+    private final ModelMapper modelMapper;
 
     @Autowired
-    public ContactServiceImp(ContactRepo contactRepo){
+    public ContactServiceImp(ContactRepo contactRepo, ModelMapper modelMapper) {
+
         this.contactRepo = contactRepo;
-    }
-
-
-    @Override
-    public List<ContactEntry> getAllContacts() {
-        var entries = contactRepo.findAll();
-
-        List results = new ArrayList<ContactEntry>();
-
-        for (Contact contact : entries) {
-            results.add(new ContactEntry(
-                            contact.getfName(),
-                            contact.getfName(),
-                            contact.getStreet(),
-                            contact.getPostcode(),
-                            contact.getCountry(),
-                            contact.getEmail()
-                    )
-            );
-
-        }
-        return results;
-
+        this.modelMapper = modelMapper;
     }
 
     @Override
-    public ContactEntry getContact(Long id) {
-        var result = contactRepo.findById(id).
-                orElseThrow(() -> new ApiRequestException("this Id not found "));
-        return new ContactEntry(
-                result.getfName(),
-                result.getlName(),
-                result.getStreet(),
-                result.getPostcode(),
-                result.getCountry(),
-                result.getEmail()
-        );
+    public List<ContactDTO> getAllContacts() {
+
+        return contactRepo.findAll()
+                .stream()
+                .map(contactEntity -> modelMapper.map(contactEntity, ContactDTO.class))
+                .collect(Collectors.toList());
     }
 
     @Override
-    public void addContact(ContactEntry tempContact) {
-        Contact con = new Contact(
-                tempContact.getFName(),
-                tempContact.getLName(),
-                tempContact.getStreet(),
-                tempContact.getPostcode(),
-                tempContact.getCountry(),
-                tempContact.getEmail());
-        contactRepo.save(con);
+    public ContactDTO getContact(Long id) {
+        return (contactRepo.findById(id).map(contactEntity -> modelMapper.map(contactEntity, ContactDTO.class)))
+                .orElseThrow(() -> new ApiRequestException("there is no id with this contact "));
     }
 
     @Override
-    public void updateContact(ContactEntry tempContact) {
-        Contact con = new Contact(
-                tempContact.getFName(),
-                tempContact.getLName(),
-                tempContact.getStreet(),
-                tempContact.getPostcode(),
-                tempContact.getCountry(),
-                tempContact.getEmail());
-        contactRepo.save(con);
+    public void addContact(ContactEntity contact) {
+        contactRepo.save(contact);
+    }
+
+    @Override
+    public void addListContacts(List<ContactEntity> contacts) {
+        contacts.stream().map(contactEntity -> contactRepo.save(contactEntity))
+                .findAny()
+                .orElseThrow(() -> new ApiRequestException("There was a false Entered Data "));
+
+    }
+
+    @Override
+    public void updateContact(ContactEntity contact) {
+        contactRepo.save(contact);
     }
 
     @Override
     public void deleteContact(Long id) {
-        try {
-            contactRepo.deleteById(id);
-        }catch (RuntimeException EX){
-            throw new ApiRequestException("this id not exists ");
-        }
-
-
+        ContactDTO contactDTO = getContact(id);
+        contactRepo.deleteById(id);
     }
-
-    @Override
-    public void addListContacts(List<ContactEntry> tempContacts) {
-        List<Contact> contacts = new ArrayList<>();
-        for (ContactEntry contact : tempContacts) {
-            contacts.add(new Contact(
-                            contact.getFName(),
-                            contact.getLName(),
-                            contact.getStreet(),
-                            contact.getPostcode(),
-                            contact.getCountry(),
-                            contact.getEmail()
-                    )
-            );
-
-        }
-        contactRepo.saveAll(contacts);
-    }
-
-    // public List<Contact> getContactWithFristAndLastName(String fristname, String lastName) {
-    //  return contactRepo.findByFNameANDLName(fristname, lastName);
-
-    // }
-
-
 }
-  /* public List<Contact> getContactByFristName (String name  ){
-         return contactRepo.findByFName(name );
-     }*/
+
