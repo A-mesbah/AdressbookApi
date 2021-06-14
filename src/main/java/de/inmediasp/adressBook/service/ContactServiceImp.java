@@ -32,7 +32,8 @@ public class ContactServiceImp implements ContactService {
 
     @Override
     public ContactDTO getContact(Long id) {
-        return (contactRepo.findById(id).map(contactEntity -> modelMapper.map(contactEntity, ContactDTO.class)))
+        return (
+                contactRepo.findById(id).map(contactEntity -> modelMapper.map(contactEntity, ContactDTO.class)))
                 .orElseThrow(() -> new ApiRequestException("there is no id with this contact "));
     }
 

@@ -1,12 +1,13 @@
 package de.inmediasp.adressBook.model;
 
+import com.sun.istack.NotNull;
 import lombok.Data;
 
 import javax.persistence.*;
 
 @Entity
 @Table(name = "Contacts")
-public class Contact {
+public class ContactEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
@@ -16,12 +17,13 @@ public class Contact {
     private String street;
     private String postcode;
     private String country;
+@NotNull
     private String Email;
 
-    public Contact() {
+    public ContactEntity() {
     }
 
-    public Contact(String fName, String lName, String street, String postcode, String country, String email) {
+    public ContactEntity(String fName, String lName, String street, String postcode, String country, String email) {
         this.fName = fName;
         this.lName = lName;
         this.street = street;
@@ -30,7 +32,7 @@ public class Contact {
         Email = email;
     }
 
-    public Contact(Long id, String fName, String lName, String street, String postcode, String country, String email) {
+    public ContactEntity(Long id, String fName, String lName, String street, String postcode, String country, String email) {
         this.id = id;
         this.fName = fName;
         this.lName = lName;
