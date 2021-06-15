@@ -1,4 +1,5 @@
-package de.inmediasp.adressBook.Firebase;
+
+package de.inmediasp.adressBook.Firebase.Service;
 
 import com.google.api.core.ApiFuture;
 import com.google.cloud.firestore.DocumentReference;
@@ -20,31 +21,31 @@ import java.util.concurrent.ExecutionException;
 @Service
 public class FBContactServiceImp implements ContactService {
 
-
         public static final String COLLECTION_NAME ="adressbook";
 
 
-        public String savePatientDetails(Patient patient) throws InterruptedException, ExecutionException {
+        public String savePatientDetails(ContactDTO contactDTO) throws InterruptedException, ExecutionException {
             Firestore dbFirestore = FirestoreClient.getFirestore();
-            ApiFuture<WriteResult> collectionsApiFuture = dbFirestore.collection(COLLECTION_NAME).document(patient.getName()).set(patient);
+            ApiFuture<WriteResult> collectionsApiFuture = dbFirestore.collection(COLLECTION_NAME).document(contactDTO.getFName()).set(contactDTO);
             return collectionsApiFuture.get().getUpdateTime().toString();
         }
-        public Patient getPatientDetails(String name) throws InterruptedException, ExecutionException {
+        public ContactDTO getPatientDetails(String name) throws InterruptedException, ExecutionException {
             Firestore dbFirestore = FirestoreClient.getFirestore();
             DocumentReference documentReference = dbFirestore.collection(COLLECTION_NAME).document(name);
             ApiFuture<DocumentSnapshot> future = documentReference.get();
             DocumentSnapshot document = future.get();
-            Patient patient = null;
+            ContactDTO contactDTO = null;
             if(document.exists()) {
-                patient = document.toObject(Patient.class);
-                return patient;
+                contactDTO = document.toObject(ContactDTO.class);
+                return contactDTO;
             }else {
                 return null;
             }
+
         }
-        public String updatePatientDetails(Patient person) throws InterruptedException, ExecutionException {
+        public String updatePatientDetails(ContactDTO contactDto) throws InterruptedException, ExecutionException {
             Firestore dbFirestore = FirestoreClient.getFirestore();
-            ApiFuture<WriteResult> collectionsApiFuture = dbFirestore.collection(COLLECTION_NAME).document(person.getName()).set(person);
+            ApiFuture<WriteResult> collectionsApiFuture = dbFirestore.collection(COLLECTION_NAME).document(contactDto.getFName()).set(contactDto);
             return collectionsApiFuture.get().getUpdateTime().toString();
         }
         public String deletePatient(String name) {
@@ -83,3 +84,4 @@ public class FBContactServiceImp implements ContactService {
 
     }
 }
+
