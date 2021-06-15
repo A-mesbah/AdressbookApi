@@ -74,6 +74,7 @@ class ContactServiceImpTest_for_javaStreams {
         given(contactRepo.findById(any())).willReturn(Optional.of(contact));
         given(modelMapper.map(contact, ContactDTO.class)).willReturn(contactDTO1);
         //when
+
         ContactDTO contactDTO = testable.getContact(3L);
         //then
         assertNotNull(contactDTO);

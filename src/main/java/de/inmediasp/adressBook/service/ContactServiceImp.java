@@ -52,7 +52,7 @@ public class ContactServiceImp implements ContactService {
         contacts.stream()
                 .findAny()
                 .orElseThrow(() -> new ApiRequestException(" addContactList is Empty "));
-        contactRepo.saveAll(contacts);
+                 contactRepo.saveAll(contacts);
     }
 
     @Override
