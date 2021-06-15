@@ -51,8 +51,7 @@ public class ContactServiceImp implements ContactService {
         }
         contacts.stream()
                 .findAny()
-                .orElseThrow(() -> new ApiRequestException(" addContactList is  Empty "));
-        // contacts.stream().map(contactEntity -> contactRepo.save(contactEntity));
+                .orElseThrow(() -> new ApiRequestException(" addContactList is Empty "));
         contactRepo.saveAll(contacts);
     }
 

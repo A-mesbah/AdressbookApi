@@ -98,9 +98,6 @@ class ContactServiceImpTest_for_javaStreams {
     }
 
     @Test
-    @Disabled
-        // I cant test this Method because :(findAny-findFirst )in ContactServiceImp
-        //TODO Thomas : can you please write a test for this Method
     void addListContacts() {
         //given
         List<ContactEntity> contactList = new ArrayList<>();
@@ -115,13 +112,17 @@ class ContactServiceImpTest_for_javaStreams {
 
     }
 @Test
-void ThrowExceptionWhenListIsEmpty (){
-
+void ThrowExceptionWhenListIsNull(){
     List<ContactEntity> contactList = null;
     ApiRequestException apiRequestException = assertThrows(ApiRequestException.class, () -> testable.addListContacts(contactList));
     assertEquals("addContactList  is Null", apiRequestException.getMessage());
-
 }
+    @Test
+    void ThrowExceptionWhenListIsEmpty (){
+        List<ContactEntity> contactList = new ArrayList<>();
+        ApiRequestException apiRequestException = assertThrows(ApiRequestException.class, () -> testable.addListContacts(contactList));
+        assertEquals(" addContactList is Empty ", apiRequestException.getMessage());
+    }
     //Done
     @Test
     void updateContact() {
