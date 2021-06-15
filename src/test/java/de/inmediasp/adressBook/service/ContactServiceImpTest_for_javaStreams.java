@@ -104,17 +104,24 @@ class ContactServiceImpTest_for_javaStreams {
     void addListContacts() {
         //given
         List<ContactEntity> contactList = new ArrayList<>();
-        contactList.stream().map(contactEntity -> contactList.add(contactEntity));
+        contactList.add(contact);
         //When
         testable.addListContacts(contactList);
         //then
-        ArgumentCaptor<ContactEntity> contactEntryArgumentCaptor = ArgumentCaptor.forClass(ContactEntity.class);
-        verify(contactRepo).save(contactEntryArgumentCaptor.capture());
-        ContactEntity captorContactEntity = contactEntryArgumentCaptor.getValue();
-        assertThat(captorContactEntity.getfName()).isEqualTo(contactList.get(0).getlName());
+        ArgumentCaptor<Iterable<ContactEntity>> contactEntryArgumentCaptor = ArgumentCaptor.forClass(Iterable.class);
+        verify(contactRepo).saveAll(contactEntryArgumentCaptor.capture());
+        Iterable<ContactEntity> captorContactEntity = contactEntryArgumentCaptor.getValue();
+        assertThat(captorContactEntity.iterator().next().getfName()).isEqualTo(contactList.get(0).getlName());
 
     }
+@Test
+void ThrowExceptionWhenListIsEmpty (){
 
+    List<ContactEntity> contactList = null;
+    ApiRequestException apiRequestException = assertThrows(ApiRequestException.class, () -> testable.addListContacts(contactList));
+    assertEquals("addContactList  is Null", apiRequestException.getMessage());
+
+}
     //Done
     @Test
     void updateContact() {

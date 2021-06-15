@@ -1,4 +1,5 @@
 package de.inmediasp.adressBook.service;
+
 import de.inmediasp.adressBook.exception.ApiRequestException;
 import de.inmediasp.adressBook.model.ContactEntity;
 import de.inmediasp.adressBook.model.ContactDTO;
@@ -6,6 +7,7 @@ import de.inmediasp.adressBook.repository.ContactRepo;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -44,10 +46,14 @@ public class ContactServiceImp implements ContactService {
 
     @Override
     public void addListContacts(List<ContactEntity> contacts) {
-        contacts.stream().map(contactEntity -> contactRepo.save(contactEntity))
+        if (contacts == null) {
+            throw new ApiRequestException("addContactList  is Null");
+        }
+        contacts.stream()
                 .findAny()
-                .orElseThrow(() -> new ApiRequestException("There was a false Entered Data "));
-
+                .orElseThrow(() -> new ApiRequestException(" addContactList is  Empty "));
+        // contacts.stream().map(contactEntity -> contactRepo.save(contactEntity));
+        contactRepo.saveAll(contacts);
     }
 
     @Override

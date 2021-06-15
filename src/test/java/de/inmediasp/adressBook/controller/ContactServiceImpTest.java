@@ -1,6 +1,8 @@
-package de.inmediasp.adressBook.service;
+package de.inmediasp.adressBook.controller;
 
-import de.inmediasp.adressBook.model.ContactEntry;
+import de.inmediasp.adressBook.model.ContactDTO;
+import de.inmediasp.adressBook.service.ContactService;
+import de.inmediasp.adressBook.service.ContactServiceImp;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.jupiter.api.Test;
@@ -11,6 +13,7 @@ import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.datasource.init.ScriptUtils;
+import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.jdbc.JdbcTestUtils;
 import org.springframework.test.web.servlet.MockMvc;
@@ -18,10 +21,11 @@ import org.springframework.test.web.servlet.MockMvc;
 import java.sql.SQLException;
 
 import static org.junit.jupiter.api.Assertions.*;
-
+@ActiveProfiles("test")
 @RunWith(SpringRunner.class)
 @WebMvcTest
-class ContactServiceImpTest {
+class ContactEntityServiceImp_integration_Test {
+
     private static final String DROP_TABLE_CONTACTS = "H2DB\\drop.sql";
     private static final String CREATE_TABLE_CONTACTS = "H2DB\\create.sql";
     private JdbcTemplate jdbc;
@@ -43,7 +47,7 @@ class ContactServiceImpTest {
     @Autowired
     ContactService contactService= Mockito.mock(ContactServiceImp.class);
     @Autowired
-    ContactEntry contactEntry;
+    ContactDTO contactDTO;
 
     @Test
     void getAllContacts() {
@@ -51,7 +55,7 @@ class ContactServiceImpTest {
 
     @Test
     void getContact() {
-        contactEntry = new ContactEntry(
+        contactDTO = new ContactDTO(
                 "ahmed",
                 "mohamed",
                 "Berliner STR 1",
@@ -79,5 +83,6 @@ class ContactServiceImpTest {
 
     @Test
     void addListContacts() {
+
     }
 }

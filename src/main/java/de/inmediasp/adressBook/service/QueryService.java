@@ -1,6 +1,6 @@
 package de.inmediasp.adressBook.service;
 
-import de.inmediasp.adressBook.model.Contact;
+import de.inmediasp.adressBook.model.ContactEntity;
 import org.springframework.stereotype.Service;
 
 import javax.persistence.EntityManager;
@@ -11,9 +11,9 @@ public class QueryService {
     @PersistenceContext
     private EntityManager entityManager;
 
-    public Contact getContact(Long id ){
+    public ContactEntity getContact(Long id ){
         String query= "your Query";
-         var result =entityManager.createNativeQuery(query,Contact.class);
-         return (Contact) result.getSingleResult();
+         var result =entityManager.createNativeQuery(query, ContactEntity.class);
+         return (ContactEntity) result.getSingleResult();
     }
 }

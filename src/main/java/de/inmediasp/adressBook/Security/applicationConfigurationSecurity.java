@@ -1,3 +1,4 @@
+/*
 package de.inmediasp.adressBook.Security;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -56,3 +57,4 @@ public class applicationConfigurationSecurity extends WebSecurityConfigurerAdapt
         return new InMemoryUserDetailsManager(user);
     }
 }
+*/

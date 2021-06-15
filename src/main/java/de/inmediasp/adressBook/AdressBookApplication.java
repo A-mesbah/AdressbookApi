@@ -2,12 +2,19 @@ package de.inmediasp.adressBook;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.modelmapper.ModelMapper;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
 public class AdressBookApplication {
     private static Logger logger = LogManager.getLogger(AdressBookApplication.class);
+
+    @Bean
+    public ModelMapper modelmapper() {
+        return new ModelMapper();
+    }
 
     public static void main(String[] args) {
         SpringApplication.run(AdressBookApplication.class, args);

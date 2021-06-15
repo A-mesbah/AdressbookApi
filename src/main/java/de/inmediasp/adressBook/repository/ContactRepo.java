@@ -1,15 +1,12 @@
 package de.inmediasp.adressBook.repository;
 
-import de.inmediasp.adressBook.model.Contact;
+import de.inmediasp.adressBook.model.ContactEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.jpa.repository.Query;
-import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
-import java.util.List;
-
 @Repository
-public interface ContactRepo extends JpaRepository<Contact,Long>   {
+public interface ContactRepo extends JpaRepository<ContactEntity,Long>   {
+
   //@Query("SELECT a FROM contact a WHERE a.fName=?1 AND a.lName =?" )
    //List<Contact>findByFNameANDLName(String fristname, String lastName );
 

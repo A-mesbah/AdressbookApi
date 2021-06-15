@@ -2,6 +2,7 @@ package de.inmediasp.adressBook.controller;
 
 import de.inmediasp.adressBook.model.ContactEntity;
 import de.inmediasp.adressBook.model.ContactDTO;
+import de.inmediasp.adressBook.service.ContactService;
 import de.inmediasp.adressBook.service.ContactServiceImp;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -18,10 +19,10 @@ import java.util.Optional;
 @RequestMapping("/api/v1")
 public class ContactController {
     private static Logger logger = LogManager.getLogger(ContactController.class);
-    private final ContactServiceImp contactServiceImp;
+    private final ContactService contactServiceImp;
 
     @Autowired
-    public ContactController(ContactServiceImp contactServiceImp) {
+    public ContactController(ContactService contactServiceImp) {
         this.contactServiceImp = contactServiceImp;
     }
 
