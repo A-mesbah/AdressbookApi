@@ -3,7 +3,6 @@ package de.inmediasp.adressBook.controller;
 import de.inmediasp.adressBook.model.ContactDTO;
 import de.inmediasp.adressBook.model.ContactEntity;
 import de.inmediasp.adressBook.service.ContactServiceImp;
-import de.inmediasp.adressBook.service.ContactWrite;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,6 +18,7 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.hamcrest.Matchers.*;
+/*
 
 @WebMvcTest //if i have more than one Controller i should give it as a parameter
 class ContactEntityControllerTest {
@@ -103,3 +103,4 @@ class ContactEntityControllerTest {
 
 
 
+*/

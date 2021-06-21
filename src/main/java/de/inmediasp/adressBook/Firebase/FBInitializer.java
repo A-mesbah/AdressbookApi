@@ -9,6 +9,7 @@ import javax.annotation.PostConstruct;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+/*
 
 @Service
 public class FBInitializer {
@@ -30,3 +31,4 @@ public class FBInitializer {
         }
     }
 }
+*/

@@ -2,8 +2,7 @@ package de.inmediasp.adressBook.controller;
 
 import de.inmediasp.adressBook.model.ContactEntity;
 import de.inmediasp.adressBook.model.ContactDTO;
-import de.inmediasp.adressBook.service.ContactService;
-import de.inmediasp.adressBook.service.ContactServiceImp;
+import de.inmediasp.adressBook.service.ServicesInterfaces.ContactService;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.modelmapper.ModelMapper;
@@ -13,7 +12,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/v1")
@@ -32,13 +30,13 @@ public class ContactController {
         return ResponseEntity.status(HttpStatus.OK).body(contactsList);
     }
 
-    @GetMapping("/contact/{id}")
-    public ResponseEntity getContactWithId(@PathVariable Long id) {
-        ContactDTO contactDTO = contactServiceImp.getContact(id);
+   /* @GetMapping("/contact/{email}")
+    public ResponseEntity getContactWithId(@PathVariable String email) {
+        ContactDTO contactDTO = contactServiceImp.getContact(email);
         if (contactDTO != null) {
             return ResponseEntity.status(HttpStatus.OK).body(contactDTO);
         } else return ResponseEntity.status(HttpStatus.NO_CONTENT).body("There is  no data for this id ");
-    }
+    }*/
 
     @PostMapping("/contact")
     public ResponseEntity addContact(@RequestBody ContactEntity contact) {
@@ -66,10 +64,10 @@ public class ContactController {
         return ResponseEntity.status(HttpStatus.OK).body("contact updated Successfully");
     }
 
-    @DeleteMapping("/contact/{id}")
-    public ResponseEntity deleteContact(@PathVariable Long id) {
-       contactServiceImp.deleteContact(id);
+  /*  @DeleteMapping("/contact/{email}")
+    public ResponseEntity deleteContact(@PathVariable String email) {
+       contactServiceImp.deleteContact(email);
         return ResponseEntity.status(HttpStatus.NO_CONTENT).body("Contact successfully deleted");
-    }
+    }*/
 
 }

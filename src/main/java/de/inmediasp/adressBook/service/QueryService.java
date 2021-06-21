@@ -1,4 +1,5 @@
 package de.inmediasp.adressBook.service;
+/*
 
 import de.inmediasp.adressBook.model.ContactEntity;
 import org.springframework.stereotype.Service;
@@ -11,9 +12,10 @@ public class QueryService {
     @PersistenceContext
     private EntityManager entityManager;
 
-    public ContactEntity getContact(Long id ){
-        String query= "your Query";
+    public ContactEntity getContact(String email){
+        String query= "SELECT * FROM adressbook where email=";
          var result =entityManager.createNativeQuery(query, ContactEntity.class);
          return (ContactEntity) result.getSingleResult();
     }
 }
+*/

@@ -17,7 +17,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ExecutionException;
 import java.util.stream.Collectors;
-
+/*
 
 @Primary
 @Service
@@ -26,7 +26,7 @@ public class FBContactServiceImp implements ContactService {
 
     Firestore dbFirestore;
 
-    //Done
+
     @Override
     public List<ContactDTO> getAllContacts() {
 
@@ -102,3 +102,4 @@ public class FBContactServiceImp implements ContactService {
     }
 }
 
+*/

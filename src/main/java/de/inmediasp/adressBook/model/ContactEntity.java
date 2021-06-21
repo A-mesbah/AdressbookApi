@@ -1,12 +1,15 @@
 package de.inmediasp.adressBook.model;
 
 import com.sun.istack.NotNull;
-import lombok.Data;
+import lombok.*;
 
 import javax.persistence.*;
-
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
 @Entity
-@Table(name = "Contacts")
+@Table(name = "contacts")
 public class ContactEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -17,84 +20,6 @@ public class ContactEntity {
     private String street;
     private String postcode;
     private String country;
-@NotNull
+    @NotNull
     private String Email;
-
-    public ContactEntity() {
-    }
-
-    public ContactEntity(String fName, String lName, String street, String postcode, String country, String email) {
-        this.fName = fName;
-        this.lName = lName;
-        this.street = street;
-        this.postcode = postcode;
-        this.country = country;
-        Email = email;
-    }
-
-    public ContactEntity(Long id, String fName, String lName, String street, String postcode, String country, String email) {
-        this.id = id;
-        this.fName = fName;
-        this.lName = lName;
-        this.street = street;
-        this.postcode = postcode;
-        this.country = country;
-        Email = email;
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public String getfName() {
-        return fName;
-    }
-
-    public void setfName(String fName) {
-        this.fName = fName;
-    }
-
-    public String getlName() {
-        return lName;
-    }
-
-    public void setlName(String lName) {
-        this.lName = lName;
-    }
-
-    public String getStreet() {
-        return street;
-    }
-
-    public void setStreet(String street) {
-        this.street = street;
-    }
-
-    public String getPostcode() {
-        return postcode;
-    }
-
-    public void setPostcode(String postcode) {
-        this.postcode = postcode;
-    }
-
-    public String getCountry() {
-        return country;
-    }
-
-    public void setCountry(String country) {
-        this.country = country;
-    }
-
-    public String getEmail() {
-        return Email;
-    }
-
-    public void setEmail(String email) {
-        Email = email;
-    }
 }
