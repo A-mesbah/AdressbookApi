@@ -1,13 +1,10 @@
 package de.inmediasp.adressBook.service;
 
-import com.sun.xml.bind.v2.TODO;
-import de.inmediasp.adressBook.exception.ApiException;
 import de.inmediasp.adressBook.exception.ApiRequestException;
 import de.inmediasp.adressBook.model.ContactDTO;
 import de.inmediasp.adressBook.model.ContactEntity;
 import de.inmediasp.adressBook.repository.ContactRepo;
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.ArgumentCaptor;
@@ -27,7 +24,7 @@ import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.BDDMockito.given;
 import static org.mockito.Mockito.doReturn;
 import static org.mockito.Mockito.verify;
-/*
+
 
 
 @ExtendWith(MockitoExtension.class)
@@ -45,7 +42,7 @@ class ContactServiceImpTest_for_javaStreams {
 
         MockitoAnnotations.openMocks(this);
         testable = new ContactServiceImp(contactRepo, modelMapper);
-        contact = new ContactEntity("hallo","Hallo","hallo","hallo","hallo","hallo");
+        contact = new ContactEntity(3l,"hallo","hallo","hallo","hallo","hallo","hallo");
     }
 
     //Done
@@ -72,11 +69,11 @@ class ContactServiceImpTest_for_javaStreams {
     void getContact() {
         //given
         ContactDTO contactDTO1 = new ContactDTO("hallo", "hallo", "hallo", "Hallo", "hallo", "hallo");
-        given(contactRepo.findByEmail(any())).willReturn(Optional.of(contact));
+        given(contactRepo.findById(any())).willReturn(Optional.of(contact));
         given(modelMapper.map(contact, ContactDTO.class)).willReturn(contactDTO1);
         //when
 
-        ContactDTO contactDTO = testable.getContact("hallo@123");
+        ContactDTO contactDTO = testable.getContactById(3l);
         //then
         assertNotNull(contactDTO);
         assertEquals(contactDTO, contactDTO1);
@@ -149,4 +146,3 @@ void ThrowExceptionWhenListIsNull(){
 
 
 }
-*/

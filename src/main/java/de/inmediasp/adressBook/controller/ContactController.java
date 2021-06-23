@@ -16,7 +16,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/v1")
 public class ContactController {
-    private static Logger logger = LogManager.getLogger(ContactController.class);
+    public static Logger logger = LogManager.getLogger(ContactController.class);
     private final ContactService contactServiceImp;
 
     @Autowired
@@ -30,13 +30,28 @@ public class ContactController {
         return ResponseEntity.status(HttpStatus.OK).body(contactsList);
     }
 
-   /* @GetMapping("/contact/{email}")
-    public ResponseEntity getContactWithId(@PathVariable String email) {
-        ContactDTO contactDTO = contactServiceImp.getContact(email);
+    @GetMapping("/contact/{id}")
+    public ResponseEntity getContactWithId(@PathVariable long id) {
+        ContactDTO contactDTO = contactServiceImp.getContactById(id);
         if (contactDTO != null) {
             return ResponseEntity.status(HttpStatus.OK).body(contactDTO);
         } else return ResponseEntity.status(HttpStatus.NO_CONTENT).body("There is  no data for this id ");
-    }*/
+    }
+
+    @GetMapping("/contactEmail/{email}")
+    public ResponseEntity getContactWithId(@PathVariable String email) {
+        ContactDTO contactDTO = contactServiceImp.getContactByEmail(email);
+        if (contactDTO != null) {
+            return ResponseEntity.status(HttpStatus.OK).body(contactDTO);
+        } else return ResponseEntity.status(HttpStatus.NO_CONTENT).body("There is  no data for this id ");
+    }
+
+
+
+
+
+
+
 
     @PostMapping("/contact")
     public ResponseEntity addContact(@RequestBody ContactEntity contact) {
@@ -48,12 +63,10 @@ public class ContactController {
 
     @PostMapping("/contacts")
     public ResponseEntity addContactsList(@RequestBody List<ContactEntity> contacts) {
-        if (contacts!=null){
+        if (contacts != null) {
             contactServiceImp.addListContacts(contacts);
             return ResponseEntity.status(HttpStatus.CREATED).body("the  contactList is successfully added");
-        }
-        else return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("the  contactList is failed to   add");
-
+        } else return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("the  contactList is failed to   add");
 
 
     }
@@ -64,10 +77,10 @@ public class ContactController {
         return ResponseEntity.status(HttpStatus.OK).body("contact updated Successfully");
     }
 
-  /*  @DeleteMapping("/contact/{email}")
-    public ResponseEntity deleteContact(@PathVariable String email) {
-       contactServiceImp.deleteContact(email);
+    @DeleteMapping("/contact/{id}")
+    public ResponseEntity deleteContact(@PathVariable long id) {
+        contactServiceImp.deleteContact(id);
         return ResponseEntity.status(HttpStatus.NO_CONTENT).body("Contact successfully deleted");
-    }*/
+    }
 
 }

@@ -1,9 +1,11 @@
 package de.inmediasp.adressBook.model;
 
-import com.sun.istack.NotNull;
+import com.google.firebase.database.annotations.NotNull;
+import com.google.firebase.database.annotations.Nullable;
 import lombok.*;
 
 import javax.persistence.*;
+
 @Getter
 @Setter
 @NoArgsConstructor
@@ -12,14 +14,56 @@ import javax.persistence.*;
 @Table(name = "contacts")
 public class ContactEntity {
     @Id
+
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
-    @Column(name = "firstName")
-    private String fName;
-    private String lName;
-    private String street;
-    private String postcode;
-    private String country;
+    @Column(
+            name = "id",
+            nullable = false
+    )
     @NotNull
-    private String Email;
+    private Long id;
+    @Column(
+            name = "firstName",
+            unique = false,
+            nullable = false,
+            columnDefinition = "TEXT"
+    )
+
+    private String fName;
+    @Column(
+            name = "lastName",
+            unique = false,
+            nullable = false,
+            columnDefinition = "TEXT"
+    )
+    private String lName;
+    @Column(
+            name = "street",
+            unique = false,
+            nullable = false,
+            columnDefinition = "TEXT"
+    )
+    private String street;
+    @Column(
+            name = "postcode",
+            unique = false,
+            nullable = false,
+            columnDefinition = "TEXT"
+    )
+    private String postcode;
+    @Column(
+            name = "country",
+            unique = false,
+            nullable = false,
+            columnDefinition = "TEXT"
+    )
+    private String country;
+    @Column(
+            name = "email",
+            unique = true,
+            nullable = false,
+            columnDefinition = "TEXT"
+    )
+    @NotNull
+    private String email;
 }

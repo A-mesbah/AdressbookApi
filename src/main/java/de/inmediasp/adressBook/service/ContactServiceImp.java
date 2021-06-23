@@ -7,6 +7,7 @@ import de.inmediasp.adressBook.repository.ContactRepo;
 import de.inmediasp.adressBook.service.ServicesInterfaces.ContactService;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -34,11 +35,23 @@ public class ContactServiceImp implements ContactService {
     }
 
 
+
     @Override
-    public ContactDTO getContact(String email) {
-        return
-                contactRepo.findByEmail(email).map(contactEntity -> modelMapper.map(contactEntity, ContactDTO.class)))
+    public ContactDTO getContactById(Long id) {
+        return (
+                contactRepo.findById(id).map(contactEntity -> modelMapper.map(contactEntity, ContactDTO.class)))
                 .orElseThrow(() -> new ApiRequestException("there is no id with this contact "));
+    }
+
+    @Override
+    public ContactDTO getContactByEmail(String name) {
+        ContactDTO contactDTO=null;
+        try {
+        contactDTO=    modelMapper.map( contactRepo.findByEmail(name),ContactDTO.class);
+        }catch (Exception E){
+            throw new ApiRequestException("there is no Contact with this Email ");
+        }
+      return   contactDTO;
     }
 
     @Override
@@ -63,9 +76,9 @@ public class ContactServiceImp implements ContactService {
     }
 
     @Override
-    public void deleteContact(String email) {
-        ContactDTO contactDTO = getContact(email);
-        contactRepo.deleteById(email);
+    public void deleteContact(Long id) {
+        ContactDTO contactDTO = getContactById(id);
+        contactRepo.deleteById(id);
     }
 
 
