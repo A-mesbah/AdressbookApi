@@ -14,7 +14,6 @@ import javax.persistence.*;
 @Table(name = "contacts")
 public class ContactEntity {
     @Id
-
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(
             name = "id",
@@ -66,4 +65,6 @@ public class ContactEntity {
     )
     @NotNull
     private String email;
+
+
 }

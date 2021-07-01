@@ -23,7 +23,6 @@ public class ContactController {
     public ContactController(ContactService contactServiceImp) {
         this.contactServiceImp = contactServiceImp;
     }
-
     @GetMapping("/contacts")
     public ResponseEntity getAllContacts() {
         List<ContactDTO> contactsList = contactServiceImp.getAllContacts();
@@ -45,13 +44,6 @@ public class ContactController {
             return ResponseEntity.status(HttpStatus.OK).body(contactDTO);
         } else return ResponseEntity.status(HttpStatus.NO_CONTENT).body("There is  no data for this id ");
     }
-
-
-
-
-
-
-
 
     @PostMapping("/contact")
     public ResponseEntity addContact(@RequestBody ContactEntity contact) {
@@ -78,9 +70,10 @@ public class ContactController {
     }
 
     @DeleteMapping("/contact/{id}")
-    public ResponseEntity deleteContact(@PathVariable long id) {
+    public ResponseEntity deleteContact(@PathVariable Long id) {
         contactServiceImp.deleteContact(id);
-        return ResponseEntity.status(HttpStatus.NO_CONTENT).body("Contact successfully deleted");
+        return ResponseEntity.status(HttpStatus.ACCEPTED).body("Contact successfully deleted");
     }
+
 
 }
